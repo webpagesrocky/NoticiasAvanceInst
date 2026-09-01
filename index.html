@@ -44,9 +44,9 @@ a:hover{text-decoration:underline;}
 .punto.verde{background:var(--verde);} .punto.amarillo{background:var(--amarillo);} .punto.rojo{background:var(--rojo);}
 
 .eje{margin-top:34px;}
-.eje h2{font-family:Arial,Helvetica,sans-serif; font-size:1.25rem; font-weight:800; letter-spacing:.04em; margin:0 0 4px;
-  padding-bottom:8px; border-bottom:2px solid var(--azul); display:flex; gap:12px; align-items:baseline; color:var(--accent-2); text-transform:uppercase;}
-.eje h2 .num{color:var(--accent); font-size:1rem; font-weight:700;}
+.eje h2{font-family:Arial,Helvetica,sans-serif; font-size:1.3rem; font-weight:700; margin:0 0 14px;
+  padding-bottom:8px; border-bottom:2px solid var(--azul); display:flex; gap:12px; align-items:baseline; color:var(--ink);}
+.eje h2 .num{color:var(--ink); font-size:1rem; font-weight:700;}
 .vacio{color:var(--muted); font-style:italic; padding:10px 0; font-size:.9rem;}
 
 .nota{display:grid; grid-template-columns:auto 1fr; gap:14px; padding:16px 0; border-bottom:1px solid var(--rule);}
@@ -58,9 +58,6 @@ a:hover{text-decoration:underline;}
 .fuente-linea{font-size:.8rem; color:var(--muted); display:flex; flex-wrap:wrap; gap:10px; align-items:center;}
 .chip{background:var(--paper-2); border:1px solid var(--rule); border-radius:999px; padding:2px 10px; font-size:.74rem; color:var(--ink);}
 .icono-nuevo{width:28px; height:28px; display:inline-block; margin-top:4px; flex:0 0 auto;}
-
-.nuevas{margin-top:34px;}
-.nuevas h2{font-family:Arial,Helvetica,sans-serif; font-size:1.3rem; font-weight:700; margin:0 0 14px;}
 
 .por-mes{margin-top:44px; border-top:3px double var(--accent); padding-top:18px;}
 .por-mes h2{font-family:Arial,Helvetica,sans-serif; font-size:1.3rem; font-weight:700; margin:0 0 14px;}
@@ -77,13 +74,50 @@ a:hover{text-decoration:underline;}
 
 footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; text-align:center; color:var(--muted); font-size:.82rem;}
 
+.fuentes-lateral{position:fixed; top:130px; left:max(14px, calc(50% - 610px)); width:170px; font-size:.74rem; line-height:1.6;}
+.fuentes-lateral h3{font-family:Arial,Helvetica,sans-serif; font-size:.72rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); margin:0 0 8px;}
+.fuentes-lateral ul{list-style:none; margin:0; padding:0;}
+.fuentes-lateral li{margin-bottom:5px;}
+.fuentes-lateral a{color:var(--muted); font-size:.74rem;}
+.fuentes-lateral a:hover{color:var(--accent);}
+
+@media (max-width:1300px){
+  .fuentes-lateral{display:none;}
+}
+
 @media (max-width:560px){
   .nota{grid-template-columns:1fr;}
   .col-izq{flex-direction:row; justify-content:flex-start;}
 }
 </style>
 </head>
-<body><div class="wrap">
+<body>
+<aside class="fuentes-lateral" aria-label="Fuentes de noticias habituales">
+  <h3>Fuentes habituales</h3>
+  <ul>
+  <li><a href="https://columnaocho.com" target="_blank" rel="noopener">Columna Ocho</a></li>
+<li><a href="https://diariotijuana.info" target="_blank" rel="noopener">Diario Tijuana</a></li>
+<li><a href="https://www.elimparcial.com" target="_blank" rel="noopener">El Imparcial</a></li>
+<li><a href="https://el-mexicano.com.mx" target="_blank" rel="noopener">El Mexicano</a></li>
+<li><a href="https://oem.com.mx" target="_blank" rel="noopener">El Sol de Tijuana</a></li>
+<li><a href="https://www.enlineabc.com.mx" target="_blank" rel="noopener">En Línea BC</a></li>
+<li><a href="https://expansion.mx" target="_blank" rel="noopener">Expansión</a></li>
+<li><a href="https://www.gob.mx" target="_blank" rel="noopener">Gob.mx Agricultura BC</a></li>
+<li><a href="https://www.bajacalifornia.gob.mx" target="_blank" rel="noopener">Gobierno de Baja California</a></li>
+<li><a href="https://www.iagua.es" target="_blank" rel="noopener">iAgua</a></li>
+<li><a href="https://www.indexmexicali.org.mx" target="_blank" rel="noopener">Index Mexicali</a></li>
+<li><a href="https://www.industrialnewsbc.com" target="_blank" rel="noopener">Industrial News BC</a></li>
+<li><a href="https://oem.com.mx" target="_blank" rel="noopener">La Voz de la Frontera</a></li>
+<li><a href="https://mexicaliedc.com" target="_blank" rel="noopener">Mexicali EDC</a></li>
+<li><a href="https://mvsnoticias.com" target="_blank" rel="noopener">MVS Noticias</a></li>
+<li><a href="https://pregonerobaja.com.mx" target="_blank" rel="noopener">Pregonero Baja</a></li>
+<li><a href="https://radarbc.com" target="_blank" rel="noopener">RadarBC</a></li>
+<li><a href="https://www.telemundo20.com" target="_blank" rel="noopener">Telemundo San Diego (20)</a></li>
+<li><a href="https://www.uniradiobaja.com" target="_blank" rel="noopener">Uniradio Baja</a></li>
+<li><a href="https://zetatijuana.com" target="_blank" rel="noopener">Zeta Tijuana</a></li>
+  </ul>
+</aside>
+<div class="wrap">
 <header class="masthead">
   <p class="kicker">Boletin · Monitoreo de noticias</p>
   <h1 class="titulo">Avance Institucional</h1>
@@ -100,9 +134,21 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
   <span><i class="punto rojo"></i> Rojo — Alerta</span>
 </div>
 
-<section class="nuevas">
-  <h2>Noticias Nuevas</h2>
-  <div class="mes-nota-eje">Camaras empresariales</div>
+<section class="por-mes">
+  <h2>Historial por mes</h2>
+  <div class="meses-tabs">
+  <button type="button" class="mes-tab activo" data-mes="nuevas">Noticias Nuevas</button>
+  <button type="button" class="mes-tab" data-mes="2026-08">agosto 2026</button>
+<button type="button" class="mes-tab" data-mes="2026-07">julio 2026</button>
+<button type="button" class="mes-tab" data-mes="2026-06">junio 2026</button>
+<button type="button" class="mes-tab" data-mes="2026-05">mayo 2026</button>
+<button type="button" class="mes-tab" data-mes="2026-04">abril 2026</button>
+<button type="button" class="mes-tab" data-mes="2026-03">marzo 2026</button>
+<button type="button" class="mes-tab" data-mes="2026-02">febrero 2026</button>
+<button type="button" class="mes-tab" data-mes="2026-01">enero 2026</button>
+  </div>
+  <div class="mes-panel activo" data-mes="nuevas">
+<div class="mes-nota-eje">Camaras empresariales</div>
 <article class="nota">
   <div class="col-izq">
     <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
@@ -273,21 +319,8 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
     </div>
   </div>
 </article>
-</section>
-
-<section class="por-mes">
-  <h2>Historial por mes</h2>
-  <div class="meses-tabs">
-  <button type="button" class="mes-tab activo" data-mes="2026-08">agosto 2026</button>
-<button type="button" class="mes-tab" data-mes="2026-07">julio 2026</button>
-<button type="button" class="mes-tab" data-mes="2026-06">junio 2026</button>
-<button type="button" class="mes-tab" data-mes="2026-05">mayo 2026</button>
-<button type="button" class="mes-tab" data-mes="2026-04">abril 2026</button>
-<button type="button" class="mes-tab" data-mes="2026-03">marzo 2026</button>
-<button type="button" class="mes-tab" data-mes="2026-02">febrero 2026</button>
-<button type="button" class="mes-tab" data-mes="2026-01">enero 2026</button>
-  </div>
-  <div class="mes-panel activo" data-mes="2026-08">
+</div>
+  <div class="mes-panel" data-mes="2026-08">
 <div class="mes-nota-eje">Camaras empresariales</div>
 <article class="nota">
   <div class="col-izq">

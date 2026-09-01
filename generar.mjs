@@ -98,9 +98,9 @@ a:hover{text-decoration:underline;}
 .punto.verde{background:var(--verde);} .punto.amarillo{background:var(--amarillo);} .punto.rojo{background:var(--rojo);}
 
 .eje{margin-top:34px;}
-.eje h2{font-family:Arial,Helvetica,sans-serif; font-size:1.25rem; font-weight:800; letter-spacing:.04em; margin:0 0 4px;
-  padding-bottom:8px; border-bottom:2px solid var(--azul); display:flex; gap:12px; align-items:baseline; color:var(--accent-2); text-transform:uppercase;}
-.eje h2 .num{color:var(--accent); font-size:1rem; font-weight:700;}
+.eje h2{font-family:Arial,Helvetica,sans-serif; font-size:1.3rem; font-weight:700; margin:0 0 14px;
+  padding-bottom:8px; border-bottom:2px solid var(--azul); display:flex; gap:12px; align-items:baseline; color:var(--ink);}
+.eje h2 .num{color:var(--ink); font-size:1rem; font-weight:700;}
 .vacio{color:var(--muted); font-style:italic; padding:10px 0; font-size:.9rem;}
 
 .nota{display:grid; grid-template-columns:auto 1fr; gap:14px; padding:16px 0; border-bottom:1px solid var(--rule);}
@@ -112,9 +112,6 @@ a:hover{text-decoration:underline;}
 .fuente-linea{font-size:.8rem; color:var(--muted); display:flex; flex-wrap:wrap; gap:10px; align-items:center;}
 .chip{background:var(--paper-2); border:1px solid var(--rule); border-radius:999px; padding:2px 10px; font-size:.74rem; color:var(--ink);}
 .icono-nuevo{width:28px; height:28px; display:inline-block; margin-top:4px; flex:0 0 auto;}
-
-.nuevas{margin-top:34px;}
-.nuevas h2{font-family:Arial,Helvetica,sans-serif; font-size:1.3rem; font-weight:700; margin:0 0 14px;}
 
 .por-mes{margin-top:44px; border-top:3px double var(--accent); padding-top:18px;}
 .por-mes h2{font-family:Arial,Helvetica,sans-serif; font-size:1.3rem; font-weight:700; margin:0 0 14px;}
@@ -130,6 +127,17 @@ a:hover{text-decoration:underline;}
 .mes-vacio{color:var(--muted); font-style:italic; padding:10px 0; font-size:.9rem;}
 
 footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; text-align:center; color:var(--muted); font-size:.82rem;}
+
+.fuentes-lateral{position:fixed; top:130px; left:max(14px, calc(50% - 610px)); width:170px; font-size:.74rem; line-height:1.6;}
+.fuentes-lateral h3{font-family:Arial,Helvetica,sans-serif; font-size:.72rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); margin:0 0 8px;}
+.fuentes-lateral ul{list-style:none; margin:0; padding:0;}
+.fuentes-lateral li{margin-bottom:5px;}
+.fuentes-lateral a{color:var(--muted); font-size:.74rem;}
+.fuentes-lateral a:hover{color:var(--accent);}
+
+@media (max-width:1300px){
+  .fuentes-lateral{display:none;}
+}
 
 @media (max-width:560px){
   .nota{grid-template-columns:1fr;}
@@ -147,7 +155,20 @@ function cabecera(tituloPagina) {
 <title>${escHtml(tituloPagina)}</title>
 <style>${ESTILOS}</style>
 </head>
-<body><div class="wrap">`;
+<body>`;
+}
+
+function sidebarFuentes(fuentes) {
+  if (!fuentes.length) return "";
+  const items = fuentes
+    .map(([nombre, origen]) => `<li><a href="${escHtml(origen)}" target="_blank" rel="noopener">${escHtml(nombre)}</a></li>`)
+    .join("\n");
+  return `<aside class="fuentes-lateral" aria-label="Fuentes de noticias habituales">
+  <h3>Fuentes habituales</h3>
+  <ul>
+  ${items}
+  </ul>
+</aside>`;
 }
 
 function leyendaSemaforo() {
@@ -200,42 +221,20 @@ function seccionesEjes(porEje) {
   }).join("\n");
 }
 
-function seccionNuevas(porEje) {
+function seccionHistorial(porEje) {
   const nuevas = [];
-  for (const eje of EJES) {
-    for (const nota of porEje[eje.id] || []) {
-      if (!nota.nueva) continue;
-      const d = new Date(nota.fecha);
-      nuevas.push({ ...nota, ejeTitulo: eje.titulo, ts: isNaN(d) ? 0 : d.getTime() });
-    }
-  }
-  nuevas.sort((a, b) => b.ts - a.ts);
-
-  const cuerpo = nuevas.length
-    ? nuevas.map((n) => `<div class="mes-nota-eje">${escHtml(n.ejeTitulo)}</div>\n${tarjetaNota(n)}`).join("\n")
-    : `<p class="vacio">No hay noticias nuevas por el momento.</p>`;
-
-  return `<section class="nuevas">
-  <h2>Noticias Nuevas</h2>
-  ${cuerpo}
-</section>`;
-}
-
-function seccionMeses(porEje) {
   const todas = [];
   for (const eje of EJES) {
     for (const nota of porEje[eje.id] || []) {
       const d = new Date(nota.fecha);
+      const conEje = { ...nota, ejeTitulo: eje.titulo, ts: isNaN(d) ? 0 : d.getTime() };
+      if (nota.nueva) nuevas.push(conEje);
       if (isNaN(d)) continue;
-      todas.push({
-        ...nota,
-        ejeTitulo: eje.titulo,
-        claveMes: `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, "0")}`,
-        ts: d.getTime()
-      });
+      todas.push({ ...conEje, claveMes: `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, "0")}` });
     }
   }
-  if (!todas.length) return "";
+  if (!todas.length && !nuevas.length) return "";
+  nuevas.sort((a, b) => b.ts - a.ts);
 
   const mapa = new Map();
   for (const nota of todas) {
@@ -244,24 +243,32 @@ function seccionMeses(porEje) {
   }
   const claves = [...mapa.keys()].sort((a, b) => b.localeCompare(a));
 
-  const tabs = claves.map((clave, i) => {
+  const tabNuevas = `<button type="button" class="mes-tab activo" data-mes="nuevas">Noticias Nuevas</button>`;
+  const tabsMeses = claves.map((clave) => {
     const [anio, mm] = clave.split("-");
     const nombre = `${MESES_LARGO[Number(mm) - 1]} ${anio}`;
-    return `<button type="button" class="mes-tab${i === 0 ? " activo" : ""}" data-mes="${clave}">${escHtml(nombre)}</button>`;
+    return `<button type="button" class="mes-tab" data-mes="${clave}">${escHtml(nombre)}</button>`;
   }).join("\n");
 
-  const paneles = claves.map((clave, i) => {
+  const panelNuevas = `<div class="mes-panel activo" data-mes="nuevas">\n${
+    nuevas.length
+      ? nuevas.map((n) => `<div class="mes-nota-eje">${escHtml(n.ejeTitulo)}</div>\n${tarjetaNota(n)}`).join("\n")
+      : `<p class="mes-vacio">No hay noticias nuevas por el momento.</p>`
+  }\n</div>`;
+  const panelesMeses = claves.map((clave) => {
     const notas = [...mapa.get(clave)].sort((a, b) => b.ts - a.ts);
     const cuerpo = notas.map((n) => `<div class="mes-nota-eje">${escHtml(n.ejeTitulo)}</div>\n${tarjetaNota(n)}`).join("\n");
-    return `<div class="mes-panel${i === 0 ? " activo" : ""}" data-mes="${clave}">\n${cuerpo}\n</div>`;
+    return `<div class="mes-panel" data-mes="${clave}">\n${cuerpo}\n</div>`;
   }).join("\n");
 
   return `<section class="por-mes">
   <h2>Historial por mes</h2>
   <div class="meses-tabs">
-  ${tabs}
+  ${tabNuevas}
+  ${tabsMeses}
   </div>
-  ${paneles}
+  ${panelNuevas}
+  ${panelesMeses}
 </section>
 <script>
 (function(){
@@ -278,9 +285,11 @@ function seccionMeses(porEje) {
 </script>`;
 }
 
-function renderPagina(porEje, metaDetalle) {
+function renderPagina(porEje, metaDetalle, fuentes) {
   const totalNotas = EJES.reduce((s, e) => s + (porEje[e.id]?.length || 0), 0);
   return `${cabecera("Avance Institucional")}
+${sidebarFuentes(fuentes)}
+<div class="wrap">
 <header class="masthead">
   <p class="kicker">Boletin · Monitoreo de noticias</p>
   <h1 class="titulo">Avance Institucional</h1>
@@ -293,9 +302,7 @@ function renderPagina(porEje, metaDetalle) {
 
 ${leyendaSemaforo()}
 
-${seccionNuevas(porEje)}
-
-${seccionMeses(porEje)}
+${seccionHistorial(porEje)}
 
 ${seccionesEjes(porEje)}
 
@@ -320,6 +327,18 @@ for (const nota of notas) {
 const hoy = new Date();
 const metaDetalle = `Actualizado ${hoy.getUTCDate()} ${MESES_LARGO[hoy.getUTCMonth()]} ${hoy.getUTCFullYear()}`;
 
-const html = renderPagina(porEje, metaDetalle);
+// --- Fuentes habituales (para el listado lateral) ---------------------------
+const fuentesMapa = new Map();
+for (const nota of notas) {
+  if (!nota.fuente || !nota.url || fuentesMapa.has(nota.fuente)) continue;
+  try {
+    fuentesMapa.set(nota.fuente, new URL(nota.url).origin);
+  } catch {
+    // URL invalida: se omite del listado lateral
+  }
+}
+const fuentes = [...fuentesMapa.entries()].sort((a, b) => a[0].localeCompare(b[0], "es"));
+
+const html = renderPagina(porEje, metaDetalle, fuentes);
 await writeFile(join(__dirname, "index.html"), html, "utf-8");
 console.log(`Listo: index.html generado con ${notas.length} notas.`);
