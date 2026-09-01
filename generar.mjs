@@ -11,30 +11,24 @@ import { dirname, join } from "node:path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-// --- Los 7 ejes, en el orden en que se muestran ----------------------------
+// --- Los 7 ejes: id interno, clave tal cual aparece en datos.json, y titulo
+// para mostrar (con acentos) ------------------------------------------------
 const EJES = [
-  { id: "filantropia", titulo: "Filantropia y responsabilidad social" },
-  { id: "empresas", titulo: "Empresas y lideres establecidos" },
-  { id: "inversion", titulo: "Inversion entrante / expansiones" },
-  { id: "gobierno", titulo: "Gobierno" },
-  { id: "hacienda", titulo: "Hacienda" },
-  { id: "agropecuario", titulo: "Agropecuario" },
-  { id: "camaras", titulo: "Camaras empresariales" }
+  { id: "camaras", claveDatos: "Camaras empresariales", titulo: "Cámaras empresariales" },
+  { id: "gobierno", claveDatos: "Gobierno", titulo: "Gobierno" },
+  { id: "agropecuario", claveDatos: "Agropecuario", titulo: "Agropecuario" },
+  { id: "empresas", claveDatos: "Empresas y lideres establecidos", titulo: "Empresas y líderes establecidos" },
+  { id: "inversion", claveDatos: "Inversion entrante / expansiones", titulo: "Inversión / expansiones" },
+  { id: "hacienda", claveDatos: "Hacienda", titulo: "Hacienda" },
+  { id: "filantropia", claveDatos: "Filantropia y responsabilidad social", titulo: "Filantropía y responsabilidad social" }
 ];
 
-// --- Colores y etiquetas del semaforo ---------------------------------------
+// --- Colores, etiquetas y descripciones del semaforo ------------------------
 const SEMAFORO = {
-  verde: { etiqueta: "positivo" },
-  amarillo: { etiqueta: "neutral" },
-  rojo: { etiqueta: "Alerta" }
+  verde: { etiqueta: "positivo", desc: "avances y anuncios favorables" },
+  amarillo: { etiqueta: "neutral", desc: "seguimiento sin definición clara" },
+  rojo: { etiqueta: "Alerta", desc: "riesgos que requieren atención" }
 };
-const ORDEN_SEMAFORO = { verde: 0, amarillo: 1, rojo: 2 };
-
-// --- Icono "NEW" (estrella roja) para noticias nuevas -----------------------
-const ICONO_NUEVO_SVG = `<svg class="icono-nuevo" viewBox="-4 -4 108 108" role="img" aria-label="Noticia nueva"><title>Nueva</title>
-<polygon points="103.00,50.00 101.99,52.72 99.23,55.17 95.43,57.20 91.57,58.84 88.58,60.34 87.09,62.05 87.29,64.31 88.83,67.29 90.99,70.88 92.87,74.75 93.66,78.36 92.88,81.15 90.46,82.76 86.79,83.12 82.53,82.53 78.44,81.58 75.13,81.04 72.92,81.55 71.75,83.49 71.25,86.81 70.88,90.99 70.13,95.22 68.66,98.60 66.38,100.41 63.47,100.29 60.29,98.42 57.20,95.43 54.44,92.27 52.09,89.88 50.00,89.00 47.91,89.88 45.56,92.27 42.80,95.43 39.71,98.42 36.53,100.29 33.62,100.41 31.34,98.60 29.87,95.22 29.12,90.99 28.75,86.81 28.25,83.49 27.08,81.55 24.87,81.04 21.56,81.58 17.47,82.53 13.21,83.12 9.54,82.76 7.12,81.15 6.34,78.36 7.13,74.75 9.01,70.88 11.17,67.29 12.71,64.31 12.91,62.05 11.42,60.34 8.43,58.84 4.57,57.20 0.77,55.17 -1.99,52.72 -3.00,50.00 -1.99,47.28 0.77,44.83 4.57,42.80 8.43,41.16 11.42,39.66 12.91,37.95 12.71,35.69 11.17,32.71 9.01,29.12 7.13,25.25 6.34,21.64 7.12,18.85 9.54,17.24 13.21,16.88 17.47,17.47 21.56,18.42 24.87,18.96 27.08,18.45 28.25,16.51 28.75,13.19 29.12,9.01 29.87,4.78 31.34,1.40 33.62,-0.41 36.53,-0.29 39.71,1.58 42.80,4.57 45.56,7.73 47.91,10.12 50.00,11.00 52.09,10.12 54.44,7.73 57.20,4.57 60.29,1.58 63.47,-0.29 66.38,-0.41 68.66,1.40 70.13,4.78 70.88,9.01 71.25,13.19 71.75,16.51 72.92,18.45 75.13,18.96 78.44,18.42 82.53,17.47 86.79,16.88 90.46,17.24 92.88,18.85 93.66,21.64 92.87,25.25 90.99,29.12 88.83,32.71 87.29,35.69 87.09,37.95 88.58,39.66 91.57,41.16 95.43,42.80 99.23,44.83 101.99,47.28" fill="#f4213c"/>
-<text x="50" y="61" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="-2" fill="#ffffff">NEW</text>
-</svg>`;
 
 const MESES_CORTO = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
 const MESES_LARGO = [
@@ -61,87 +55,89 @@ function fechaCorta(iso) {
 // --- CSS autocontenido -------------------------------------------------------
 const ESTILOS = `
 :root{
-  --ink:#22303d;
+  --ink:#1c2530;
   --paper:#ffffff;
-  --paper-2:#eef3f8;
-  --azul:#7da5cc;
-  --azul-claro:#a7cfe0;
-  --accent:#3a6ea5;
-  --accent-2:#2c5278;
-  --rule:#dfe6ee; --muted:#6b7785;
-  --verde:#1f8a4c; --amarillo:#d99500; --rojo:#c0392b;
+  --fondo:#f1f1ef;
+  --acento:#2f6db3;
+  --acento-oscuro:#24568e;
+  --rule:#dcdfe3; --muted:#6b7785;
+  --verde:#1f8a4c; --amarillo:#c98a00; --rojo:#c0392b;
 }
 *{box-sizing:border-box;}
 body{
-  margin:0; background:var(--paper); color:var(--ink);
+  margin:0; background:var(--fondo); color:var(--ink);
   font-family:Arial,Helvetica,sans-serif; line-height:1.55;
   -webkit-font-smoothing:antialiased;
 }
-.wrap{max-width:880px; margin:0 auto; padding:28px 20px 60px;}
-a{color:var(--accent); text-decoration:none;}
+.page{max-width:1280px; margin:0 auto; padding:24px 24px 60px;}
+a{color:var(--acento); text-decoration:none;}
 a:hover{text-decoration:underline;}
 
-.masthead{background:#3d7ab5;
-  color:#fff; border-radius:14px; padding:30px 28px; margin-bottom:24px;
-  box-shadow:0 8px 22px rgba(34,48,61,.14);}
-.kicker{font-size:.72rem; letter-spacing:.24em; text-transform:uppercase; color:rgba(255,255,255,.88); margin:0 0 8px; font-weight:600;}
-.titulo{font-family:Arial,Helvetica,sans-serif; font-weight:800; letter-spacing:.02em; font-size:clamp(2.1rem,5.5vw,3.2rem); line-height:1.02; margin:0; color:#fff; text-transform:uppercase;}
-.subtitulo{color:rgba(255,255,255,.94); margin:10px 0 0; font-size:1.02rem; font-weight:500;}
+.masthead{background:var(--acento); color:#fff; padding:30px 32px; margin-bottom:20px;}
+.kicker{font-size:.72rem; letter-spacing:.24em; text-transform:uppercase; color:rgba(255,255,255,.9); margin:0 0 10px; font-weight:700;}
+.titulo{font-family:Arial,Helvetica,sans-serif; font-weight:800; letter-spacing:.02em; font-size:clamp(2rem,4.5vw,3rem); line-height:1.02; margin:0; color:#fff; text-transform:uppercase;}
+.subtitulo{color:rgba(255,255,255,.95); margin:12px 0 0; font-size:1rem; font-weight:500;}
 .meta{display:flex; flex-wrap:wrap; gap:10px 18px; align-items:center; justify-content:space-between;
   border-top:1px solid rgba(255,255,255,.4);
-  padding:12px 0 0; margin:16px 0 0; font-size:.85rem; color:rgba(255,255,255,.92);}
+  padding:14px 0 0; margin:18px 0 0; font-size:.85rem; color:rgba(255,255,255,.95);}
 .meta strong{color:#fff; font-weight:700;}
 
-.leyenda{display:flex; flex-wrap:wrap; gap:16px; margin:18px 0 8px; font-size:.82rem; color:var(--muted);}
-.leyenda span{display:inline-flex; align-items:center; gap:7px;}
-.punto{width:13px; height:13px; border-radius:50%; display:inline-block; flex:0 0 auto;}
-.punto.verde{background:var(--verde);} .punto.amarillo{background:var(--amarillo);} .punto.rojo{background:var(--rojo);}
+.stats-row{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1px; background:var(--rule); border:1px solid var(--rule); margin-bottom:20px;}
+.stat-card{background:var(--paper); padding:18px 20px;}
+.stat-cabeza{display:flex; align-items:center; gap:8px; font-size:.72rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--ink); margin-bottom:10px;}
+.stat-icono{width:11px; height:11px; display:inline-block; border-radius:2px; flex:0 0 auto;}
+.stat-icono.verde{background:var(--verde);} .stat-icono.amarillo{background:var(--amarillo);} .stat-icono.rojo{background:var(--rojo);}
+.stat-num{font-size:2.1rem; font-weight:800; line-height:1; margin-bottom:6px;}
+.stat-desc{font-size:.8rem; color:var(--muted);}
 
-.eje{margin-top:34px;}
-.eje h2{font-family:Arial,Helvetica,sans-serif; font-size:1.3rem; font-weight:700; margin:0 0 14px;
-  padding-bottom:8px; border-bottom:2px solid var(--azul); display:flex; gap:12px; align-items:baseline; color:var(--ink);}
-.eje h2 .num{color:var(--ink); font-size:1rem; font-weight:700;}
-.vacio{color:var(--muted); font-style:italic; padding:10px 0; font-size:.9rem;}
+.cuerpo{display:flex; gap:32px; align-items:flex-start; border-top:1px solid var(--rule); padding-top:20px;}
 
-.nota{display:grid; grid-template-columns:auto 1fr; gap:14px; padding:16px 0; border-bottom:1px solid var(--rule);}
-.col-izq{display:flex; flex-direction:column; align-items:center; gap:6px; padding-top:4px;}
-.col-izq .punto{width:16px; height:16px;}
-.col-izq .fecha{font-size:.72rem; color:var(--verde); font-weight:600; text-align:center; white-space:nowrap;}
-.nota h3{font-family:Arial,Helvetica,sans-serif; font-weight:600; font-size:1.08rem; letter-spacing:-.01em; margin:0 0 5px; line-height:1.3;}
-.nota p{margin:0 0 8px; color:#39322a;}
-.fuente-linea{font-size:.8rem; color:var(--muted); display:flex; flex-wrap:wrap; gap:10px; align-items:center;}
-.chip{background:var(--paper-2); border:1px solid var(--rule); border-radius:999px; padding:2px 10px; font-size:.74rem; color:var(--ink);}
-.icono-nuevo{width:28px; height:28px; display:inline-block; margin-top:4px; flex:0 0 auto;}
-
-.por-mes{margin-top:44px; border-top:3px double var(--accent); padding-top:18px;}
-.por-mes h2{font-family:Arial,Helvetica,sans-serif; font-size:1.3rem; font-weight:700; margin:0 0 14px;}
-.meses-tabs{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px;}
-.mes-tab{font:inherit; cursor:pointer; background:var(--paper-2); border:1px solid var(--rule); border-radius:999px;
-  padding:6px 14px; font-size:.82rem; color:var(--ink); text-transform:capitalize;}
-.mes-tab.activo{background:var(--accent); border-color:var(--accent); color:#fff; font-weight:700;}
-.mes-panel{display:none;}
-.mes-panel.activo{display:block;}
-.mes-panel .nota{grid-template-columns:auto 1fr;}
-.mes-nota-eje{font-size:.72rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--accent); margin:18px 0 -6px;}
-.mes-panel .nota:first-of-type{margin-top:0;}
-.mes-vacio{color:var(--muted); font-style:italic; padding:10px 0; font-size:.9rem;}
-
-footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; text-align:center; color:var(--muted); font-size:.82rem;}
-
-.fuentes-lateral{position:fixed; top:130px; left:max(14px, calc(50% - 610px)); width:170px; font-size:.74rem; line-height:1.6;}
-.fuentes-lateral h3{font-family:Arial,Helvetica,sans-serif; font-size:.72rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); margin:0 0 8px;}
+.fuentes-lateral{width:160px; flex:0 0 auto; font-size:.78rem; line-height:1.7;}
+.fuentes-lateral h3{font-family:Arial,Helvetica,sans-serif; font-size:.72rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--ink); margin:0 0 10px;}
 .fuentes-lateral ul{list-style:none; margin:0; padding:0;}
-.fuentes-lateral li{margin-bottom:5px;}
-.fuentes-lateral a{color:var(--muted); font-size:.74rem;}
-.fuentes-lateral a:hover{color:var(--accent);}
+.fuentes-lateral li{margin-bottom:4px;}
+.fuentes-lateral a{color:var(--ink);}
+.fuentes-lateral a:hover{color:var(--acento);}
 
-@media (max-width:1300px){
-  .fuentes-lateral{display:none;}
+.contenido{flex:1; min-width:0;}
+
+.filtro-fila{display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-bottom:10px;}
+.filtro-titulo{font-size:.72rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); flex:0 0 auto;}
+.filtro-pills{display:flex; flex-wrap:wrap; gap:8px;}
+.pill{font:inherit; cursor:pointer; background:#fff; border:1px solid var(--rule); border-radius:999px;
+  padding:6px 14px; font-size:.8rem; color:var(--ink);}
+.pill.activo{background:var(--acento); border-color:var(--acento); color:#fff; font-weight:700;}
+
+.contador{font-size:.85rem; color:var(--muted); margin:14px 0 16px;}
+.contador strong{color:var(--ink);}
+
+.grid-notas{display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--rule); border-left:1px solid var(--rule);}
+.tarjeta{background:#fff; border-right:1px solid var(--rule); border-bottom:1px solid var(--rule); padding:18px 20px;}
+.tarjeta-top{display:flex; align-items:center; gap:8px; margin-bottom:4px;}
+.tarjeta-top .punto{width:10px; height:10px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+.tarjeta-top .punto.verde{background:var(--verde);} .tarjeta-top .punto.amarillo{background:var(--amarillo);} .tarjeta-top .punto.rojo{background:var(--rojo);}
+.tarjeta-top .fecha{font-size:.76rem; color:var(--muted); font-weight:600;}
+.tarjeta-top .nueva-tag{margin-left:auto; font-size:.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.04em; color:var(--acento);}
+.tarjeta-cat{font-size:.68rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--acento); margin-bottom:6px;}
+.tarjeta h3{font-family:Arial,Helvetica,sans-serif; font-weight:700; font-size:1rem; letter-spacing:-.01em; margin:0 0 8px; line-height:1.32;}
+.tarjeta h3 a{color:var(--ink);}
+.tarjeta h3 a:hover{color:var(--acento);}
+.tarjeta p{margin:0 0 12px; color:#39404a; font-size:.88rem;}
+.tarjeta-footer{font-size:.78rem; display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between;}
+.chip{background:#fff; border:1px solid var(--acento); color:var(--acento); border-radius:4px; padding:2px 9px; font-size:.72rem;}
+.tarjeta-footer > a{color:var(--ink); font-weight:700;}
+.tarjeta-footer > a:hover{color:var(--acento);}
+.sin-resultados{grid-column:1/-1; padding:30px 20px; color:var(--muted); font-style:italic; text-align:center;}
+
+footer{margin-top:40px; border-top:1px solid var(--rule); padding-top:16px; text-align:center; color:var(--muted); font-size:.82rem;}
+
+@media (max-width:960px){
+  .grid-notas{grid-template-columns:repeat(2,1fr);}
 }
-
-@media (max-width:560px){
-  .nota{grid-template-columns:1fr;}
-  .col-izq{flex-direction:row; justify-content:flex-start;}
+@media (max-width:760px){
+  .cuerpo{flex-direction:column;}
+  .fuentes-lateral{width:100%;}
+  .grid-notas{grid-template-columns:1fr;}
 }
 `;
 
@@ -158,6 +154,18 @@ function cabecera(tituloPagina) {
 <body>`;
 }
 
+function filaEstadisticas(notas) {
+  const conteo = { verde: 0, amarillo: 0, rojo: 0 };
+  for (const n of notas) conteo[n.semaforo] = (conteo[n.semaforo] || 0) + 1;
+  return `<div class="stats-row">
+  ${["verde", "amarillo", "rojo"].map((color) => `<div class="stat-card">
+    <div class="stat-cabeza"><span class="stat-icono ${color}"></span>${color} — ${SEMAFORO[color].etiqueta}</div>
+    <div class="stat-num">${conteo[color]}</div>
+    <div class="stat-desc">${SEMAFORO[color].desc}</div>
+  </div>`).join("\n")}
+</div>`;
+}
+
 function sidebarFuentes(fuentes) {
   if (!fuentes.length) return "";
   const items = fuentes
@@ -171,125 +179,104 @@ function sidebarFuentes(fuentes) {
 </aside>`;
 }
 
-function leyendaSemaforo() {
-  return `<div class="leyenda" aria-label="Leyenda del semaforo">
-  <span><i class="punto verde"></i> Verde — ${SEMAFORO.verde.etiqueta}</span>
-  <span><i class="punto amarillo"></i> Amarillo — ${SEMAFORO.amarillo.etiqueta}</span>
-  <span><i class="punto rojo"></i> Rojo — ${SEMAFORO.rojo.etiqueta}</span>
+function filtroCategoria() {
+  const pills = [`<button type="button" class="pill activo" data-cat="todas">Todas</button>`]
+    .concat(EJES.map((e) => `<button type="button" class="pill" data-cat="${e.id}">${escHtml(e.titulo)}</button>`))
+    .join("\n");
+  return `<div class="filtro-fila">
+  <span class="filtro-titulo">Categoría</span>
+  <div class="filtro-pills" data-grupo="categoria">${pills}</div>
+</div>`;
+}
+
+function filtroMes(claves) {
+  const pills = [`<button type="button" class="pill activo" data-mes="nuevas">Noticias nuevas</button>`]
+    .concat(claves.map((clave) => {
+      const [anio, mm] = clave.split("-");
+      return `<button type="button" class="pill" data-mes="${clave}">${MESES_LARGO[Number(mm) - 1]} ${anio}</button>`;
+    }))
+    .join("\n");
+  return `<div class="filtro-fila">
+  <span class="filtro-titulo">Historial por mes</span>
+  <div class="filtro-pills" data-grupo="mes">${pills}</div>
 </div>`;
 }
 
 function tarjetaNota(nota) {
-  const color = nota.semaforo || "amarillo";
-  const etiqueta = SEMAFORO[color]?.etiqueta || "";
-  return `<article class="nota">
-  <div class="col-izq">
-    <span class="punto ${color}" role="img" aria-label="Semaforo ${color}: ${escHtml(etiqueta)}"></span>
+  const etiqueta = SEMAFORO[nota.semaforo]?.etiqueta || "";
+  return `<article class="tarjeta" data-cat="${nota.ejeId}" data-mes="${nota.claveMes}" data-nueva="${nota.nueva ? 1 : 0}">
+  <div class="tarjeta-top">
+    <span class="punto ${nota.semaforo}" role="img" aria-label="Semaforo ${nota.semaforo}: ${escHtml(etiqueta)}"></span>
     <span class="fecha">${escHtml(fechaCorta(nota.fecha))}</span>
-    ${nota.nueva ? ICONO_NUEVO_SVG : ""}
+    ${nota.nueva ? `<span class="nueva-tag">Nueva</span>` : ""}
   </div>
-  <div class="col-der">
-    <h3><a href="${escHtml(nota.url)}" target="_blank" rel="noopener">${escHtml(nota.titulo)}</a></h3>
-    <p>${escHtml(nota.resumen || "")}</p>
-    <div class="fuente-linea">
-      <span class="chip">${escHtml(nota.fuente || "Fuente")}</span>
-      <a href="${escHtml(nota.url)}" target="_blank" rel="noopener">Abrir noticia →</a>
-    </div>
+  <div class="tarjeta-cat">${escHtml(nota.ejeTitulo)}</div>
+  <h3><a href="${escHtml(nota.url)}" target="_blank" rel="noopener">${escHtml(nota.titulo)}</a></h3>
+  <p>${escHtml(nota.resumen || "")}</p>
+  <div class="tarjeta-footer">
+    <span class="chip">${escHtml(nota.fuente || "Fuente")}</span>
+    <a href="${escHtml(nota.url)}" target="_blank" rel="noopener">Abrir noticia →</a>
   </div>
 </article>`;
 }
 
-function ordenarPorSemaforo(notas) {
-  return [...notas].sort((a, b) => {
-    const oa = ORDEN_SEMAFORO[a.semaforo] ?? 1;
-    const ob = ORDEN_SEMAFORO[b.semaforo] ?? 1;
-    if (oa !== ob) return oa - ob;
-    return new Date(b.fecha) - new Date(a.fecha);
-  });
-}
+function scriptFiltros() {
+  return `<script>
+(function(){
+  var tarjetas = document.querySelectorAll(".tarjeta");
+  var gruposCat = document.querySelectorAll('[data-grupo="categoria"] .pill');
+  var gruposMes = document.querySelectorAll('[data-grupo="mes"] .pill');
+  var contadorNum = document.getElementById("contador-num");
+  var contadorLabel = document.getElementById("contador-label");
+  var grid = document.getElementById("grid-notas");
 
-function seccionesEjes(porEje) {
-  return EJES.map((eje, i) => {
-    const notas = ordenarPorSemaforo(porEje[eje.id] || []);
-    const cuerpo = notas.length
-      ? notas.map(tarjetaNota).join("\n")
-      : `<p class="vacio">Sin notas.</p>`;
-    return `<section class="eje">
-  <h2><span class="num">${i + 1}</span> ${escHtml(eje.titulo)}</h2>
-  ${cuerpo}
-</section>`;
-  }).join("\n");
-}
-
-function seccionHistorial(porEje) {
-  const nuevas = [];
-  const todas = [];
-  for (const eje of EJES) {
-    for (const nota of porEje[eje.id] || []) {
-      const d = new Date(nota.fecha);
-      const conEje = { ...nota, ejeTitulo: eje.titulo, ts: isNaN(d) ? 0 : d.getTime() };
-      if (nota.nueva) nuevas.push(conEje);
-      if (isNaN(d)) continue;
-      todas.push({ ...conEje, claveMes: `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, "0")}` });
+  function aplicar(){
+    var catBtn = document.querySelector('[data-grupo="categoria"] .pill.activo');
+    var mesBtn = document.querySelector('[data-grupo="mes"] .pill.activo');
+    var cat = catBtn.getAttribute("data-cat");
+    var mes = mesBtn.getAttribute("data-mes");
+    var visibles = 0;
+    tarjetas.forEach(function(t){
+      var okCat = (cat === "todas") || (t.getAttribute("data-cat") === cat);
+      var okMes = (mes === "nuevas") ? (t.getAttribute("data-nueva") === "1") : (t.getAttribute("data-mes") === mes);
+      var mostrar = okCat && okMes;
+      t.style.display = mostrar ? "" : "none";
+      if (mostrar) visibles++;
+    });
+    contadorNum.textContent = visibles;
+    contadorLabel.textContent = (cat === "todas") ? mesBtn.textContent : (mesBtn.textContent + " · " + catBtn.textContent);
+    var vacio = grid.querySelector(".sin-resultados");
+    if (visibles === 0 && !vacio) {
+      vacio = document.createElement("div");
+      vacio.className = "sin-resultados";
+      vacio.textContent = "No hay noticias para este filtro.";
+      grid.appendChild(vacio);
+    } else if (visibles > 0 && vacio) {
+      vacio.remove();
     }
   }
-  if (!todas.length && !nuevas.length) return "";
-  nuevas.sort((a, b) => b.ts - a.ts);
 
-  const mapa = new Map();
-  for (const nota of todas) {
-    if (!mapa.has(nota.claveMes)) mapa.set(nota.claveMes, []);
-    mapa.get(nota.claveMes).push(nota);
-  }
-  const claves = [...mapa.keys()].sort((a, b) => b.localeCompare(a));
-
-  const tabNuevas = `<button type="button" class="mes-tab activo" data-mes="nuevas">Noticias Nuevas</button>`;
-  const tabsMeses = claves.map((clave) => {
-    const [anio, mm] = clave.split("-");
-    const nombre = `${MESES_LARGO[Number(mm) - 1]} ${anio}`;
-    return `<button type="button" class="mes-tab" data-mes="${clave}">${escHtml(nombre)}</button>`;
-  }).join("\n");
-
-  const panelNuevas = `<div class="mes-panel activo" data-mes="nuevas">\n${
-    nuevas.length
-      ? nuevas.map((n) => `<div class="mes-nota-eje">${escHtml(n.ejeTitulo)}</div>\n${tarjetaNota(n)}`).join("\n")
-      : `<p class="mes-vacio">No hay noticias nuevas por el momento.</p>`
-  }\n</div>`;
-  const panelesMeses = claves.map((clave) => {
-    const notas = [...mapa.get(clave)].sort((a, b) => b.ts - a.ts);
-    const cuerpo = notas.map((n) => `<div class="mes-nota-eje">${escHtml(n.ejeTitulo)}</div>\n${tarjetaNota(n)}`).join("\n");
-    return `<div class="mes-panel" data-mes="${clave}">\n${cuerpo}\n</div>`;
-  }).join("\n");
-
-  return `<section class="por-mes">
-  <h2>Historial por mes</h2>
-  <div class="meses-tabs">
-  ${tabNuevas}
-  ${tabsMeses}
-  </div>
-  ${panelNuevas}
-  ${panelesMeses}
-</section>
-<script>
-(function(){
-  var tabs = document.querySelectorAll(".mes-tab");
-  var paneles = document.querySelectorAll(".mes-panel");
-  tabs.forEach(function(tab){
-    tab.addEventListener("click", function(){
-      var mes = tab.getAttribute("data-mes");
-      tabs.forEach(function(t){ t.classList.toggle("activo", t === tab); });
-      paneles.forEach(function(p){ p.classList.toggle("activo", p.getAttribute("data-mes") === mes); });
+  gruposCat.forEach(function(btn){
+    btn.addEventListener("click", function(){
+      gruposCat.forEach(function(b){ b.classList.toggle("activo", b === btn); });
+      aplicar();
     });
   });
+  gruposMes.forEach(function(btn){
+    btn.addEventListener("click", function(){
+      gruposMes.forEach(function(b){ b.classList.toggle("activo", b === btn); });
+      aplicar();
+    });
+  });
+  aplicar();
 })();
 </script>`;
 }
 
-function renderPagina(porEje, metaDetalle, fuentes) {
-  const totalNotas = EJES.reduce((s, e) => s + (porEje[e.id]?.length || 0), 0);
+function renderPagina(notas, metaDetalle, fuentes, claves) {
+  const totalNotas = notas.length;
   return `${cabecera("Avance Institucional")}
-${sidebarFuentes(fuentes)}
-<div class="wrap">
+<div class="page">
 <header class="masthead">
   <p class="kicker">Boletin · Monitoreo de noticias</p>
   <h1 class="titulo">Avance Institucional</h1>
@@ -300,29 +287,43 @@ ${sidebarFuentes(fuentes)}
   </div>
 </header>
 
-${leyendaSemaforo()}
+${filaEstadisticas(notas)}
 
-${seccionHistorial(porEje)}
-
-${seccionesEjes(porEje)}
+<div class="cuerpo">
+${sidebarFuentes(fuentes)}
+<main class="contenido">
+  ${filtroCategoria()}
+  ${filtroMes(claves)}
+  <div class="contador"><strong id="contador-num">0</strong> notas · <span id="contador-label"></span></div>
+  <div class="grid-notas" id="grid-notas">
+  ${notas.map(tarjetaNota).join("\n")}
+  </div>
+</main>
+</div>
 
 <footer>
   <p>Avance Institucional — documento interno de monitoreo.</p>
 </footer>
-</div></body></html>`;
+</div>
+${scriptFiltros()}
+</body></html>`;
 }
 
 // --- Punto de entrada --------------------------------------------------------
-const notas = JSON.parse(await readFile(join(__dirname, "datos.json"), "utf-8"));
+const notasCrudas = JSON.parse(await readFile(join(__dirname, "datos.json"), "utf-8"));
 
-// datos.json es una lista plana; la agrupamos por eje usando el campo "eje"
-// (el titulo tal cual aparece en EJES) o "ejeId" si ya viene como id.
-const idPorTitulo = Object.fromEntries(EJES.map((e) => [e.titulo, e.id]));
-const porEje = Object.fromEntries(EJES.map((e) => [e.id, []]));
-for (const nota of notas) {
-  const id = nota.ejeId || idPorTitulo[nota.eje] || "empresas";
-  porEje[id].push(nota);
-}
+const idPorClave = Object.fromEntries(EJES.map((e) => [e.claveDatos, e.id]));
+const tituloPorId = Object.fromEntries(EJES.map((e) => [e.id, e.titulo]));
+
+const notas = notasCrudas.map((n) => {
+  const ejeId = n.ejeId || idPorClave[n.eje] || "empresas";
+  const d = new Date(n.fecha);
+  const ts = isNaN(d) ? 0 : d.getTime();
+  const claveMes = isNaN(d) ? "" : `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, "0")}`;
+  return { ...n, ejeId, ejeTitulo: tituloPorId[ejeId], ts, claveMes };
+}).sort((a, b) => b.ts - a.ts);
+
+const claves = [...new Set(notas.map((n) => n.claveMes).filter(Boolean))].sort((a, b) => b.localeCompare(a));
 
 const hoy = new Date();
 const metaDetalle = `Actualizado ${hoy.getUTCDate()} ${MESES_LARGO[hoy.getUTCMonth()]} ${hoy.getUTCFullYear()}`;
@@ -339,6 +340,6 @@ for (const nota of notas) {
 }
 const fuentes = [...fuentesMapa.entries()].sort((a, b) => a[0].localeCompare(b[0], "es"));
 
-const html = renderPagina(porEje, metaDetalle, fuentes);
+const html = renderPagina(notas, metaDetalle, fuentes, claves);
 await writeFile(join(__dirname, "index.html"), html, "utf-8");
 console.log(`Listo: index.html generado con ${notas.length} notas.`);
