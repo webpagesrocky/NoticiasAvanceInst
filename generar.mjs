@@ -24,10 +24,17 @@ const EJES = [
 
 // --- Colores y etiquetas del semaforo ---------------------------------------
 const SEMAFORO = {
-  verde: { etiqueta: "Oportunidad / positivo" },
-  amarillo: { etiqueta: "Seguimiento / neutral" },
-  rojo: { etiqueta: "Alerta / riesgo" }
+  verde: { etiqueta: "positivo" },
+  amarillo: { etiqueta: "neutral" },
+  rojo: { etiqueta: "Alerta" }
 };
+const ORDEN_SEMAFORO = { verde: 0, amarillo: 1, rojo: 2 };
+
+// --- Icono "NEW" (estrella roja) para noticias nuevas -----------------------
+const ICONO_NUEVO_SVG = `<svg class="icono-nuevo" viewBox="-4 -4 108 108" role="img" aria-label="Noticia nueva"><title>Nueva</title>
+<polygon points="103.00,50.00 101.99,52.72 99.23,55.17 95.43,57.20 91.57,58.84 88.58,60.34 87.09,62.05 87.29,64.31 88.83,67.29 90.99,70.88 92.87,74.75 93.66,78.36 92.88,81.15 90.46,82.76 86.79,83.12 82.53,82.53 78.44,81.58 75.13,81.04 72.92,81.55 71.75,83.49 71.25,86.81 70.88,90.99 70.13,95.22 68.66,98.60 66.38,100.41 63.47,100.29 60.29,98.42 57.20,95.43 54.44,92.27 52.09,89.88 50.00,89.00 47.91,89.88 45.56,92.27 42.80,95.43 39.71,98.42 36.53,100.29 33.62,100.41 31.34,98.60 29.87,95.22 29.12,90.99 28.75,86.81 28.25,83.49 27.08,81.55 24.87,81.04 21.56,81.58 17.47,82.53 13.21,83.12 9.54,82.76 7.12,81.15 6.34,78.36 7.13,74.75 9.01,70.88 11.17,67.29 12.71,64.31 12.91,62.05 11.42,60.34 8.43,58.84 4.57,57.20 0.77,55.17 -1.99,52.72 -3.00,50.00 -1.99,47.28 0.77,44.83 4.57,42.80 8.43,41.16 11.42,39.66 12.91,37.95 12.71,35.69 11.17,32.71 9.01,29.12 7.13,25.25 6.34,21.64 7.12,18.85 9.54,17.24 13.21,16.88 17.47,17.47 21.56,18.42 24.87,18.96 27.08,18.45 28.25,16.51 28.75,13.19 29.12,9.01 29.87,4.78 31.34,1.40 33.62,-0.41 36.53,-0.29 39.71,1.58 42.80,4.57 45.56,7.73 47.91,10.12 50.00,11.00 52.09,10.12 54.44,7.73 57.20,4.57 60.29,1.58 63.47,-0.29 66.38,-0.41 68.66,1.40 70.13,4.78 70.88,9.01 71.25,13.19 71.75,16.51 72.92,18.45 75.13,18.96 78.44,18.42 82.53,17.47 86.79,16.88 90.46,17.24 92.88,18.85 93.66,21.64 92.87,25.25 90.99,29.12 88.83,32.71 87.29,35.69 87.09,37.95 88.58,39.66 91.57,41.16 95.43,42.80 99.23,44.83 101.99,47.28" fill="#f4213c"/>
+<text x="50" y="61" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="-2" fill="#ffffff">NEW</text>
+</svg>`;
 
 const MESES_CORTO = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
 const MESES_LARGO = [
@@ -67,7 +74,7 @@ const ESTILOS = `
 *{box-sizing:border-box;}
 body{
   margin:0; background:var(--paper); color:var(--ink);
-  font-family:"Inter",system-ui,-apple-system,sans-serif; line-height:1.55;
+  font-family:Arial,Helvetica,sans-serif; line-height:1.55;
   -webkit-font-smoothing:antialiased;
 }
 .wrap{max-width:880px; margin:0 auto; padding:28px 20px 60px;}
@@ -78,7 +85,7 @@ a:hover{text-decoration:underline;}
   color:#fff; border-radius:14px; padding:30px 28px; margin-bottom:24px;
   box-shadow:0 8px 22px rgba(34,48,61,.14);}
 .kicker{font-size:.72rem; letter-spacing:.24em; text-transform:uppercase; color:rgba(255,255,255,.88); margin:0 0 8px; font-weight:600;}
-.titulo{font-family:"Sora",sans-serif; font-weight:800; letter-spacing:.02em; font-size:clamp(2.1rem,5.5vw,3.2rem); line-height:1.02; margin:0; color:#fff; text-transform:uppercase;}
+.titulo{font-family:Arial,Helvetica,sans-serif; font-weight:800; letter-spacing:.02em; font-size:clamp(2.1rem,5.5vw,3.2rem); line-height:1.02; margin:0; color:#fff; text-transform:uppercase;}
 .subtitulo{color:rgba(255,255,255,.94); margin:10px 0 0; font-size:1.02rem; font-weight:500;}
 .meta{display:flex; flex-wrap:wrap; gap:10px 18px; align-items:center; justify-content:space-between;
   border-top:1px solid rgba(255,255,255,.4);
@@ -91,7 +98,7 @@ a:hover{text-decoration:underline;}
 .punto.verde{background:var(--verde);} .punto.amarillo{background:var(--amarillo);} .punto.rojo{background:var(--rojo);}
 
 .eje{margin-top:34px;}
-.eje h2{font-family:"Sora",sans-serif; font-size:1.25rem; font-weight:800; letter-spacing:.04em; margin:0 0 4px;
+.eje h2{font-family:Arial,Helvetica,sans-serif; font-size:1.25rem; font-weight:800; letter-spacing:.04em; margin:0 0 4px;
   padding-bottom:8px; border-bottom:2px solid var(--azul); display:flex; gap:12px; align-items:baseline; color:var(--accent-2); text-transform:uppercase;}
 .eje h2 .num{color:var(--accent); font-size:1rem; font-weight:700;}
 .vacio{color:var(--muted); font-style:italic; padding:10px 0; font-size:.9rem;}
@@ -100,14 +107,14 @@ a:hover{text-decoration:underline;}
 .col-izq{display:flex; flex-direction:column; align-items:center; gap:6px; padding-top:4px;}
 .col-izq .punto{width:16px; height:16px;}
 .col-izq .fecha{font-size:.72rem; color:var(--verde); font-weight:600; text-align:center; white-space:nowrap;}
-.nota h3{font-family:"Sora",sans-serif; font-weight:600; font-size:1.08rem; letter-spacing:-.01em; margin:0 0 5px; line-height:1.3;}
+.nota h3{font-family:Arial,Helvetica,sans-serif; font-weight:600; font-size:1.08rem; letter-spacing:-.01em; margin:0 0 5px; line-height:1.3;}
 .nota p{margin:0 0 8px; color:#39322a;}
 .fuente-linea{font-size:.8rem; color:var(--muted); display:flex; flex-wrap:wrap; gap:10px; align-items:center;}
 .chip{background:var(--paper-2); border:1px solid var(--rule); border-radius:999px; padding:2px 10px; font-size:.74rem; color:var(--ink);}
-.icono-nuevo{width:9px; height:9px; border-radius:50%; background:var(--accent); display:inline-block; margin-top:4px; flex:0 0 auto;}
+.icono-nuevo{width:28px; height:28px; display:inline-block; margin-top:4px; flex:0 0 auto;}
 
 .por-mes{margin-top:44px; border-top:3px double var(--accent); padding-top:18px;}
-.por-mes h2{font-family:"Sora",sans-serif; font-size:1.3rem; font-weight:700; margin:0 0 14px;}
+.por-mes h2{font-family:Arial,Helvetica,sans-serif; font-size:1.3rem; font-weight:700; margin:0 0 14px;}
 .meses-tabs{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px;}
 .mes-tab{font:inherit; cursor:pointer; background:var(--paper-2); border:1px solid var(--rule); border-radius:999px;
   padding:6px 14px; font-size:.82rem; color:var(--ink); text-transform:capitalize;}
@@ -135,9 +142,6 @@ function cabecera(tituloPagina) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
 <title>${escHtml(tituloPagina)}</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>${ESTILOS}</style>
 </head>
 <body><div class="wrap">`;
@@ -158,7 +162,7 @@ function tarjetaNota(nota) {
   <div class="col-izq">
     <span class="punto ${color}" role="img" aria-label="Semaforo ${color}: ${escHtml(etiqueta)}"></span>
     <span class="fecha">${escHtml(fechaCorta(nota.fecha))}</span>
-    ${nota.nueva ? `<span class="icono-nuevo" role="img" aria-label="Noticia nueva" title="Nueva"></span>` : ""}
+    ${nota.nueva ? ICONO_NUEVO_SVG : ""}
   </div>
   <div class="col-der">
     <h3><a href="${escHtml(nota.url)}" target="_blank" rel="noopener">${escHtml(nota.titulo)}</a></h3>
@@ -171,9 +175,18 @@ function tarjetaNota(nota) {
 </article>`;
 }
 
+function ordenarPorSemaforo(notas) {
+  return [...notas].sort((a, b) => {
+    const oa = ORDEN_SEMAFORO[a.semaforo] ?? 1;
+    const ob = ORDEN_SEMAFORO[b.semaforo] ?? 1;
+    if (oa !== ob) return oa - ob;
+    return new Date(b.fecha) - new Date(a.fecha);
+  });
+}
+
 function seccionesEjes(porEje) {
   return EJES.map((eje, i) => {
-    const notas = porEje[eje.id] || [];
+    const notas = ordenarPorSemaforo(porEje[eje.id] || []);
     const cuerpo = notas.length
       ? notas.map(tarjetaNota).join("\n")
       : `<p class="vacio">Sin notas.</p>`;

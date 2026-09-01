@@ -5,9 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
 <title>Avance Institucional</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --ink:#22303d;
@@ -23,7 +20,7 @@
 *{box-sizing:border-box;}
 body{
   margin:0; background:var(--paper); color:var(--ink);
-  font-family:"Inter",system-ui,-apple-system,sans-serif; line-height:1.55;
+  font-family:Arial,Helvetica,sans-serif; line-height:1.55;
   -webkit-font-smoothing:antialiased;
 }
 .wrap{max-width:880px; margin:0 auto; padding:28px 20px 60px;}
@@ -34,7 +31,7 @@ a:hover{text-decoration:underline;}
   color:#fff; border-radius:14px; padding:30px 28px; margin-bottom:24px;
   box-shadow:0 8px 22px rgba(34,48,61,.14);}
 .kicker{font-size:.72rem; letter-spacing:.24em; text-transform:uppercase; color:rgba(255,255,255,.88); margin:0 0 8px; font-weight:600;}
-.titulo{font-family:"Sora",sans-serif; font-weight:800; letter-spacing:.02em; font-size:clamp(2.1rem,5.5vw,3.2rem); line-height:1.02; margin:0; color:#fff; text-transform:uppercase;}
+.titulo{font-family:Arial,Helvetica,sans-serif; font-weight:800; letter-spacing:.02em; font-size:clamp(2.1rem,5.5vw,3.2rem); line-height:1.02; margin:0; color:#fff; text-transform:uppercase;}
 .subtitulo{color:rgba(255,255,255,.94); margin:10px 0 0; font-size:1.02rem; font-weight:500;}
 .meta{display:flex; flex-wrap:wrap; gap:10px 18px; align-items:center; justify-content:space-between;
   border-top:1px solid rgba(255,255,255,.4);
@@ -47,7 +44,7 @@ a:hover{text-decoration:underline;}
 .punto.verde{background:var(--verde);} .punto.amarillo{background:var(--amarillo);} .punto.rojo{background:var(--rojo);}
 
 .eje{margin-top:34px;}
-.eje h2{font-family:"Sora",sans-serif; font-size:1.25rem; font-weight:800; letter-spacing:.04em; margin:0 0 4px;
+.eje h2{font-family:Arial,Helvetica,sans-serif; font-size:1.25rem; font-weight:800; letter-spacing:.04em; margin:0 0 4px;
   padding-bottom:8px; border-bottom:2px solid var(--azul); display:flex; gap:12px; align-items:baseline; color:var(--accent-2); text-transform:uppercase;}
 .eje h2 .num{color:var(--accent); font-size:1rem; font-weight:700;}
 .vacio{color:var(--muted); font-style:italic; padding:10px 0; font-size:.9rem;}
@@ -56,14 +53,14 @@ a:hover{text-decoration:underline;}
 .col-izq{display:flex; flex-direction:column; align-items:center; gap:6px; padding-top:4px;}
 .col-izq .punto{width:16px; height:16px;}
 .col-izq .fecha{font-size:.72rem; color:var(--verde); font-weight:600; text-align:center; white-space:nowrap;}
-.nota h3{font-family:"Sora",sans-serif; font-weight:600; font-size:1.08rem; letter-spacing:-.01em; margin:0 0 5px; line-height:1.3;}
+.nota h3{font-family:Arial,Helvetica,sans-serif; font-weight:600; font-size:1.08rem; letter-spacing:-.01em; margin:0 0 5px; line-height:1.3;}
 .nota p{margin:0 0 8px; color:#39322a;}
 .fuente-linea{font-size:.8rem; color:var(--muted); display:flex; flex-wrap:wrap; gap:10px; align-items:center;}
 .chip{background:var(--paper-2); border:1px solid var(--rule); border-radius:999px; padding:2px 10px; font-size:.74rem; color:var(--ink);}
-.icono-nuevo{width:9px; height:9px; border-radius:50%; background:var(--accent); display:inline-block; margin-top:4px; flex:0 0 auto;}
+.icono-nuevo{width:28px; height:28px; display:inline-block; margin-top:4px; flex:0 0 auto;}
 
 .por-mes{margin-top:44px; border-top:3px double var(--accent); padding-top:18px;}
-.por-mes h2{font-family:"Sora",sans-serif; font-size:1.3rem; font-weight:700; margin:0 0 14px;}
+.por-mes h2{font-family:Arial,Helvetica,sans-serif; font-size:1.3rem; font-weight:700; margin:0 0 14px;}
 .meses-tabs{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px;}
 .mes-tab{font:inherit; cursor:pointer; background:var(--paper-2); border:1px solid var(--rule); border-radius:999px;
   padding:6px 14px; font-size:.82rem; color:var(--ink); text-transform:capitalize;}
@@ -90,21 +87,21 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
   <p class="subtitulo">Resumen de noticias relevantes para direccion — Mexicali y Baja California</p>
   <div class="meta">
     <span><strong>Resumen</strong> · Actualizado 1 septiembre 2026</span>
-    <span>48 notas</span>
+    <span>57 notas</span>
   </div>
 </header>
 
 <div class="leyenda" aria-label="Leyenda del semaforo">
-  <span><i class="punto verde"></i> Verde — Oportunidad / positivo</span>
-  <span><i class="punto amarillo"></i> Amarillo — Seguimiento / neutral</span>
-  <span><i class="punto rojo"></i> Rojo — Alerta / riesgo</span>
+  <span><i class="punto verde"></i> Verde — positivo</span>
+  <span><i class="punto amarillo"></i> Amarillo — neutral</span>
+  <span><i class="punto rojo"></i> Rojo — Alerta</span>
 </div>
 
 <section class="eje">
   <h2><span class="num">1</span> Filantropia y responsabilidad social</h2>
   <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">4 jun</span>
     
   </div>
@@ -122,9 +119,9 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
   <h2><span class="num">2</span> Empresas y lideres establecidos</h2>
   <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">17 ago</span>
-    <span class="icono-nuevo" role="img" aria-label="Noticia nueva" title="Nueva"></span>
+    
   </div>
   <div class="col-der">
     <h3><a href="https://www.industrialnewsbc.com/2026/08/17/genera-baja-california-mas-de-14-mil-empleos-formales-durante-julio/" target="_blank" rel="noopener">Genera Baja California más de 14 mil empleos formales durante julio</a></h3>
@@ -137,9 +134,9 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">14 ago</span>
-    <span class="icono-nuevo" role="img" aria-label="Noticia nueva" title="Nueva"></span>
+    
   </div>
   <div class="col-der">
     <h3><a href="https://www.elimparcial.com/mxl/mexicali/2026/08/14/skyworks-mexicali-reconoce-a-60-colaboradores-destacados-por-su-compromiso-liderazgo-y-contribucion/" target="_blank" rel="noopener">Skyworks Mexicali reconoce a 60 colaboradores destacados por su compromiso, liderazgo y contribución</a></h3>
@@ -152,52 +149,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
-    <span class="fecha">8 ago</span>
-    
-  </div>
-  <div class="col-der">
-    <h3><a href="https://oem.com.mx/lavozdelafrontera/local/por-apagones-y-altas-temperaturas-empresas-interrumpen-labores-a-media-jornada-31485560" target="_blank" rel="noopener">Por apagones y altas temperaturas empresas interrumpen labores a media jornada</a></h3>
-    <p>Empresas en Mexicali interrumpen labores a media jornada ante los constantes apagones y las altas temperaturas; autoridades laborales recuerdan que los trabajadores pueden presentar quejas si sus centros de trabajo carecen de condiciones adecuadas de temperatura.</p>
-    <div class="fuente-linea">
-      <span class="chip">La Voz de la Frontera</span>
-      <a href="https://oem.com.mx/lavozdelafrontera/local/por-apagones-y-altas-temperaturas-empresas-interrumpen-labores-a-media-jornada-31485560" target="_blank" rel="noopener">Abrir noticia →</a>
-    </div>
-  </div>
-</article>
-<article class="nota">
-  <div class="col-izq">
-    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
-    <span class="fecha">7 ago</span>
-    
-  </div>
-  <div class="col-der">
-    <h3><a href="https://www.industrialnewsbc.com/2026/08/07/acumula-baja-california-caida-de-empresas-formales-en-tijuana-y-mexicali/" target="_blank" rel="noopener">Acumula Baja California caída de empresas formales en Tijuana y Mexicali</a></h3>
-    <p>Cifras del IMSS muestran que Tijuana acumuló un saldo anual negativo de 479 empresas formales a junio de 2026 y Mexicali perdió 508 en el mismo periodo (26 solo en junio), continuando una tendencia a la baja que suma más de 3,000 empresas menos en el estado desde 2022.</p>
-    <div class="fuente-linea">
-      <span class="chip">Industrial News BC</span>
-      <a href="https://www.industrialnewsbc.com/2026/08/07/acumula-baja-california-caida-de-empresas-formales-en-tijuana-y-mexicali/" target="_blank" rel="noopener">Abrir noticia →</a>
-    </div>
-  </div>
-</article>
-<article class="nota">
-  <div class="col-izq">
-    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
-    <span class="fecha">27 jul</span>
-    
-  </div>
-  <div class="col-der">
-    <h3><a href="https://www.elimparcial.com/mundo/2026/07/27/trump-presume-que-sus-aranceles-estan-llevando-produccion-automotriz-de-mexico-y-canada-hacia-eeuu-mientras-toyota-prepara-el-traslado-de-la-tacoma-desde-baja-california/" target="_blank" rel="noopener">Trump presume que sus aranceles están llevando producción automotriz de México y Canadá hacia EEUU mientras Toyota prepara el traslado de la Tacoma desde Baja California</a></h3>
-    <p>Trump atribuyó a sus aranceles el traslado de producción automotriz de México y Canadá hacia EE. UU., citando el caso de Toyota, que prepara el traslado de la producción de la Tacoma desde Baja California a Texas; el episodio profundiza la incertidumbre sobre el futuro de la planta y sus más de 2 mil trabajadores.</p>
-    <div class="fuente-linea">
-      <span class="chip">El Imparcial</span>
-      <a href="https://www.elimparcial.com/mundo/2026/07/27/trump-presume-que-sus-aranceles-estan-llevando-produccion-automotriz-de-mexico-y-canada-hacia-eeuu-mientras-toyota-prepara-el-traslado-de-la-tacoma-desde-baja-california/" target="_blank" rel="noopener">Abrir noticia →</a>
-    </div>
-  </div>
-</article>
-<article class="nota">
-  <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">16 jul</span>
     
   </div>
@@ -212,22 +164,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
-    <span class="fecha">8 jul</span>
-    
-  </div>
-  <div class="col-der">
-    <h3><a href="https://expansion.mx/empresas/2026/07/08/planta-toyota-baja-california-de-simbolo-del-tlcan-a-cerrar" target="_blank" rel="noopener">La planta de Toyota en Baja California, de símbolo del TLCAN a cerrar</a></h3>
-    <p>Toyota confirmó una inversión de 3,600 mdd para ampliar su planta de Texas y trasladará gradualmente, en unos 4 años, la producción de la pickup Tacoma desde su planta de Baja California; el gobierno estatal descarta un cierre inmediato, pero el futuro de la planta tras 2030 queda sin definir.</p>
-    <div class="fuente-linea">
-      <span class="chip">Expansión</span>
-      <a href="https://expansion.mx/empresas/2026/07/08/planta-toyota-baja-california-de-simbolo-del-tlcan-a-cerrar" target="_blank" rel="noopener">Abrir noticia →</a>
-    </div>
-  </div>
-</article>
-<article class="nota">
-  <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">18 jun</span>
     
   </div>
@@ -242,67 +179,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
-    <span class="fecha">18 jun</span>
-    
-  </div>
-  <div class="col-der">
-    <h3><a href="https://mexicaliedc.com/enfoque-de-la-industria-musical-the-namm-show/?lang=es" target="_blank" rel="noopener">Enfoque de la industria musical: The NAMM Show</a></h3>
-    <p>Empresas de Mexicali participaron en el NAMM Show, principal feria mundial de instrumentos musicales, buscando abrir mercados internacionales.</p>
-    <div class="fuente-linea">
-      <span class="chip">Mexicali EDC</span>
-      <a href="https://mexicaliedc.com/enfoque-de-la-industria-musical-the-namm-show/?lang=es" target="_blank" rel="noopener">Abrir noticia →</a>
-    </div>
-  </div>
-</article>
-<article class="nota">
-  <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
-    <span class="fecha">18 jun</span>
-    
-  </div>
-  <div class="col-der">
-    <h3><a href="https://mexicaliedc.com/mexicali-presente-en-el-pabellon-de-mexico-en-farnborough-international-airshow-fia-2022/?lang=es" target="_blank" rel="noopener">Mexicali presente en el pabellon de Mexico en Farnborough International Airshow 2022</a></h3>
-    <p>Empresas del sector aeroespacial de Mexicali acompanaron al pabellon de Mexico en Farnborough 2022, una de las ferias aeroespaciales mas importantes del mundo.</p>
-    <div class="fuente-linea">
-      <span class="chip">Mexicali EDC</span>
-      <a href="https://mexicaliedc.com/mexicali-presente-en-el-pabellon-de-mexico-en-farnborough-international-airshow-fia-2022/?lang=es" target="_blank" rel="noopener">Abrir noticia →</a>
-    </div>
-  </div>
-</article>
-<article class="nota">
-  <div class="col-izq">
-    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
-    <span class="fecha">18 jun</span>
-    
-  </div>
-  <div class="col-der">
-    <h3><a href="https://oem.com.mx/elsoldetijuana/local/tijuana-alcanza-cifra-record-de-8-millones-de-pies-cuadrados-vacantes-en-naves-industriales-30535498" target="_blank" rel="noopener">Tijuana alcanza cifra record de 8 millones de pies cuadrados vacantes en naves industriales</a></h3>
-    <p>Tijuana llega a un record de 8 millones de pies cuadrados de espacio industrial vacante, una senal de alerta sobre la demanda de naves industriales en la frontera.</p>
-    <div class="fuente-linea">
-      <span class="chip">El Sol de Tijuana</span>
-      <a href="https://oem.com.mx/elsoldetijuana/local/tijuana-alcanza-cifra-record-de-8-millones-de-pies-cuadrados-vacantes-en-naves-industriales-30535498" target="_blank" rel="noopener">Abrir noticia →</a>
-    </div>
-  </div>
-</article>
-<article class="nota">
-  <div class="col-izq">
-    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
-    <span class="fecha">14 may</span>
-    
-  </div>
-  <div class="col-der">
-    <h3><a href="https://www.elimparcial.com/mxl/mexicali/2026/05/14/despliegan-operativo-por-presunto-huachicol-en-empresa-transportista-de-mexicali/" target="_blank" rel="noopener">Despliegan operativo por presunto huachicol en empresa transportista de Mexicali</a></h3>
-    <p>SEDENA, la Fiscalía y personal de Pemex realizaron un cateo en las instalaciones de una empresa transportista (Comandos del Norte, Blvd. Lázaro Cárdenas/Huertas del Progreso) por presunto robo y manejo ilegal de combustible (huachicol); al momento no se reportaron detenidos ni aseguramientos. También reportado por La Voz de la Frontera.</p>
-    <div class="fuente-linea">
-      <span class="chip">El Imparcial</span>
-      <a href="https://www.elimparcial.com/mxl/mexicali/2026/05/14/despliegan-operativo-por-presunto-huachicol-en-empresa-transportista-de-mexicali/" target="_blank" rel="noopener">Abrir noticia →</a>
-    </div>
-  </div>
-</article>
-<article class="nota">
-  <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">12 may</span>
     
   </div>
@@ -317,7 +194,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">24 abr</span>
     
   </div>
@@ -332,7 +209,145 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
+    <span class="fecha">18 jun</span>
+    
+  </div>
+  <div class="col-der">
+    <h3><a href="https://mexicaliedc.com/enfoque-de-la-industria-musical-the-namm-show/?lang=es" target="_blank" rel="noopener">Enfoque de la industria musical: The NAMM Show</a></h3>
+    <p>Empresas de Mexicali participaron en el NAMM Show, principal feria mundial de instrumentos musicales, buscando abrir mercados internacionales.</p>
+    <div class="fuente-linea">
+      <span class="chip">Mexicali EDC</span>
+      <a href="https://mexicaliedc.com/enfoque-de-la-industria-musical-the-namm-show/?lang=es" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
+    <span class="fecha">18 jun</span>
+    
+  </div>
+  <div class="col-der">
+    <h3><a href="https://mexicaliedc.com/mexicali-presente-en-el-pabellon-de-mexico-en-farnborough-international-airshow-fia-2022/?lang=es" target="_blank" rel="noopener">Mexicali presente en el pabellon de Mexico en Farnborough International Airshow 2022</a></h3>
+    <p>Empresas del sector aeroespacial de Mexicali acompanaron al pabellon de Mexico en Farnborough 2022, una de las ferias aeroespaciales mas importantes del mundo.</p>
+    <div class="fuente-linea">
+      <span class="chip">Mexicali EDC</span>
+      <a href="https://mexicaliedc.com/mexicali-presente-en-el-pabellon-de-mexico-en-farnborough-international-airshow-fia-2022/?lang=es" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
+    <span class="fecha">25 ago</span>
+    <svg class="icono-nuevo" viewBox="-4 -4 108 108" role="img" aria-label="Noticia nueva"><title>Nueva</title>
+<polygon points="103.00,50.00 101.99,52.72 99.23,55.17 95.43,57.20 91.57,58.84 88.58,60.34 87.09,62.05 87.29,64.31 88.83,67.29 90.99,70.88 92.87,74.75 93.66,78.36 92.88,81.15 90.46,82.76 86.79,83.12 82.53,82.53 78.44,81.58 75.13,81.04 72.92,81.55 71.75,83.49 71.25,86.81 70.88,90.99 70.13,95.22 68.66,98.60 66.38,100.41 63.47,100.29 60.29,98.42 57.20,95.43 54.44,92.27 52.09,89.88 50.00,89.00 47.91,89.88 45.56,92.27 42.80,95.43 39.71,98.42 36.53,100.29 33.62,100.41 31.34,98.60 29.87,95.22 29.12,90.99 28.75,86.81 28.25,83.49 27.08,81.55 24.87,81.04 21.56,81.58 17.47,82.53 13.21,83.12 9.54,82.76 7.12,81.15 6.34,78.36 7.13,74.75 9.01,70.88 11.17,67.29 12.71,64.31 12.91,62.05 11.42,60.34 8.43,58.84 4.57,57.20 0.77,55.17 -1.99,52.72 -3.00,50.00 -1.99,47.28 0.77,44.83 4.57,42.80 8.43,41.16 11.42,39.66 12.91,37.95 12.71,35.69 11.17,32.71 9.01,29.12 7.13,25.25 6.34,21.64 7.12,18.85 9.54,17.24 13.21,16.88 17.47,17.47 21.56,18.42 24.87,18.96 27.08,18.45 28.25,16.51 28.75,13.19 29.12,9.01 29.87,4.78 31.34,1.40 33.62,-0.41 36.53,-0.29 39.71,1.58 42.80,4.57 45.56,7.73 47.91,10.12 50.00,11.00 52.09,10.12 54.44,7.73 57.20,4.57 60.29,1.58 63.47,-0.29 66.38,-0.41 68.66,1.40 70.13,4.78 70.88,9.01 71.25,13.19 71.75,16.51 72.92,18.45 75.13,18.96 78.44,18.42 82.53,17.47 86.79,16.88 90.46,17.24 92.88,18.85 93.66,21.64 92.87,25.25 90.99,29.12 88.83,32.71 87.29,35.69 87.09,37.95 88.58,39.66 91.57,41.16 95.43,42.80 99.23,44.83 101.99,47.28" fill="#f4213c"/>
+<text x="50" y="61" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="-2" fill="#ffffff">NEW</text>
+</svg>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.telemundo20.com/video/videos/video-noticias/alerta-eeuu-mexicali-incertidumbre-sector-empresarial/2539497/" target="_blank" rel="noopener">Alerta de seguridad de EE.UU. en Mexicali genera incertidumbre en el sector empresarial</a></h3>
+    <p>Un reportaje de Telemundo San Diego documenta cómo la alerta de seguridad emitida por Estados Unidos sobre Mexicali genera incertidumbre entre empresarios, que advierten un reto adicional para la actividad económica de la región.</p>
+    <div class="fuente-linea">
+      <span class="chip">Telemundo San Diego (20)</span>
+      <a href="https://www.telemundo20.com/video/videos/video-noticias/alerta-eeuu-mexicali-incertidumbre-sector-empresarial/2539497/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
+    <span class="fecha">8 ago</span>
+    
+  </div>
+  <div class="col-der">
+    <h3><a href="https://oem.com.mx/lavozdelafrontera/local/por-apagones-y-altas-temperaturas-empresas-interrumpen-labores-a-media-jornada-31485560" target="_blank" rel="noopener">Por apagones y altas temperaturas empresas interrumpen labores a media jornada</a></h3>
+    <p>Empresas en Mexicali interrumpen labores a media jornada ante los constantes apagones y las altas temperaturas; autoridades laborales recuerdan que los trabajadores pueden presentar quejas si sus centros de trabajo carecen de condiciones adecuadas de temperatura.</p>
+    <div class="fuente-linea">
+      <span class="chip">La Voz de la Frontera</span>
+      <a href="https://oem.com.mx/lavozdelafrontera/local/por-apagones-y-altas-temperaturas-empresas-interrumpen-labores-a-media-jornada-31485560" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
+    <span class="fecha">7 ago</span>
+    
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.industrialnewsbc.com/2026/08/07/acumula-baja-california-caida-de-empresas-formales-en-tijuana-y-mexicali/" target="_blank" rel="noopener">Acumula Baja California caída de empresas formales en Tijuana y Mexicali</a></h3>
+    <p>Cifras del IMSS muestran que Tijuana acumuló un saldo anual negativo de 479 empresas formales a junio de 2026 y Mexicali perdió 508 en el mismo periodo (26 solo en junio), continuando una tendencia a la baja que suma más de 3,000 empresas menos en el estado desde 2022.</p>
+    <div class="fuente-linea">
+      <span class="chip">Industrial News BC</span>
+      <a href="https://www.industrialnewsbc.com/2026/08/07/acumula-baja-california-caida-de-empresas-formales-en-tijuana-y-mexicali/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
+    <span class="fecha">27 jul</span>
+    
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.elimparcial.com/mundo/2026/07/27/trump-presume-que-sus-aranceles-estan-llevando-produccion-automotriz-de-mexico-y-canada-hacia-eeuu-mientras-toyota-prepara-el-traslado-de-la-tacoma-desde-baja-california/" target="_blank" rel="noopener">Trump presume que sus aranceles están llevando producción automotriz de México y Canadá hacia EEUU mientras Toyota prepara el traslado de la Tacoma desde Baja California</a></h3>
+    <p>Trump atribuyó a sus aranceles el traslado de producción automotriz de México y Canadá hacia EE. UU., citando el caso de Toyota, que prepara el traslado de la producción de la Tacoma desde Baja California a Texas; el episodio profundiza la incertidumbre sobre el futuro de la planta y sus más de 2 mil trabajadores.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Imparcial</span>
+      <a href="https://www.elimparcial.com/mundo/2026/07/27/trump-presume-que-sus-aranceles-estan-llevando-produccion-automotriz-de-mexico-y-canada-hacia-eeuu-mientras-toyota-prepara-el-traslado-de-la-tacoma-desde-baja-california/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
+    <span class="fecha">8 jul</span>
+    
+  </div>
+  <div class="col-der">
+    <h3><a href="https://expansion.mx/empresas/2026/07/08/planta-toyota-baja-california-de-simbolo-del-tlcan-a-cerrar" target="_blank" rel="noopener">La planta de Toyota en Baja California, de símbolo del TLCAN a cerrar</a></h3>
+    <p>Toyota confirmó una inversión de 3,600 mdd para ampliar su planta de Texas y trasladará gradualmente, en unos 4 años, la producción de la pickup Tacoma desde su planta de Baja California; el gobierno estatal descarta un cierre inmediato, pero el futuro de la planta tras 2030 queda sin definir.</p>
+    <div class="fuente-linea">
+      <span class="chip">Expansión</span>
+      <a href="https://expansion.mx/empresas/2026/07/08/planta-toyota-baja-california-de-simbolo-del-tlcan-a-cerrar" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
+    <span class="fecha">18 jun</span>
+    
+  </div>
+  <div class="col-der">
+    <h3><a href="https://oem.com.mx/elsoldetijuana/local/tijuana-alcanza-cifra-record-de-8-millones-de-pies-cuadrados-vacantes-en-naves-industriales-30535498" target="_blank" rel="noopener">Tijuana alcanza cifra record de 8 millones de pies cuadrados vacantes en naves industriales</a></h3>
+    <p>Tijuana llega a un record de 8 millones de pies cuadrados de espacio industrial vacante, una senal de alerta sobre la demanda de naves industriales en la frontera.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Sol de Tijuana</span>
+      <a href="https://oem.com.mx/elsoldetijuana/local/tijuana-alcanza-cifra-record-de-8-millones-de-pies-cuadrados-vacantes-en-naves-industriales-30535498" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
+    <span class="fecha">14 may</span>
+    
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.elimparcial.com/mxl/mexicali/2026/05/14/despliegan-operativo-por-presunto-huachicol-en-empresa-transportista-de-mexicali/" target="_blank" rel="noopener">Despliegan operativo por presunto huachicol en empresa transportista de Mexicali</a></h3>
+    <p>SEDENA, la Fiscalía y personal de Pemex realizaron un cateo en las instalaciones de una empresa transportista (Comandos del Norte, Blvd. Lázaro Cárdenas/Huertas del Progreso) por presunto robo y manejo ilegal de combustible (huachicol); al momento no se reportaron detenidos ni aseguramientos. También reportado por La Voz de la Frontera.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Imparcial</span>
+      <a href="https://www.elimparcial.com/mxl/mexicali/2026/05/14/despliegan-operativo-por-presunto-huachicol-en-empresa-transportista-de-mexicali/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
     <span class="fecha">19 mar</span>
     
   </div>
@@ -347,7 +362,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
     <span class="fecha">16 mar</span>
     
   </div>
@@ -362,7 +377,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
     <span class="fecha">27 ene</span>
     
   </div>
@@ -380,7 +395,25 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
   <h2><span class="num">3</span> Inversion entrante / expansiones</h2>
   <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
+    <span class="fecha">17 ago</span>
+    <svg class="icono-nuevo" viewBox="-4 -4 108 108" role="img" aria-label="Noticia nueva"><title>Nueva</title>
+<polygon points="103.00,50.00 101.99,52.72 99.23,55.17 95.43,57.20 91.57,58.84 88.58,60.34 87.09,62.05 87.29,64.31 88.83,67.29 90.99,70.88 92.87,74.75 93.66,78.36 92.88,81.15 90.46,82.76 86.79,83.12 82.53,82.53 78.44,81.58 75.13,81.04 72.92,81.55 71.75,83.49 71.25,86.81 70.88,90.99 70.13,95.22 68.66,98.60 66.38,100.41 63.47,100.29 60.29,98.42 57.20,95.43 54.44,92.27 52.09,89.88 50.00,89.00 47.91,89.88 45.56,92.27 42.80,95.43 39.71,98.42 36.53,100.29 33.62,100.41 31.34,98.60 29.87,95.22 29.12,90.99 28.75,86.81 28.25,83.49 27.08,81.55 24.87,81.04 21.56,81.58 17.47,82.53 13.21,83.12 9.54,82.76 7.12,81.15 6.34,78.36 7.13,74.75 9.01,70.88 11.17,67.29 12.71,64.31 12.91,62.05 11.42,60.34 8.43,58.84 4.57,57.20 0.77,55.17 -1.99,52.72 -3.00,50.00 -1.99,47.28 0.77,44.83 4.57,42.80 8.43,41.16 11.42,39.66 12.91,37.95 12.71,35.69 11.17,32.71 9.01,29.12 7.13,25.25 6.34,21.64 7.12,18.85 9.54,17.24 13.21,16.88 17.47,17.47 21.56,18.42 24.87,18.96 27.08,18.45 28.25,16.51 28.75,13.19 29.12,9.01 29.87,4.78 31.34,1.40 33.62,-0.41 36.53,-0.29 39.71,1.58 42.80,4.57 45.56,7.73 47.91,10.12 50.00,11.00 52.09,10.12 54.44,7.73 57.20,4.57 60.29,1.58 63.47,-0.29 66.38,-0.41 68.66,1.40 70.13,4.78 70.88,9.01 71.25,13.19 71.75,16.51 72.92,18.45 75.13,18.96 78.44,18.42 82.53,17.47 86.79,16.88 90.46,17.24 92.88,18.85 93.66,21.64 92.87,25.25 90.99,29.12 88.83,32.71 87.29,35.69 87.09,37.95 88.58,39.66 91.57,41.16 95.43,42.80 99.23,44.83 101.99,47.28" fill="#f4213c"/>
+<text x="50" y="61" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="-2" fill="#ffffff">NEW</text>
+</svg>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.iagua.es/noticias/redaccion-iagua/cox-construira-la-desaladora-de-playas-de-rosarito-una-de-las-mayores-de-america-latina" target="_blank" rel="noopener">Cox construirá la desaladora de Playas de Rosarito, una de las mayores de América Latina</a></h3>
+    <p>Conagua adjudicó a Cox Energy, filial del grupo español Cox, la construcción de la desaladora de Playas de Rosarito, una de las mayores de América Latina, con una inversión de 5,291 millones de pesos que aumentaría hasta 45% la disponibilidad de agua para Tijuana y Rosarito.</p>
+    <div class="fuente-linea">
+      <span class="chip">iAgua</span>
+      <a href="https://www.iagua.es/noticias/redaccion-iagua/cox-construira-la-desaladora-de-playas-de-rosarito-una-de-las-mayores-de-america-latina" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">18 jun</span>
     
   </div>
@@ -395,7 +428,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">18 jun</span>
     
   </div>
@@ -410,7 +443,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">18 jun</span>
     
   </div>
@@ -425,7 +458,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">25 mar</span>
     
   </div>
@@ -443,22 +476,25 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
   <h2><span class="num">4</span> Gobierno</h2>
   <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
-    <span class="fecha">14 ago</span>
-    <span class="icono-nuevo" role="img" aria-label="Noticia nueva" title="Nueva"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
+    <span class="fecha">27 ago</span>
+    <svg class="icono-nuevo" viewBox="-4 -4 108 108" role="img" aria-label="Noticia nueva"><title>Nueva</title>
+<polygon points="103.00,50.00 101.99,52.72 99.23,55.17 95.43,57.20 91.57,58.84 88.58,60.34 87.09,62.05 87.29,64.31 88.83,67.29 90.99,70.88 92.87,74.75 93.66,78.36 92.88,81.15 90.46,82.76 86.79,83.12 82.53,82.53 78.44,81.58 75.13,81.04 72.92,81.55 71.75,83.49 71.25,86.81 70.88,90.99 70.13,95.22 68.66,98.60 66.38,100.41 63.47,100.29 60.29,98.42 57.20,95.43 54.44,92.27 52.09,89.88 50.00,89.00 47.91,89.88 45.56,92.27 42.80,95.43 39.71,98.42 36.53,100.29 33.62,100.41 31.34,98.60 29.87,95.22 29.12,90.99 28.75,86.81 28.25,83.49 27.08,81.55 24.87,81.04 21.56,81.58 17.47,82.53 13.21,83.12 9.54,82.76 7.12,81.15 6.34,78.36 7.13,74.75 9.01,70.88 11.17,67.29 12.71,64.31 12.91,62.05 11.42,60.34 8.43,58.84 4.57,57.20 0.77,55.17 -1.99,52.72 -3.00,50.00 -1.99,47.28 0.77,44.83 4.57,42.80 8.43,41.16 11.42,39.66 12.91,37.95 12.71,35.69 11.17,32.71 9.01,29.12 7.13,25.25 6.34,21.64 7.12,18.85 9.54,17.24 13.21,16.88 17.47,17.47 21.56,18.42 24.87,18.96 27.08,18.45 28.25,16.51 28.75,13.19 29.12,9.01 29.87,4.78 31.34,1.40 33.62,-0.41 36.53,-0.29 39.71,1.58 42.80,4.57 45.56,7.73 47.91,10.12 50.00,11.00 52.09,10.12 54.44,7.73 57.20,4.57 60.29,1.58 63.47,-0.29 66.38,-0.41 68.66,1.40 70.13,4.78 70.88,9.01 71.25,13.19 71.75,16.51 72.92,18.45 75.13,18.96 78.44,18.42 82.53,17.47 86.79,16.88 90.46,17.24 92.88,18.85 93.66,21.64 92.87,25.25 90.99,29.12 88.83,32.71 87.29,35.69 87.09,37.95 88.58,39.66 91.57,41.16 95.43,42.80 99.23,44.83 101.99,47.28" fill="#f4213c"/>
+<text x="50" y="61" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="-2" fill="#ffffff">NEW</text>
+</svg>
   </div>
   <div class="col-der">
-    <h3><a href="https://www.industrialnewsbc.com/2026/08/14/pide-ebrard-a-eu-trato-preferencial-de-aranceles-durante-revision-del-t-mec/" target="_blank" rel="noopener">Pide Ebrard a EU trato preferencial de aranceles durante revisión del T-MEC</a></h3>
-    <p>El secretario de Economía, Marcelo Ebrard, solicitó a Estados Unidos un trato arancelario preferencial para México durante la revisión del T-MEC, buscando reducir los aranceles a autos (25%) y acero (50%), con posible impacto en la industria exportadora de Baja California.</p>
+    <h3><a href="https://www.uniradiobaja.com/sociedad/firman-contrato-colectivo-comision-estatal-agua-sindicato-burocratas-beneficio-trabajadores-n900936" target="_blank" rel="noopener">Firman contrato colectivo Comisión Estatal del Agua y sindicato de burócratas en beneficio de trabajadores</a></h3>
+    <p>La Comisión Estatal del Agua y el Sindicato de Burócratas firmaron el Contrato Colectivo de Trabajo 2026 con mejoras salariales y laborales para los trabajadores que operan infraestructura crítica como el Acueducto Río Colorado-Tijuana.</p>
     <div class="fuente-linea">
-      <span class="chip">Industrial News BC</span>
-      <a href="https://www.industrialnewsbc.com/2026/08/14/pide-ebrard-a-eu-trato-preferencial-de-aranceles-durante-revision-del-t-mec/" target="_blank" rel="noopener">Abrir noticia →</a>
+      <span class="chip">Uniradio Baja</span>
+      <a href="https://www.uniradiobaja.com/sociedad/firman-contrato-colectivo-comision-estatal-agua-sindicato-burocratas-beneficio-trabajadores-n900936" target="_blank" rel="noopener">Abrir noticia →</a>
     </div>
   </div>
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">7 ago</span>
     
   </div>
@@ -473,9 +509,9 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">3 ago</span>
-    <span class="icono-nuevo" role="img" aria-label="Noticia nueva" title="Nueva"></span>
+    
   </div>
   <div class="col-der">
     <h3><a href="https://el-mexicano.com.mx/Noticia/Mexicali/98193/Ampl%C3%ADa-Cabildo-de-Mexicali-programa-S.O.S-Hidr%C3%A1tate" target="_blank" rel="noopener">Amplía Cabildo de Mexicali programa S.O.S. Hidrátate</a></h3>
@@ -488,7 +524,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">1 ago</span>
     
   </div>
@@ -503,22 +539,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
-    <span class="fecha">21 jul</span>
-    
-  </div>
-  <div class="col-der">
-    <h3><a href="https://el-mexicano.com.mx/Noticia/Mexicali/97044/Ayuntamiento-de-Mexicali-invertir%C3%A1-20-millones-de-pesos-para-sustituir-cableado" target="_blank" rel="noopener">Ayuntamiento de Mexicali invertirá 20 millones de pesos para sustituir cableado</a></h3>
-    <p>El Ayuntamiento de Mexicali destinará cerca de 20 millones de pesos para sustituir el cableado eléctrico del Palacio Municipal, con más de 40 años de antigüedad, tras fallas recurrentes; los trabajos iniciaron en áreas prioritarias como Catastro y Recaudación.</p>
-    <div class="fuente-linea">
-      <span class="chip">El Mexicano</span>
-      <a href="https://el-mexicano.com.mx/Noticia/Mexicali/97044/Ayuntamiento-de-Mexicali-invertir%C3%A1-20-millones-de-pesos-para-sustituir-cableado" target="_blank" rel="noopener">Abrir noticia →</a>
-    </div>
-  </div>
-</article>
-<article class="nota">
-  <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">18 jun</span>
     
   </div>
@@ -533,7 +554,55 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
+    <span class="fecha">25 ago</span>
+    <svg class="icono-nuevo" viewBox="-4 -4 108 108" role="img" aria-label="Noticia nueva"><title>Nueva</title>
+<polygon points="103.00,50.00 101.99,52.72 99.23,55.17 95.43,57.20 91.57,58.84 88.58,60.34 87.09,62.05 87.29,64.31 88.83,67.29 90.99,70.88 92.87,74.75 93.66,78.36 92.88,81.15 90.46,82.76 86.79,83.12 82.53,82.53 78.44,81.58 75.13,81.04 72.92,81.55 71.75,83.49 71.25,86.81 70.88,90.99 70.13,95.22 68.66,98.60 66.38,100.41 63.47,100.29 60.29,98.42 57.20,95.43 54.44,92.27 52.09,89.88 50.00,89.00 47.91,89.88 45.56,92.27 42.80,95.43 39.71,98.42 36.53,100.29 33.62,100.41 31.34,98.60 29.87,95.22 29.12,90.99 28.75,86.81 28.25,83.49 27.08,81.55 24.87,81.04 21.56,81.58 17.47,82.53 13.21,83.12 9.54,82.76 7.12,81.15 6.34,78.36 7.13,74.75 9.01,70.88 11.17,67.29 12.71,64.31 12.91,62.05 11.42,60.34 8.43,58.84 4.57,57.20 0.77,55.17 -1.99,52.72 -3.00,50.00 -1.99,47.28 0.77,44.83 4.57,42.80 8.43,41.16 11.42,39.66 12.91,37.95 12.71,35.69 11.17,32.71 9.01,29.12 7.13,25.25 6.34,21.64 7.12,18.85 9.54,17.24 13.21,16.88 17.47,17.47 21.56,18.42 24.87,18.96 27.08,18.45 28.25,16.51 28.75,13.19 29.12,9.01 29.87,4.78 31.34,1.40 33.62,-0.41 36.53,-0.29 39.71,1.58 42.80,4.57 45.56,7.73 47.91,10.12 50.00,11.00 52.09,10.12 54.44,7.73 57.20,4.57 60.29,1.58 63.47,-0.29 66.38,-0.41 68.66,1.40 70.13,4.78 70.88,9.01 71.25,13.19 71.75,16.51 72.92,18.45 75.13,18.96 78.44,18.42 82.53,17.47 86.79,16.88 90.46,17.24 92.88,18.85 93.66,21.64 92.87,25.25 90.99,29.12 88.83,32.71 87.29,35.69 87.09,37.95 88.58,39.66 91.57,41.16 95.43,42.80 99.23,44.83 101.99,47.28" fill="#f4213c"/>
+<text x="50" y="61" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="-2" fill="#ffffff">NEW</text>
+</svg>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.uniradiobaja.com/sociedad/mantiene-mesa-coordinacion-operativos-garantizar-seguridad-mexicali-instruccion-gobernadora-marina-pilar-sscbc-n900472" target="_blank" rel="noopener">Mantiene Mesa de Coordinación operativos para garantizar la seguridad en Mexicali por instrucción de la gobernadora Marina del Pilar: SSCBC</a></h3>
+    <p>El Gobierno de Baja California reforzó, por instrucción de la gobernadora Marina del Pilar Ávila, la coordinación de operativos de seguridad en Mexicali entre autoridades estatales y federales, tras la alerta de seguridad emitida por Estados Unidos.</p>
+    <div class="fuente-linea">
+      <span class="chip">Uniradio Baja</span>
+      <a href="https://www.uniradiobaja.com/sociedad/mantiene-mesa-coordinacion-operativos-garantizar-seguridad-mexicali-instruccion-gobernadora-marina-pilar-sscbc-n900472" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
+    <span class="fecha">14 ago</span>
+    
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.industrialnewsbc.com/2026/08/14/pide-ebrard-a-eu-trato-preferencial-de-aranceles-durante-revision-del-t-mec/" target="_blank" rel="noopener">Pide Ebrard a EU trato preferencial de aranceles durante revisión del T-MEC</a></h3>
+    <p>El secretario de Economía, Marcelo Ebrard, solicitó a Estados Unidos un trato arancelario preferencial para México durante la revisión del T-MEC, buscando reducir los aranceles a autos (25%) y acero (50%), con posible impacto en la industria exportadora de Baja California.</p>
+    <div class="fuente-linea">
+      <span class="chip">Industrial News BC</span>
+      <a href="https://www.industrialnewsbc.com/2026/08/14/pide-ebrard-a-eu-trato-preferencial-de-aranceles-durante-revision-del-t-mec/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
+    <span class="fecha">21 jul</span>
+    
+  </div>
+  <div class="col-der">
+    <h3><a href="https://el-mexicano.com.mx/Noticia/Mexicali/97044/Ayuntamiento-de-Mexicali-invertir%C3%A1-20-millones-de-pesos-para-sustituir-cableado" target="_blank" rel="noopener">Ayuntamiento de Mexicali invertirá 20 millones de pesos para sustituir cableado</a></h3>
+    <p>El Ayuntamiento de Mexicali destinará cerca de 20 millones de pesos para sustituir el cableado eléctrico del Palacio Municipal, con más de 40 años de antigüedad, tras fallas recurrentes; los trabajos iniciaron en áreas prioritarias como Catastro y Recaudación.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Mexicano</span>
+      <a href="https://el-mexicano.com.mx/Noticia/Mexicali/97044/Ayuntamiento-de-Mexicali-invertir%C3%A1-20-millones-de-pesos-para-sustituir-cableado" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
     <span class="fecha">18 jun</span>
     
   </div>
@@ -548,7 +617,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
     <span class="fecha">18 jun</span>
     
   </div>
@@ -561,12 +630,30 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
     </div>
   </div>
 </article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
+    <span class="fecha">25 ago</span>
+    <svg class="icono-nuevo" viewBox="-4 -4 108 108" role="img" aria-label="Noticia nueva"><title>Nueva</title>
+<polygon points="103.00,50.00 101.99,52.72 99.23,55.17 95.43,57.20 91.57,58.84 88.58,60.34 87.09,62.05 87.29,64.31 88.83,67.29 90.99,70.88 92.87,74.75 93.66,78.36 92.88,81.15 90.46,82.76 86.79,83.12 82.53,82.53 78.44,81.58 75.13,81.04 72.92,81.55 71.75,83.49 71.25,86.81 70.88,90.99 70.13,95.22 68.66,98.60 66.38,100.41 63.47,100.29 60.29,98.42 57.20,95.43 54.44,92.27 52.09,89.88 50.00,89.00 47.91,89.88 45.56,92.27 42.80,95.43 39.71,98.42 36.53,100.29 33.62,100.41 31.34,98.60 29.87,95.22 29.12,90.99 28.75,86.81 28.25,83.49 27.08,81.55 24.87,81.04 21.56,81.58 17.47,82.53 13.21,83.12 9.54,82.76 7.12,81.15 6.34,78.36 7.13,74.75 9.01,70.88 11.17,67.29 12.71,64.31 12.91,62.05 11.42,60.34 8.43,58.84 4.57,57.20 0.77,55.17 -1.99,52.72 -3.00,50.00 -1.99,47.28 0.77,44.83 4.57,42.80 8.43,41.16 11.42,39.66 12.91,37.95 12.71,35.69 11.17,32.71 9.01,29.12 7.13,25.25 6.34,21.64 7.12,18.85 9.54,17.24 13.21,16.88 17.47,17.47 21.56,18.42 24.87,18.96 27.08,18.45 28.25,16.51 28.75,13.19 29.12,9.01 29.87,4.78 31.34,1.40 33.62,-0.41 36.53,-0.29 39.71,1.58 42.80,4.57 45.56,7.73 47.91,10.12 50.00,11.00 52.09,10.12 54.44,7.73 57.20,4.57 60.29,1.58 63.47,-0.29 66.38,-0.41 68.66,1.40 70.13,4.78 70.88,9.01 71.25,13.19 71.75,16.51 72.92,18.45 75.13,18.96 78.44,18.42 82.53,17.47 86.79,16.88 90.46,17.24 92.88,18.85 93.66,21.64 92.87,25.25 90.99,29.12 88.83,32.71 87.29,35.69 87.09,37.95 88.58,39.66 91.57,41.16 95.43,42.80 99.23,44.83 101.99,47.28" fill="#f4213c"/>
+<text x="50" y="61" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="-2" fill="#ffffff">NEW</text>
+</svg>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://zetatijuana.com/2026/08/alerta-de-ee-uu-provoca-incertidumbre-en-mexicali-autoridades-llaman-a-mantener-la-calma/" target="_blank" rel="noopener">Alerta de EE.UU. provoca incertidumbre en Mexicali; autoridades llaman a mantener la calma</a></h3>
+    <p>El Consulado de Estados Unidos emitió una alerta de seguridad para Mexicali tras una amenaza dirigida a autoridades, lo que desplegó a 350 elementos de seguridad; el gobierno estatal descartó indicios que la confirmen y llamó a mantener la calma mientras la actividad económica continúa con normalidad.</p>
+    <div class="fuente-linea">
+      <span class="chip">Zeta Tijuana</span>
+      <a href="https://zetatijuana.com/2026/08/alerta-de-ee-uu-provoca-incertidumbre-en-mexicali-autoridades-llaman-a-mantener-la-calma/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
 </section>
 <section class="eje">
   <h2><span class="num">5</span> Hacienda</h2>
   <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">7 ago</span>
     
   </div>
@@ -581,7 +668,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
     <span class="fecha">25 jul</span>
     
   </div>
@@ -599,7 +686,25 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
   <h2><span class="num">6</span> Agropecuario</h2>
   <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
+    <span class="fecha">27 ago</span>
+    <svg class="icono-nuevo" viewBox="-4 -4 108 108" role="img" aria-label="Noticia nueva"><title>Nueva</title>
+<polygon points="103.00,50.00 101.99,52.72 99.23,55.17 95.43,57.20 91.57,58.84 88.58,60.34 87.09,62.05 87.29,64.31 88.83,67.29 90.99,70.88 92.87,74.75 93.66,78.36 92.88,81.15 90.46,82.76 86.79,83.12 82.53,82.53 78.44,81.58 75.13,81.04 72.92,81.55 71.75,83.49 71.25,86.81 70.88,90.99 70.13,95.22 68.66,98.60 66.38,100.41 63.47,100.29 60.29,98.42 57.20,95.43 54.44,92.27 52.09,89.88 50.00,89.00 47.91,89.88 45.56,92.27 42.80,95.43 39.71,98.42 36.53,100.29 33.62,100.41 31.34,98.60 29.87,95.22 29.12,90.99 28.75,86.81 28.25,83.49 27.08,81.55 24.87,81.04 21.56,81.58 17.47,82.53 13.21,83.12 9.54,82.76 7.12,81.15 6.34,78.36 7.13,74.75 9.01,70.88 11.17,67.29 12.71,64.31 12.91,62.05 11.42,60.34 8.43,58.84 4.57,57.20 0.77,55.17 -1.99,52.72 -3.00,50.00 -1.99,47.28 0.77,44.83 4.57,42.80 8.43,41.16 11.42,39.66 12.91,37.95 12.71,35.69 11.17,32.71 9.01,29.12 7.13,25.25 6.34,21.64 7.12,18.85 9.54,17.24 13.21,16.88 17.47,17.47 21.56,18.42 24.87,18.96 27.08,18.45 28.25,16.51 28.75,13.19 29.12,9.01 29.87,4.78 31.34,1.40 33.62,-0.41 36.53,-0.29 39.71,1.58 42.80,4.57 45.56,7.73 47.91,10.12 50.00,11.00 52.09,10.12 54.44,7.73 57.20,4.57 60.29,1.58 63.47,-0.29 66.38,-0.41 68.66,1.40 70.13,4.78 70.88,9.01 71.25,13.19 71.75,16.51 72.92,18.45 75.13,18.96 78.44,18.42 82.53,17.47 86.79,16.88 90.46,17.24 92.88,18.85 93.66,21.64 92.87,25.25 90.99,29.12 88.83,32.71 87.29,35.69 87.09,37.95 88.58,39.66 91.57,41.16 95.43,42.80 99.23,44.83 101.99,47.28" fill="#f4213c"/>
+<text x="50" y="61" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="-2" fill="#ffffff">NEW</text>
+</svg>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://diariotijuana.info/2026/08/respalda-sector-agropecuario-a-gobierno-del-estado" target="_blank" rel="noopener">Respalda sector agropecuario a Gobierno del Estado</a></h3>
+    <p>Representantes de sistemas producto agrícolas (dátil, trigo, cítricos) y organizaciones del campo respaldaron la gestión del Gobierno del Estado, reconociendo el apoyo institucional pese a desafíos climáticos y altos costos de insumos.</p>
+    <div class="fuente-linea">
+      <span class="chip">Diario Tijuana</span>
+      <a href="https://diariotijuana.info/2026/08/respalda-sector-agropecuario-a-gobierno-del-estado" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
     <span class="fecha">18 jun</span>
     
   </div>
@@ -617,9 +722,45 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
   <h2><span class="num">7</span> Camaras empresariales</h2>
   <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
+    <span class="fecha">29 ago</span>
+    <svg class="icono-nuevo" viewBox="-4 -4 108 108" role="img" aria-label="Noticia nueva"><title>Nueva</title>
+<polygon points="103.00,50.00 101.99,52.72 99.23,55.17 95.43,57.20 91.57,58.84 88.58,60.34 87.09,62.05 87.29,64.31 88.83,67.29 90.99,70.88 92.87,74.75 93.66,78.36 92.88,81.15 90.46,82.76 86.79,83.12 82.53,82.53 78.44,81.58 75.13,81.04 72.92,81.55 71.75,83.49 71.25,86.81 70.88,90.99 70.13,95.22 68.66,98.60 66.38,100.41 63.47,100.29 60.29,98.42 57.20,95.43 54.44,92.27 52.09,89.88 50.00,89.00 47.91,89.88 45.56,92.27 42.80,95.43 39.71,98.42 36.53,100.29 33.62,100.41 31.34,98.60 29.87,95.22 29.12,90.99 28.75,86.81 28.25,83.49 27.08,81.55 24.87,81.04 21.56,81.58 17.47,82.53 13.21,83.12 9.54,82.76 7.12,81.15 6.34,78.36 7.13,74.75 9.01,70.88 11.17,67.29 12.71,64.31 12.91,62.05 11.42,60.34 8.43,58.84 4.57,57.20 0.77,55.17 -1.99,52.72 -3.00,50.00 -1.99,47.28 0.77,44.83 4.57,42.80 8.43,41.16 11.42,39.66 12.91,37.95 12.71,35.69 11.17,32.71 9.01,29.12 7.13,25.25 6.34,21.64 7.12,18.85 9.54,17.24 13.21,16.88 17.47,17.47 21.56,18.42 24.87,18.96 27.08,18.45 28.25,16.51 28.75,13.19 29.12,9.01 29.87,4.78 31.34,1.40 33.62,-0.41 36.53,-0.29 39.71,1.58 42.80,4.57 45.56,7.73 47.91,10.12 50.00,11.00 52.09,10.12 54.44,7.73 57.20,4.57 60.29,1.58 63.47,-0.29 66.38,-0.41 68.66,1.40 70.13,4.78 70.88,9.01 71.25,13.19 71.75,16.51 72.92,18.45 75.13,18.96 78.44,18.42 82.53,17.47 86.79,16.88 90.46,17.24 92.88,18.85 93.66,21.64 92.87,25.25 90.99,29.12 88.83,32.71 87.29,35.69 87.09,37.95 88.58,39.66 91.57,41.16 95.43,42.80 99.23,44.83 101.99,47.28" fill="#f4213c"/>
+<text x="50" y="61" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="-2" fill="#ffffff">NEW</text>
+</svg>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.elimparcial.com/mxl/mexicali/2026/08/29/foro-eleva-mexicali-2026-buscara-impulsar-oportunidades-de-negocio-y-vinculacion-empresarial/" target="_blank" rel="noopener">Foro Eleva Mexicali 2026 buscará impulsar oportunidades de negocio y vinculación empresarial</a></h3>
+    <p>Coparmex Mexicali anunció la 14ª edición del Foro Eleva, a realizarse el 7 de octubre en el Centro Estatal de las Artes, con ponentes como Leo Zuckermann y Mariana Chávez para abordar economía, innovación e inteligencia artificial y fortalecer la vinculación entre empresarios.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Imparcial</span>
+      <a href="https://www.elimparcial.com/mxl/mexicali/2026/08/29/foro-eleva-mexicali-2026-buscara-impulsar-oportunidades-de-negocio-y-vinculacion-empresarial/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
+    <span class="fecha">27 ago</span>
+    <svg class="icono-nuevo" viewBox="-4 -4 108 108" role="img" aria-label="Noticia nueva"><title>Nueva</title>
+<polygon points="103.00,50.00 101.99,52.72 99.23,55.17 95.43,57.20 91.57,58.84 88.58,60.34 87.09,62.05 87.29,64.31 88.83,67.29 90.99,70.88 92.87,74.75 93.66,78.36 92.88,81.15 90.46,82.76 86.79,83.12 82.53,82.53 78.44,81.58 75.13,81.04 72.92,81.55 71.75,83.49 71.25,86.81 70.88,90.99 70.13,95.22 68.66,98.60 66.38,100.41 63.47,100.29 60.29,98.42 57.20,95.43 54.44,92.27 52.09,89.88 50.00,89.00 47.91,89.88 45.56,92.27 42.80,95.43 39.71,98.42 36.53,100.29 33.62,100.41 31.34,98.60 29.87,95.22 29.12,90.99 28.75,86.81 28.25,83.49 27.08,81.55 24.87,81.04 21.56,81.58 17.47,82.53 13.21,83.12 9.54,82.76 7.12,81.15 6.34,78.36 7.13,74.75 9.01,70.88 11.17,67.29 12.71,64.31 12.91,62.05 11.42,60.34 8.43,58.84 4.57,57.20 0.77,55.17 -1.99,52.72 -3.00,50.00 -1.99,47.28 0.77,44.83 4.57,42.80 8.43,41.16 11.42,39.66 12.91,37.95 12.71,35.69 11.17,32.71 9.01,29.12 7.13,25.25 6.34,21.64 7.12,18.85 9.54,17.24 13.21,16.88 17.47,17.47 21.56,18.42 24.87,18.96 27.08,18.45 28.25,16.51 28.75,13.19 29.12,9.01 29.87,4.78 31.34,1.40 33.62,-0.41 36.53,-0.29 39.71,1.58 42.80,4.57 45.56,7.73 47.91,10.12 50.00,11.00 52.09,10.12 54.44,7.73 57.20,4.57 60.29,1.58 63.47,-0.29 66.38,-0.41 68.66,1.40 70.13,4.78 70.88,9.01 71.25,13.19 71.75,16.51 72.92,18.45 75.13,18.96 78.44,18.42 82.53,17.47 86.79,16.88 90.46,17.24 92.88,18.85 93.66,21.64 92.87,25.25 90.99,29.12 88.83,32.71 87.29,35.69 87.09,37.95 88.58,39.66 91.57,41.16 95.43,42.80 99.23,44.83 101.99,47.28" fill="#f4213c"/>
+<text x="50" y="61" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="-2" fill="#ffffff">NEW</text>
+</svg>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.uniradiobaja.com/gobierno/felicita-index-mexicali-ariel-alejandro-lizarraga-montero-su-nombramiento-n900946" target="_blank" rel="noopener">Felicita Index Mexicali a Ariel Alejandro Lizárraga Montero por su nombramiento</a></h3>
+    <p>Index Mexicali felicitó a Ariel Alejandro Lizárraga Montero por su nombramiento como Coordinador de Gabinete del Gobierno de Baja California, expresando respaldo para fortalecer la coordinación interinstitucional en el estado.</p>
+    <div class="fuente-linea">
+      <span class="chip">Uniradio Baja</span>
+      <a href="https://www.uniradiobaja.com/gobierno/felicita-index-mexicali-ariel-alejandro-lizarraga-montero-su-nombramiento-n900946" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">17 ago</span>
-    <span class="icono-nuevo" role="img" aria-label="Noticia nueva" title="Nueva"></span>
+    
   </div>
   <div class="col-der">
     <h3><a href="https://www.industrialnewsbc.com/2026/08/17/impulsa-index-proveeduria-local-para-fortalecer-industria-immex-en-ensenada/" target="_blank" rel="noopener">Impulsa Index proveeduría local para fortalecer industria IMMEX en Ensenada</a></h3>
@@ -632,9 +773,9 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">17 ago</span>
-    <span class="icono-nuevo" role="img" aria-label="Noticia nueva" title="Nueva"></span>
+    
   </div>
   <div class="col-der">
     <h3><a href="https://www.industrialnewsbc.com/2026/08/17/impulsa-deitac-proveeduria-para-crecer-en-el-sector-aeroespacial/" target="_blank" rel="noopener">Impulsa DEITAC proveeduría para crecer en el sector aeroespacial</a></h3>
@@ -647,9 +788,9 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">14 ago</span>
-    <span class="icono-nuevo" role="img" aria-label="Noticia nueva" title="Nueva"></span>
+    
   </div>
   <div class="col-der">
     <h3><a href="https://www.industrialnewsbc.com/2026/08/14/busca-ampi-realty-summit-elevar-la-profesionalizacion-inmobiliaria/" target="_blank" rel="noopener">Busca AMPI Realty Summit elevar la profesionalización inmobiliaria</a></h3>
@@ -662,37 +803,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
-    <span class="fecha">7 ago</span>
-    
-  </div>
-  <div class="col-der">
-    <h3><a href="https://www.industrialnewsbc.com/2026/08/07/advierte-canacintra-retos-para-el-transporte-de-carga-por-criterios-de-cabotaje/" target="_blank" rel="noopener">Advierte Canacintra retos para el transporte de carga por criterios de cabotaje</a></h3>
-    <p>Canacintra advirtió que los criterios de cabotaje aplicados por autoridades estadounidenses generan retos para transportistas y exportadores de la región, agravados por la escasez de operadores y la retención de visas, y pidió mayor entendimiento de la logística transfronteriza.</p>
-    <div class="fuente-linea">
-      <span class="chip">Industrial News BC</span>
-      <a href="https://www.industrialnewsbc.com/2026/08/07/advierte-canacintra-retos-para-el-transporte-de-carga-por-criterios-de-cabotaje/" target="_blank" rel="noopener">Abrir noticia →</a>
-    </div>
-  </div>
-</article>
-<article class="nota">
-  <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
-    <span class="fecha">5 ago</span>
-    
-  </div>
-  <div class="col-der">
-    <h3><a href="https://www.industrialnewsbc.com/2026/08/05/prioriza-index-mexicali-esfuerzos-en-la-retencion-de-inversiones-ante-incertidumbre-comercial/" target="_blank" rel="noopener">Prioriza Index Mexicali esfuerzos en la retención de inversiones ante incertidumbre comercial</a></h3>
-    <p>Index Mexicali, que representa a más de 1,200 empresas manufactureras (68% de las exportaciones manufactureras de México a EE. UU.), concentra su agenda en retener inversiones y empleo formal ante la incertidumbre comercial y arancelaria derivada de la revisión del T-MEC, en vez de solo atraer inversión nueva.</p>
-    <div class="fuente-linea">
-      <span class="chip">Industrial News BC</span>
-      <a href="https://www.industrialnewsbc.com/2026/08/05/prioriza-index-mexicali-esfuerzos-en-la-retencion-de-inversiones-ante-incertidumbre-comercial/" target="_blank" rel="noopener">Abrir noticia →</a>
-    </div>
-  </div>
-</article>
-<article class="nota">
-  <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">28 jul</span>
     
   </div>
@@ -707,9 +818,9 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">28 jul</span>
-    <span class="icono-nuevo" role="img" aria-label="Noticia nueva" title="Nueva"></span>
+    
   </div>
   <div class="col-der">
     <h3><a href="https://www.industrialnewsbc.com/2026/07/28/fortalecen-vinculacion-empresarial-con-torneo-de-golf-coparmex-banamex-2026/" target="_blank" rel="noopener">Fortalecen vinculación empresarial con torneo de golf Coparmex-Banamex 2026</a></h3>
@@ -722,7 +833,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">15 jul</span>
     
   </div>
@@ -737,7 +848,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">14 jul</span>
     
   </div>
@@ -752,67 +863,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
-    <span class="fecha">3 jul</span>
-    
-  </div>
-  <div class="col-der">
-    <h3><a href="https://el-mexicano.com.mx/Noticia/Mexicali/95391/Reducir%C3%A1n-jornada-laboral-a-trabajadores-de-la-construcci%C3%B3n-en-Mexicali:-CCE" target="_blank" rel="noopener">Reducirán jornada laboral a trabajadores de la construcción en Mexicali: CCE</a></h3>
-    <p>El CCE Mexicali impulsó la reducción de la jornada laboral hasta las 2:00 p.m. para los trabajadores de la construcción como medida preventiva ante las altas temperaturas del verano, buscando garantizar hidratación, sombra y descanso en las obras.</p>
-    <div class="fuente-linea">
-      <span class="chip">El Mexicano</span>
-      <a href="https://el-mexicano.com.mx/Noticia/Mexicali/95391/Reducir%C3%A1n-jornada-laboral-a-trabajadores-de-la-construcci%C3%B3n-en-Mexicali:-CCE" target="_blank" rel="noopener">Abrir noticia →</a>
-    </div>
-  </div>
-</article>
-<article class="nota">
-  <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
-    <span class="fecha">2 jul</span>
-    
-  </div>
-  <div class="col-der">
-    <h3><a href="https://www.indexmexicali.org.mx/publicacion/6955/" target="_blank" rel="noopener">Index Mexicali realiza Reunión Mensual de Recursos Humanos</a></h3>
-    <p>Index Mexicali llevó a cabo su Reunión Mensual de Recursos Humanos, un espacio para compartir experiencias y mejores prácticas laborales, con la participación de Karina Álvarez (Grupo Prodensa) y Fernando Aguilar Gudiño, director del Comité Laboral de Index Mexicali.</p>
-    <div class="fuente-linea">
-      <span class="chip">Index Mexicali</span>
-      <a href="https://www.indexmexicali.org.mx/publicacion/6955/" target="_blank" rel="noopener">Abrir noticia →</a>
-    </div>
-  </div>
-</article>
-<article class="nota">
-  <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
-    <span class="fecha">23 jun</span>
-    
-  </div>
-  <div class="col-der">
-    <h3><a href="https://zetatijuana.com/2026/06/canacintra-mexicali-reconoce-inversion-de-cfe-pero-advierte-que-los-apagones-continuaran/" target="_blank" rel="noopener">Canacintra Mexicali reconoce inversión de CFE pero advierte que los apagones continuarán</a></h3>
-    <p>Canacintra Mexicali reconoció la inversión de CFE en infraestructura eléctrica, pero advirtió que los apagones continuarán en la ciudad porque la red de distribución sigue siendo insuficiente para la demanda creciente de la industria.</p>
-    <div class="fuente-linea">
-      <span class="chip">Zeta Tijuana</span>
-      <a href="https://zetatijuana.com/2026/06/canacintra-mexicali-reconoce-inversion-de-cfe-pero-advierte-que-los-apagones-continuaran/" target="_blank" rel="noopener">Abrir noticia →</a>
-    </div>
-  </div>
-</article>
-<article class="nota">
-  <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
-    <span class="fecha">22 jun</span>
-    
-  </div>
-  <div class="col-der">
-    <h3><a href="https://www.elimparcial.com/mxl/mexicali/2026/06/22/canacintra-mexicali-desestima-capacidad-de-generacion-de-nueva-central-de-ciclo-combinado-hace-falta-mas-aseguran/" target="_blank" rel="noopener">Canacintra Mexicali desestima capacidad de generación de nueva central de ciclo combinado; &quot;hace falta más&quot;, aseguran</a></h3>
-    <p>Canacintra Mexicali consideró insuficiente la capacidad de generación de la nueva planta de ciclo combinado de CFE en el Valle de Mexicali y afirmó que se necesita más inversión en la red para resolver los apagones que afectan a la industria.</p>
-    <div class="fuente-linea">
-      <span class="chip">El Imparcial</span>
-      <a href="https://www.elimparcial.com/mxl/mexicali/2026/06/22/canacintra-mexicali-desestima-capacidad-de-generacion-de-nueva-central-de-ciclo-combinado-hace-falta-mas-aseguran/" target="_blank" rel="noopener">Abrir noticia →</a>
-    </div>
-  </div>
-</article>
-<article class="nota">
-  <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">26 mar</span>
     
   </div>
@@ -827,7 +878,115 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 </article>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
+    <span class="fecha">25 ago</span>
+    <svg class="icono-nuevo" viewBox="-4 -4 108 108" role="img" aria-label="Noticia nueva"><title>Nueva</title>
+<polygon points="103.00,50.00 101.99,52.72 99.23,55.17 95.43,57.20 91.57,58.84 88.58,60.34 87.09,62.05 87.29,64.31 88.83,67.29 90.99,70.88 92.87,74.75 93.66,78.36 92.88,81.15 90.46,82.76 86.79,83.12 82.53,82.53 78.44,81.58 75.13,81.04 72.92,81.55 71.75,83.49 71.25,86.81 70.88,90.99 70.13,95.22 68.66,98.60 66.38,100.41 63.47,100.29 60.29,98.42 57.20,95.43 54.44,92.27 52.09,89.88 50.00,89.00 47.91,89.88 45.56,92.27 42.80,95.43 39.71,98.42 36.53,100.29 33.62,100.41 31.34,98.60 29.87,95.22 29.12,90.99 28.75,86.81 28.25,83.49 27.08,81.55 24.87,81.04 21.56,81.58 17.47,82.53 13.21,83.12 9.54,82.76 7.12,81.15 6.34,78.36 7.13,74.75 9.01,70.88 11.17,67.29 12.71,64.31 12.91,62.05 11.42,60.34 8.43,58.84 4.57,57.20 0.77,55.17 -1.99,52.72 -3.00,50.00 -1.99,47.28 0.77,44.83 4.57,42.80 8.43,41.16 11.42,39.66 12.91,37.95 12.71,35.69 11.17,32.71 9.01,29.12 7.13,25.25 6.34,21.64 7.12,18.85 9.54,17.24 13.21,16.88 17.47,17.47 21.56,18.42 24.87,18.96 27.08,18.45 28.25,16.51 28.75,13.19 29.12,9.01 29.87,4.78 31.34,1.40 33.62,-0.41 36.53,-0.29 39.71,1.58 42.80,4.57 45.56,7.73 47.91,10.12 50.00,11.00 52.09,10.12 54.44,7.73 57.20,4.57 60.29,1.58 63.47,-0.29 66.38,-0.41 68.66,1.40 70.13,4.78 70.88,9.01 71.25,13.19 71.75,16.51 72.92,18.45 75.13,18.96 78.44,18.42 82.53,17.47 86.79,16.88 90.46,17.24 92.88,18.85 93.66,21.64 92.87,25.25 90.99,29.12 88.83,32.71 87.29,35.69 87.09,37.95 88.58,39.66 91.57,41.16 95.43,42.80 99.23,44.83 101.99,47.28" fill="#f4213c"/>
+<text x="50" y="61" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="-2" fill="#ffffff">NEW</text>
+</svg>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://oem.com.mx/lavozdelafrontera/local/llama-index-a-la-prevencion-y-activacion-de-protocolos-internos-de-seguridad-maese-31735753" target="_blank" rel="noopener">Llama Index a la prevención y activación de protocolos internos de seguridad: Maese</a></h3>
+    <p>Ante la alerta de seguridad de Estados Unidos, Index Mexicali llamó a las maquiladoras a activar sus protocolos internos de seguridad y priorizar el cuidado de sus plantillas laborales, sin detener la operación comercial de la región.</p>
+    <div class="fuente-linea">
+      <span class="chip">La Voz de la Frontera</span>
+      <a href="https://oem.com.mx/lavozdelafrontera/local/llama-index-a-la-prevencion-y-activacion-de-protocolos-internos-de-seguridad-maese-31735753" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
+    <span class="fecha">7 ago</span>
+    
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.industrialnewsbc.com/2026/08/07/advierte-canacintra-retos-para-el-transporte-de-carga-por-criterios-de-cabotaje/" target="_blank" rel="noopener">Advierte Canacintra retos para el transporte de carga por criterios de cabotaje</a></h3>
+    <p>Canacintra advirtió que los criterios de cabotaje aplicados por autoridades estadounidenses generan retos para transportistas y exportadores de la región, agravados por la escasez de operadores y la retención de visas, y pidió mayor entendimiento de la logística transfronteriza.</p>
+    <div class="fuente-linea">
+      <span class="chip">Industrial News BC</span>
+      <a href="https://www.industrialnewsbc.com/2026/08/07/advierte-canacintra-retos-para-el-transporte-de-carga-por-criterios-de-cabotaje/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
+    <span class="fecha">5 ago</span>
+    
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.industrialnewsbc.com/2026/08/05/prioriza-index-mexicali-esfuerzos-en-la-retencion-de-inversiones-ante-incertidumbre-comercial/" target="_blank" rel="noopener">Prioriza Index Mexicali esfuerzos en la retención de inversiones ante incertidumbre comercial</a></h3>
+    <p>Index Mexicali, que representa a más de 1,200 empresas manufactureras (68% de las exportaciones manufactureras de México a EE. UU.), concentra su agenda en retener inversiones y empleo formal ante la incertidumbre comercial y arancelaria derivada de la revisión del T-MEC, en vez de solo atraer inversión nueva.</p>
+    <div class="fuente-linea">
+      <span class="chip">Industrial News BC</span>
+      <a href="https://www.industrialnewsbc.com/2026/08/05/prioriza-index-mexicali-esfuerzos-en-la-retencion-de-inversiones-ante-incertidumbre-comercial/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
+    <span class="fecha">3 jul</span>
+    
+  </div>
+  <div class="col-der">
+    <h3><a href="https://el-mexicano.com.mx/Noticia/Mexicali/95391/Reducir%C3%A1n-jornada-laboral-a-trabajadores-de-la-construcci%C3%B3n-en-Mexicali:-CCE" target="_blank" rel="noopener">Reducirán jornada laboral a trabajadores de la construcción en Mexicali: CCE</a></h3>
+    <p>El CCE Mexicali impulsó la reducción de la jornada laboral hasta las 2:00 p.m. para los trabajadores de la construcción como medida preventiva ante las altas temperaturas del verano, buscando garantizar hidratación, sombra y descanso en las obras.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Mexicano</span>
+      <a href="https://el-mexicano.com.mx/Noticia/Mexicali/95391/Reducir%C3%A1n-jornada-laboral-a-trabajadores-de-la-construcci%C3%B3n-en-Mexicali:-CCE" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
+    <span class="fecha">2 jul</span>
+    
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.indexmexicali.org.mx/publicacion/6955/" target="_blank" rel="noopener">Index Mexicali realiza Reunión Mensual de Recursos Humanos</a></h3>
+    <p>Index Mexicali llevó a cabo su Reunión Mensual de Recursos Humanos, un espacio para compartir experiencias y mejores prácticas laborales, con la participación de Karina Álvarez (Grupo Prodensa) y Fernando Aguilar Gudiño, director del Comité Laboral de Index Mexicali.</p>
+    <div class="fuente-linea">
+      <span class="chip">Index Mexicali</span>
+      <a href="https://www.indexmexicali.org.mx/publicacion/6955/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
+    <span class="fecha">23 jun</span>
+    
+  </div>
+  <div class="col-der">
+    <h3><a href="https://zetatijuana.com/2026/06/canacintra-mexicali-reconoce-inversion-de-cfe-pero-advierte-que-los-apagones-continuaran/" target="_blank" rel="noopener">Canacintra Mexicali reconoce inversión de CFE pero advierte que los apagones continuarán</a></h3>
+    <p>Canacintra Mexicali reconoció la inversión de CFE en infraestructura eléctrica, pero advirtió que los apagones continuarán en la ciudad porque la red de distribución sigue siendo insuficiente para la demanda creciente de la industria.</p>
+    <div class="fuente-linea">
+      <span class="chip">Zeta Tijuana</span>
+      <a href="https://zetatijuana.com/2026/06/canacintra-mexicali-reconoce-inversion-de-cfe-pero-advierte-que-los-apagones-continuaran/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
+    <span class="fecha">22 jun</span>
+    
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.elimparcial.com/mxl/mexicali/2026/06/22/canacintra-mexicali-desestima-capacidad-de-generacion-de-nueva-central-de-ciclo-combinado-hace-falta-mas-aseguran/" target="_blank" rel="noopener">Canacintra Mexicali desestima capacidad de generación de nueva central de ciclo combinado; &quot;hace falta más&quot;, aseguran</a></h3>
+    <p>Canacintra Mexicali consideró insuficiente la capacidad de generación de la nueva planta de ciclo combinado de CFE en el Valle de Mexicali y afirmó que se necesita más inversión en la red para resolver los apagones que afectan a la industria.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Imparcial</span>
+      <a href="https://www.elimparcial.com/mxl/mexicali/2026/06/22/canacintra-mexicali-desestima-capacidad-de-generacion-de-nueva-central-de-ciclo-combinado-hace-falta-mas-aseguran/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
     <span class="fecha">5 feb</span>
     
   </div>
@@ -855,12 +1014,164 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <button type="button" class="mes-tab" data-mes="2026-01">enero 2026</button>
   </div>
   <div class="mes-panel activo" data-mes="2026-08">
+<div class="mes-nota-eje">Camaras empresariales</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
+    <span class="fecha">29 ago</span>
+    <svg class="icono-nuevo" viewBox="-4 -4 108 108" role="img" aria-label="Noticia nueva"><title>Nueva</title>
+<polygon points="103.00,50.00 101.99,52.72 99.23,55.17 95.43,57.20 91.57,58.84 88.58,60.34 87.09,62.05 87.29,64.31 88.83,67.29 90.99,70.88 92.87,74.75 93.66,78.36 92.88,81.15 90.46,82.76 86.79,83.12 82.53,82.53 78.44,81.58 75.13,81.04 72.92,81.55 71.75,83.49 71.25,86.81 70.88,90.99 70.13,95.22 68.66,98.60 66.38,100.41 63.47,100.29 60.29,98.42 57.20,95.43 54.44,92.27 52.09,89.88 50.00,89.00 47.91,89.88 45.56,92.27 42.80,95.43 39.71,98.42 36.53,100.29 33.62,100.41 31.34,98.60 29.87,95.22 29.12,90.99 28.75,86.81 28.25,83.49 27.08,81.55 24.87,81.04 21.56,81.58 17.47,82.53 13.21,83.12 9.54,82.76 7.12,81.15 6.34,78.36 7.13,74.75 9.01,70.88 11.17,67.29 12.71,64.31 12.91,62.05 11.42,60.34 8.43,58.84 4.57,57.20 0.77,55.17 -1.99,52.72 -3.00,50.00 -1.99,47.28 0.77,44.83 4.57,42.80 8.43,41.16 11.42,39.66 12.91,37.95 12.71,35.69 11.17,32.71 9.01,29.12 7.13,25.25 6.34,21.64 7.12,18.85 9.54,17.24 13.21,16.88 17.47,17.47 21.56,18.42 24.87,18.96 27.08,18.45 28.25,16.51 28.75,13.19 29.12,9.01 29.87,4.78 31.34,1.40 33.62,-0.41 36.53,-0.29 39.71,1.58 42.80,4.57 45.56,7.73 47.91,10.12 50.00,11.00 52.09,10.12 54.44,7.73 57.20,4.57 60.29,1.58 63.47,-0.29 66.38,-0.41 68.66,1.40 70.13,4.78 70.88,9.01 71.25,13.19 71.75,16.51 72.92,18.45 75.13,18.96 78.44,18.42 82.53,17.47 86.79,16.88 90.46,17.24 92.88,18.85 93.66,21.64 92.87,25.25 90.99,29.12 88.83,32.71 87.29,35.69 87.09,37.95 88.58,39.66 91.57,41.16 95.43,42.80 99.23,44.83 101.99,47.28" fill="#f4213c"/>
+<text x="50" y="61" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="-2" fill="#ffffff">NEW</text>
+</svg>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.elimparcial.com/mxl/mexicali/2026/08/29/foro-eleva-mexicali-2026-buscara-impulsar-oportunidades-de-negocio-y-vinculacion-empresarial/" target="_blank" rel="noopener">Foro Eleva Mexicali 2026 buscará impulsar oportunidades de negocio y vinculación empresarial</a></h3>
+    <p>Coparmex Mexicali anunció la 14ª edición del Foro Eleva, a realizarse el 7 de octubre en el Centro Estatal de las Artes, con ponentes como Leo Zuckermann y Mariana Chávez para abordar economía, innovación e inteligencia artificial y fortalecer la vinculación entre empresarios.</p>
+    <div class="fuente-linea">
+      <span class="chip">El Imparcial</span>
+      <a href="https://www.elimparcial.com/mxl/mexicali/2026/08/29/foro-eleva-mexicali-2026-buscara-impulsar-oportunidades-de-negocio-y-vinculacion-empresarial/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Gobierno</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
+    <span class="fecha">27 ago</span>
+    <svg class="icono-nuevo" viewBox="-4 -4 108 108" role="img" aria-label="Noticia nueva"><title>Nueva</title>
+<polygon points="103.00,50.00 101.99,52.72 99.23,55.17 95.43,57.20 91.57,58.84 88.58,60.34 87.09,62.05 87.29,64.31 88.83,67.29 90.99,70.88 92.87,74.75 93.66,78.36 92.88,81.15 90.46,82.76 86.79,83.12 82.53,82.53 78.44,81.58 75.13,81.04 72.92,81.55 71.75,83.49 71.25,86.81 70.88,90.99 70.13,95.22 68.66,98.60 66.38,100.41 63.47,100.29 60.29,98.42 57.20,95.43 54.44,92.27 52.09,89.88 50.00,89.00 47.91,89.88 45.56,92.27 42.80,95.43 39.71,98.42 36.53,100.29 33.62,100.41 31.34,98.60 29.87,95.22 29.12,90.99 28.75,86.81 28.25,83.49 27.08,81.55 24.87,81.04 21.56,81.58 17.47,82.53 13.21,83.12 9.54,82.76 7.12,81.15 6.34,78.36 7.13,74.75 9.01,70.88 11.17,67.29 12.71,64.31 12.91,62.05 11.42,60.34 8.43,58.84 4.57,57.20 0.77,55.17 -1.99,52.72 -3.00,50.00 -1.99,47.28 0.77,44.83 4.57,42.80 8.43,41.16 11.42,39.66 12.91,37.95 12.71,35.69 11.17,32.71 9.01,29.12 7.13,25.25 6.34,21.64 7.12,18.85 9.54,17.24 13.21,16.88 17.47,17.47 21.56,18.42 24.87,18.96 27.08,18.45 28.25,16.51 28.75,13.19 29.12,9.01 29.87,4.78 31.34,1.40 33.62,-0.41 36.53,-0.29 39.71,1.58 42.80,4.57 45.56,7.73 47.91,10.12 50.00,11.00 52.09,10.12 54.44,7.73 57.20,4.57 60.29,1.58 63.47,-0.29 66.38,-0.41 68.66,1.40 70.13,4.78 70.88,9.01 71.25,13.19 71.75,16.51 72.92,18.45 75.13,18.96 78.44,18.42 82.53,17.47 86.79,16.88 90.46,17.24 92.88,18.85 93.66,21.64 92.87,25.25 90.99,29.12 88.83,32.71 87.29,35.69 87.09,37.95 88.58,39.66 91.57,41.16 95.43,42.80 99.23,44.83 101.99,47.28" fill="#f4213c"/>
+<text x="50" y="61" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="-2" fill="#ffffff">NEW</text>
+</svg>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.uniradiobaja.com/sociedad/firman-contrato-colectivo-comision-estatal-agua-sindicato-burocratas-beneficio-trabajadores-n900936" target="_blank" rel="noopener">Firman contrato colectivo Comisión Estatal del Agua y sindicato de burócratas en beneficio de trabajadores</a></h3>
+    <p>La Comisión Estatal del Agua y el Sindicato de Burócratas firmaron el Contrato Colectivo de Trabajo 2026 con mejoras salariales y laborales para los trabajadores que operan infraestructura crítica como el Acueducto Río Colorado-Tijuana.</p>
+    <div class="fuente-linea">
+      <span class="chip">Uniradio Baja</span>
+      <a href="https://www.uniradiobaja.com/sociedad/firman-contrato-colectivo-comision-estatal-agua-sindicato-burocratas-beneficio-trabajadores-n900936" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Agropecuario</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
+    <span class="fecha">27 ago</span>
+    <svg class="icono-nuevo" viewBox="-4 -4 108 108" role="img" aria-label="Noticia nueva"><title>Nueva</title>
+<polygon points="103.00,50.00 101.99,52.72 99.23,55.17 95.43,57.20 91.57,58.84 88.58,60.34 87.09,62.05 87.29,64.31 88.83,67.29 90.99,70.88 92.87,74.75 93.66,78.36 92.88,81.15 90.46,82.76 86.79,83.12 82.53,82.53 78.44,81.58 75.13,81.04 72.92,81.55 71.75,83.49 71.25,86.81 70.88,90.99 70.13,95.22 68.66,98.60 66.38,100.41 63.47,100.29 60.29,98.42 57.20,95.43 54.44,92.27 52.09,89.88 50.00,89.00 47.91,89.88 45.56,92.27 42.80,95.43 39.71,98.42 36.53,100.29 33.62,100.41 31.34,98.60 29.87,95.22 29.12,90.99 28.75,86.81 28.25,83.49 27.08,81.55 24.87,81.04 21.56,81.58 17.47,82.53 13.21,83.12 9.54,82.76 7.12,81.15 6.34,78.36 7.13,74.75 9.01,70.88 11.17,67.29 12.71,64.31 12.91,62.05 11.42,60.34 8.43,58.84 4.57,57.20 0.77,55.17 -1.99,52.72 -3.00,50.00 -1.99,47.28 0.77,44.83 4.57,42.80 8.43,41.16 11.42,39.66 12.91,37.95 12.71,35.69 11.17,32.71 9.01,29.12 7.13,25.25 6.34,21.64 7.12,18.85 9.54,17.24 13.21,16.88 17.47,17.47 21.56,18.42 24.87,18.96 27.08,18.45 28.25,16.51 28.75,13.19 29.12,9.01 29.87,4.78 31.34,1.40 33.62,-0.41 36.53,-0.29 39.71,1.58 42.80,4.57 45.56,7.73 47.91,10.12 50.00,11.00 52.09,10.12 54.44,7.73 57.20,4.57 60.29,1.58 63.47,-0.29 66.38,-0.41 68.66,1.40 70.13,4.78 70.88,9.01 71.25,13.19 71.75,16.51 72.92,18.45 75.13,18.96 78.44,18.42 82.53,17.47 86.79,16.88 90.46,17.24 92.88,18.85 93.66,21.64 92.87,25.25 90.99,29.12 88.83,32.71 87.29,35.69 87.09,37.95 88.58,39.66 91.57,41.16 95.43,42.80 99.23,44.83 101.99,47.28" fill="#f4213c"/>
+<text x="50" y="61" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="-2" fill="#ffffff">NEW</text>
+</svg>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://diariotijuana.info/2026/08/respalda-sector-agropecuario-a-gobierno-del-estado" target="_blank" rel="noopener">Respalda sector agropecuario a Gobierno del Estado</a></h3>
+    <p>Representantes de sistemas producto agrícolas (dátil, trigo, cítricos) y organizaciones del campo respaldaron la gestión del Gobierno del Estado, reconociendo el apoyo institucional pese a desafíos climáticos y altos costos de insumos.</p>
+    <div class="fuente-linea">
+      <span class="chip">Diario Tijuana</span>
+      <a href="https://diariotijuana.info/2026/08/respalda-sector-agropecuario-a-gobierno-del-estado" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Camaras empresariales</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
+    <span class="fecha">27 ago</span>
+    <svg class="icono-nuevo" viewBox="-4 -4 108 108" role="img" aria-label="Noticia nueva"><title>Nueva</title>
+<polygon points="103.00,50.00 101.99,52.72 99.23,55.17 95.43,57.20 91.57,58.84 88.58,60.34 87.09,62.05 87.29,64.31 88.83,67.29 90.99,70.88 92.87,74.75 93.66,78.36 92.88,81.15 90.46,82.76 86.79,83.12 82.53,82.53 78.44,81.58 75.13,81.04 72.92,81.55 71.75,83.49 71.25,86.81 70.88,90.99 70.13,95.22 68.66,98.60 66.38,100.41 63.47,100.29 60.29,98.42 57.20,95.43 54.44,92.27 52.09,89.88 50.00,89.00 47.91,89.88 45.56,92.27 42.80,95.43 39.71,98.42 36.53,100.29 33.62,100.41 31.34,98.60 29.87,95.22 29.12,90.99 28.75,86.81 28.25,83.49 27.08,81.55 24.87,81.04 21.56,81.58 17.47,82.53 13.21,83.12 9.54,82.76 7.12,81.15 6.34,78.36 7.13,74.75 9.01,70.88 11.17,67.29 12.71,64.31 12.91,62.05 11.42,60.34 8.43,58.84 4.57,57.20 0.77,55.17 -1.99,52.72 -3.00,50.00 -1.99,47.28 0.77,44.83 4.57,42.80 8.43,41.16 11.42,39.66 12.91,37.95 12.71,35.69 11.17,32.71 9.01,29.12 7.13,25.25 6.34,21.64 7.12,18.85 9.54,17.24 13.21,16.88 17.47,17.47 21.56,18.42 24.87,18.96 27.08,18.45 28.25,16.51 28.75,13.19 29.12,9.01 29.87,4.78 31.34,1.40 33.62,-0.41 36.53,-0.29 39.71,1.58 42.80,4.57 45.56,7.73 47.91,10.12 50.00,11.00 52.09,10.12 54.44,7.73 57.20,4.57 60.29,1.58 63.47,-0.29 66.38,-0.41 68.66,1.40 70.13,4.78 70.88,9.01 71.25,13.19 71.75,16.51 72.92,18.45 75.13,18.96 78.44,18.42 82.53,17.47 86.79,16.88 90.46,17.24 92.88,18.85 93.66,21.64 92.87,25.25 90.99,29.12 88.83,32.71 87.29,35.69 87.09,37.95 88.58,39.66 91.57,41.16 95.43,42.80 99.23,44.83 101.99,47.28" fill="#f4213c"/>
+<text x="50" y="61" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="-2" fill="#ffffff">NEW</text>
+</svg>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.uniradiobaja.com/gobierno/felicita-index-mexicali-ariel-alejandro-lizarraga-montero-su-nombramiento-n900946" target="_blank" rel="noopener">Felicita Index Mexicali a Ariel Alejandro Lizárraga Montero por su nombramiento</a></h3>
+    <p>Index Mexicali felicitó a Ariel Alejandro Lizárraga Montero por su nombramiento como Coordinador de Gabinete del Gobierno de Baja California, expresando respaldo para fortalecer la coordinación interinstitucional en el estado.</p>
+    <div class="fuente-linea">
+      <span class="chip">Uniradio Baja</span>
+      <a href="https://www.uniradiobaja.com/gobierno/felicita-index-mexicali-ariel-alejandro-lizarraga-montero-su-nombramiento-n900946" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
 <div class="mes-nota-eje">Empresas y lideres establecidos</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
+    <span class="fecha">25 ago</span>
+    <svg class="icono-nuevo" viewBox="-4 -4 108 108" role="img" aria-label="Noticia nueva"><title>Nueva</title>
+<polygon points="103.00,50.00 101.99,52.72 99.23,55.17 95.43,57.20 91.57,58.84 88.58,60.34 87.09,62.05 87.29,64.31 88.83,67.29 90.99,70.88 92.87,74.75 93.66,78.36 92.88,81.15 90.46,82.76 86.79,83.12 82.53,82.53 78.44,81.58 75.13,81.04 72.92,81.55 71.75,83.49 71.25,86.81 70.88,90.99 70.13,95.22 68.66,98.60 66.38,100.41 63.47,100.29 60.29,98.42 57.20,95.43 54.44,92.27 52.09,89.88 50.00,89.00 47.91,89.88 45.56,92.27 42.80,95.43 39.71,98.42 36.53,100.29 33.62,100.41 31.34,98.60 29.87,95.22 29.12,90.99 28.75,86.81 28.25,83.49 27.08,81.55 24.87,81.04 21.56,81.58 17.47,82.53 13.21,83.12 9.54,82.76 7.12,81.15 6.34,78.36 7.13,74.75 9.01,70.88 11.17,67.29 12.71,64.31 12.91,62.05 11.42,60.34 8.43,58.84 4.57,57.20 0.77,55.17 -1.99,52.72 -3.00,50.00 -1.99,47.28 0.77,44.83 4.57,42.80 8.43,41.16 11.42,39.66 12.91,37.95 12.71,35.69 11.17,32.71 9.01,29.12 7.13,25.25 6.34,21.64 7.12,18.85 9.54,17.24 13.21,16.88 17.47,17.47 21.56,18.42 24.87,18.96 27.08,18.45 28.25,16.51 28.75,13.19 29.12,9.01 29.87,4.78 31.34,1.40 33.62,-0.41 36.53,-0.29 39.71,1.58 42.80,4.57 45.56,7.73 47.91,10.12 50.00,11.00 52.09,10.12 54.44,7.73 57.20,4.57 60.29,1.58 63.47,-0.29 66.38,-0.41 68.66,1.40 70.13,4.78 70.88,9.01 71.25,13.19 71.75,16.51 72.92,18.45 75.13,18.96 78.44,18.42 82.53,17.47 86.79,16.88 90.46,17.24 92.88,18.85 93.66,21.64 92.87,25.25 90.99,29.12 88.83,32.71 87.29,35.69 87.09,37.95 88.58,39.66 91.57,41.16 95.43,42.80 99.23,44.83 101.99,47.28" fill="#f4213c"/>
+<text x="50" y="61" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="-2" fill="#ffffff">NEW</text>
+</svg>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.telemundo20.com/video/videos/video-noticias/alerta-eeuu-mexicali-incertidumbre-sector-empresarial/2539497/" target="_blank" rel="noopener">Alerta de seguridad de EE.UU. en Mexicali genera incertidumbre en el sector empresarial</a></h3>
+    <p>Un reportaje de Telemundo San Diego documenta cómo la alerta de seguridad emitida por Estados Unidos sobre Mexicali genera incertidumbre entre empresarios, que advierten un reto adicional para la actividad económica de la región.</p>
+    <div class="fuente-linea">
+      <span class="chip">Telemundo San Diego (20)</span>
+      <a href="https://www.telemundo20.com/video/videos/video-noticias/alerta-eeuu-mexicali-incertidumbre-sector-empresarial/2539497/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Gobierno</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
+    <span class="fecha">25 ago</span>
+    <svg class="icono-nuevo" viewBox="-4 -4 108 108" role="img" aria-label="Noticia nueva"><title>Nueva</title>
+<polygon points="103.00,50.00 101.99,52.72 99.23,55.17 95.43,57.20 91.57,58.84 88.58,60.34 87.09,62.05 87.29,64.31 88.83,67.29 90.99,70.88 92.87,74.75 93.66,78.36 92.88,81.15 90.46,82.76 86.79,83.12 82.53,82.53 78.44,81.58 75.13,81.04 72.92,81.55 71.75,83.49 71.25,86.81 70.88,90.99 70.13,95.22 68.66,98.60 66.38,100.41 63.47,100.29 60.29,98.42 57.20,95.43 54.44,92.27 52.09,89.88 50.00,89.00 47.91,89.88 45.56,92.27 42.80,95.43 39.71,98.42 36.53,100.29 33.62,100.41 31.34,98.60 29.87,95.22 29.12,90.99 28.75,86.81 28.25,83.49 27.08,81.55 24.87,81.04 21.56,81.58 17.47,82.53 13.21,83.12 9.54,82.76 7.12,81.15 6.34,78.36 7.13,74.75 9.01,70.88 11.17,67.29 12.71,64.31 12.91,62.05 11.42,60.34 8.43,58.84 4.57,57.20 0.77,55.17 -1.99,52.72 -3.00,50.00 -1.99,47.28 0.77,44.83 4.57,42.80 8.43,41.16 11.42,39.66 12.91,37.95 12.71,35.69 11.17,32.71 9.01,29.12 7.13,25.25 6.34,21.64 7.12,18.85 9.54,17.24 13.21,16.88 17.47,17.47 21.56,18.42 24.87,18.96 27.08,18.45 28.25,16.51 28.75,13.19 29.12,9.01 29.87,4.78 31.34,1.40 33.62,-0.41 36.53,-0.29 39.71,1.58 42.80,4.57 45.56,7.73 47.91,10.12 50.00,11.00 52.09,10.12 54.44,7.73 57.20,4.57 60.29,1.58 63.47,-0.29 66.38,-0.41 68.66,1.40 70.13,4.78 70.88,9.01 71.25,13.19 71.75,16.51 72.92,18.45 75.13,18.96 78.44,18.42 82.53,17.47 86.79,16.88 90.46,17.24 92.88,18.85 93.66,21.64 92.87,25.25 90.99,29.12 88.83,32.71 87.29,35.69 87.09,37.95 88.58,39.66 91.57,41.16 95.43,42.80 99.23,44.83 101.99,47.28" fill="#f4213c"/>
+<text x="50" y="61" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="-2" fill="#ffffff">NEW</text>
+</svg>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.uniradiobaja.com/sociedad/mantiene-mesa-coordinacion-operativos-garantizar-seguridad-mexicali-instruccion-gobernadora-marina-pilar-sscbc-n900472" target="_blank" rel="noopener">Mantiene Mesa de Coordinación operativos para garantizar la seguridad en Mexicali por instrucción de la gobernadora Marina del Pilar: SSCBC</a></h3>
+    <p>El Gobierno de Baja California reforzó, por instrucción de la gobernadora Marina del Pilar Ávila, la coordinación de operativos de seguridad en Mexicali entre autoridades estatales y federales, tras la alerta de seguridad emitida por Estados Unidos.</p>
+    <div class="fuente-linea">
+      <span class="chip">Uniradio Baja</span>
+      <a href="https://www.uniradiobaja.com/sociedad/mantiene-mesa-coordinacion-operativos-garantizar-seguridad-mexicali-instruccion-gobernadora-marina-pilar-sscbc-n900472" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Gobierno</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
+    <span class="fecha">25 ago</span>
+    <svg class="icono-nuevo" viewBox="-4 -4 108 108" role="img" aria-label="Noticia nueva"><title>Nueva</title>
+<polygon points="103.00,50.00 101.99,52.72 99.23,55.17 95.43,57.20 91.57,58.84 88.58,60.34 87.09,62.05 87.29,64.31 88.83,67.29 90.99,70.88 92.87,74.75 93.66,78.36 92.88,81.15 90.46,82.76 86.79,83.12 82.53,82.53 78.44,81.58 75.13,81.04 72.92,81.55 71.75,83.49 71.25,86.81 70.88,90.99 70.13,95.22 68.66,98.60 66.38,100.41 63.47,100.29 60.29,98.42 57.20,95.43 54.44,92.27 52.09,89.88 50.00,89.00 47.91,89.88 45.56,92.27 42.80,95.43 39.71,98.42 36.53,100.29 33.62,100.41 31.34,98.60 29.87,95.22 29.12,90.99 28.75,86.81 28.25,83.49 27.08,81.55 24.87,81.04 21.56,81.58 17.47,82.53 13.21,83.12 9.54,82.76 7.12,81.15 6.34,78.36 7.13,74.75 9.01,70.88 11.17,67.29 12.71,64.31 12.91,62.05 11.42,60.34 8.43,58.84 4.57,57.20 0.77,55.17 -1.99,52.72 -3.00,50.00 -1.99,47.28 0.77,44.83 4.57,42.80 8.43,41.16 11.42,39.66 12.91,37.95 12.71,35.69 11.17,32.71 9.01,29.12 7.13,25.25 6.34,21.64 7.12,18.85 9.54,17.24 13.21,16.88 17.47,17.47 21.56,18.42 24.87,18.96 27.08,18.45 28.25,16.51 28.75,13.19 29.12,9.01 29.87,4.78 31.34,1.40 33.62,-0.41 36.53,-0.29 39.71,1.58 42.80,4.57 45.56,7.73 47.91,10.12 50.00,11.00 52.09,10.12 54.44,7.73 57.20,4.57 60.29,1.58 63.47,-0.29 66.38,-0.41 68.66,1.40 70.13,4.78 70.88,9.01 71.25,13.19 71.75,16.51 72.92,18.45 75.13,18.96 78.44,18.42 82.53,17.47 86.79,16.88 90.46,17.24 92.88,18.85 93.66,21.64 92.87,25.25 90.99,29.12 88.83,32.71 87.29,35.69 87.09,37.95 88.58,39.66 91.57,41.16 95.43,42.80 99.23,44.83 101.99,47.28" fill="#f4213c"/>
+<text x="50" y="61" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="-2" fill="#ffffff">NEW</text>
+</svg>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://zetatijuana.com/2026/08/alerta-de-ee-uu-provoca-incertidumbre-en-mexicali-autoridades-llaman-a-mantener-la-calma/" target="_blank" rel="noopener">Alerta de EE.UU. provoca incertidumbre en Mexicali; autoridades llaman a mantener la calma</a></h3>
+    <p>El Consulado de Estados Unidos emitió una alerta de seguridad para Mexicali tras una amenaza dirigida a autoridades, lo que desplegó a 350 elementos de seguridad; el gobierno estatal descartó indicios que la confirmen y llamó a mantener la calma mientras la actividad económica continúa con normalidad.</p>
+    <div class="fuente-linea">
+      <span class="chip">Zeta Tijuana</span>
+      <a href="https://zetatijuana.com/2026/08/alerta-de-ee-uu-provoca-incertidumbre-en-mexicali-autoridades-llaman-a-mantener-la-calma/" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Camaras empresariales</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
+    <span class="fecha">25 ago</span>
+    <svg class="icono-nuevo" viewBox="-4 -4 108 108" role="img" aria-label="Noticia nueva"><title>Nueva</title>
+<polygon points="103.00,50.00 101.99,52.72 99.23,55.17 95.43,57.20 91.57,58.84 88.58,60.34 87.09,62.05 87.29,64.31 88.83,67.29 90.99,70.88 92.87,74.75 93.66,78.36 92.88,81.15 90.46,82.76 86.79,83.12 82.53,82.53 78.44,81.58 75.13,81.04 72.92,81.55 71.75,83.49 71.25,86.81 70.88,90.99 70.13,95.22 68.66,98.60 66.38,100.41 63.47,100.29 60.29,98.42 57.20,95.43 54.44,92.27 52.09,89.88 50.00,89.00 47.91,89.88 45.56,92.27 42.80,95.43 39.71,98.42 36.53,100.29 33.62,100.41 31.34,98.60 29.87,95.22 29.12,90.99 28.75,86.81 28.25,83.49 27.08,81.55 24.87,81.04 21.56,81.58 17.47,82.53 13.21,83.12 9.54,82.76 7.12,81.15 6.34,78.36 7.13,74.75 9.01,70.88 11.17,67.29 12.71,64.31 12.91,62.05 11.42,60.34 8.43,58.84 4.57,57.20 0.77,55.17 -1.99,52.72 -3.00,50.00 -1.99,47.28 0.77,44.83 4.57,42.80 8.43,41.16 11.42,39.66 12.91,37.95 12.71,35.69 11.17,32.71 9.01,29.12 7.13,25.25 6.34,21.64 7.12,18.85 9.54,17.24 13.21,16.88 17.47,17.47 21.56,18.42 24.87,18.96 27.08,18.45 28.25,16.51 28.75,13.19 29.12,9.01 29.87,4.78 31.34,1.40 33.62,-0.41 36.53,-0.29 39.71,1.58 42.80,4.57 45.56,7.73 47.91,10.12 50.00,11.00 52.09,10.12 54.44,7.73 57.20,4.57 60.29,1.58 63.47,-0.29 66.38,-0.41 68.66,1.40 70.13,4.78 70.88,9.01 71.25,13.19 71.75,16.51 72.92,18.45 75.13,18.96 78.44,18.42 82.53,17.47 86.79,16.88 90.46,17.24 92.88,18.85 93.66,21.64 92.87,25.25 90.99,29.12 88.83,32.71 87.29,35.69 87.09,37.95 88.58,39.66 91.57,41.16 95.43,42.80 99.23,44.83 101.99,47.28" fill="#f4213c"/>
+<text x="50" y="61" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="-2" fill="#ffffff">NEW</text>
+</svg>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://oem.com.mx/lavozdelafrontera/local/llama-index-a-la-prevencion-y-activacion-de-protocolos-internos-de-seguridad-maese-31735753" target="_blank" rel="noopener">Llama Index a la prevención y activación de protocolos internos de seguridad: Maese</a></h3>
+    <p>Ante la alerta de seguridad de Estados Unidos, Index Mexicali llamó a las maquiladoras a activar sus protocolos internos de seguridad y priorizar el cuidado de sus plantillas laborales, sin detener la operación comercial de la región.</p>
+    <div class="fuente-linea">
+      <span class="chip">La Voz de la Frontera</span>
+      <a href="https://oem.com.mx/lavozdelafrontera/local/llama-index-a-la-prevencion-y-activacion-de-protocolos-internos-de-seguridad-maese-31735753" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
+<div class="mes-nota-eje">Empresas y lideres establecidos</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">17 ago</span>
-    <span class="icono-nuevo" role="img" aria-label="Noticia nueva" title="Nueva"></span>
+    
   </div>
   <div class="col-der">
     <h3><a href="https://www.industrialnewsbc.com/2026/08/17/genera-baja-california-mas-de-14-mil-empleos-formales-durante-julio/" target="_blank" rel="noopener">Genera Baja California más de 14 mil empleos formales durante julio</a></h3>
@@ -871,12 +1182,31 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
     </div>
   </div>
 </article>
+<div class="mes-nota-eje">Inversion entrante / expansiones</div>
+<article class="nota">
+  <div class="col-izq">
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
+    <span class="fecha">17 ago</span>
+    <svg class="icono-nuevo" viewBox="-4 -4 108 108" role="img" aria-label="Noticia nueva"><title>Nueva</title>
+<polygon points="103.00,50.00 101.99,52.72 99.23,55.17 95.43,57.20 91.57,58.84 88.58,60.34 87.09,62.05 87.29,64.31 88.83,67.29 90.99,70.88 92.87,74.75 93.66,78.36 92.88,81.15 90.46,82.76 86.79,83.12 82.53,82.53 78.44,81.58 75.13,81.04 72.92,81.55 71.75,83.49 71.25,86.81 70.88,90.99 70.13,95.22 68.66,98.60 66.38,100.41 63.47,100.29 60.29,98.42 57.20,95.43 54.44,92.27 52.09,89.88 50.00,89.00 47.91,89.88 45.56,92.27 42.80,95.43 39.71,98.42 36.53,100.29 33.62,100.41 31.34,98.60 29.87,95.22 29.12,90.99 28.75,86.81 28.25,83.49 27.08,81.55 24.87,81.04 21.56,81.58 17.47,82.53 13.21,83.12 9.54,82.76 7.12,81.15 6.34,78.36 7.13,74.75 9.01,70.88 11.17,67.29 12.71,64.31 12.91,62.05 11.42,60.34 8.43,58.84 4.57,57.20 0.77,55.17 -1.99,52.72 -3.00,50.00 -1.99,47.28 0.77,44.83 4.57,42.80 8.43,41.16 11.42,39.66 12.91,37.95 12.71,35.69 11.17,32.71 9.01,29.12 7.13,25.25 6.34,21.64 7.12,18.85 9.54,17.24 13.21,16.88 17.47,17.47 21.56,18.42 24.87,18.96 27.08,18.45 28.25,16.51 28.75,13.19 29.12,9.01 29.87,4.78 31.34,1.40 33.62,-0.41 36.53,-0.29 39.71,1.58 42.80,4.57 45.56,7.73 47.91,10.12 50.00,11.00 52.09,10.12 54.44,7.73 57.20,4.57 60.29,1.58 63.47,-0.29 66.38,-0.41 68.66,1.40 70.13,4.78 70.88,9.01 71.25,13.19 71.75,16.51 72.92,18.45 75.13,18.96 78.44,18.42 82.53,17.47 86.79,16.88 90.46,17.24 92.88,18.85 93.66,21.64 92.87,25.25 90.99,29.12 88.83,32.71 87.29,35.69 87.09,37.95 88.58,39.66 91.57,41.16 95.43,42.80 99.23,44.83 101.99,47.28" fill="#f4213c"/>
+<text x="50" y="61" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="-2" fill="#ffffff">NEW</text>
+</svg>
+  </div>
+  <div class="col-der">
+    <h3><a href="https://www.iagua.es/noticias/redaccion-iagua/cox-construira-la-desaladora-de-playas-de-rosarito-una-de-las-mayores-de-america-latina" target="_blank" rel="noopener">Cox construirá la desaladora de Playas de Rosarito, una de las mayores de América Latina</a></h3>
+    <p>Conagua adjudicó a Cox Energy, filial del grupo español Cox, la construcción de la desaladora de Playas de Rosarito, una de las mayores de América Latina, con una inversión de 5,291 millones de pesos que aumentaría hasta 45% la disponibilidad de agua para Tijuana y Rosarito.</p>
+    <div class="fuente-linea">
+      <span class="chip">iAgua</span>
+      <a href="https://www.iagua.es/noticias/redaccion-iagua/cox-construira-la-desaladora-de-playas-de-rosarito-una-de-las-mayores-de-america-latina" target="_blank" rel="noopener">Abrir noticia →</a>
+    </div>
+  </div>
+</article>
 <div class="mes-nota-eje">Camaras empresariales</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">17 ago</span>
-    <span class="icono-nuevo" role="img" aria-label="Noticia nueva" title="Nueva"></span>
+    
   </div>
   <div class="col-der">
     <h3><a href="https://www.industrialnewsbc.com/2026/08/17/impulsa-index-proveeduria-local-para-fortalecer-industria-immex-en-ensenada/" target="_blank" rel="noopener">Impulsa Index proveeduría local para fortalecer industria IMMEX en Ensenada</a></h3>
@@ -890,9 +1220,9 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Camaras empresariales</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">17 ago</span>
-    <span class="icono-nuevo" role="img" aria-label="Noticia nueva" title="Nueva"></span>
+    
   </div>
   <div class="col-der">
     <h3><a href="https://www.industrialnewsbc.com/2026/08/17/impulsa-deitac-proveeduria-para-crecer-en-el-sector-aeroespacial/" target="_blank" rel="noopener">Impulsa DEITAC proveeduría para crecer en el sector aeroespacial</a></h3>
@@ -906,9 +1236,9 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Empresas y lideres establecidos</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">14 ago</span>
-    <span class="icono-nuevo" role="img" aria-label="Noticia nueva" title="Nueva"></span>
+    
   </div>
   <div class="col-der">
     <h3><a href="https://www.elimparcial.com/mxl/mexicali/2026/08/14/skyworks-mexicali-reconoce-a-60-colaboradores-destacados-por-su-compromiso-liderazgo-y-contribucion/" target="_blank" rel="noopener">Skyworks Mexicali reconoce a 60 colaboradores destacados por su compromiso, liderazgo y contribución</a></h3>
@@ -922,9 +1252,9 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Gobierno</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
     <span class="fecha">14 ago</span>
-    <span class="icono-nuevo" role="img" aria-label="Noticia nueva" title="Nueva"></span>
+    
   </div>
   <div class="col-der">
     <h3><a href="https://www.industrialnewsbc.com/2026/08/14/pide-ebrard-a-eu-trato-preferencial-de-aranceles-durante-revision-del-t-mec/" target="_blank" rel="noopener">Pide Ebrard a EU trato preferencial de aranceles durante revisión del T-MEC</a></h3>
@@ -938,9 +1268,9 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Camaras empresariales</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">14 ago</span>
-    <span class="icono-nuevo" role="img" aria-label="Noticia nueva" title="Nueva"></span>
+    
   </div>
   <div class="col-der">
     <h3><a href="https://www.industrialnewsbc.com/2026/08/14/busca-ampi-realty-summit-elevar-la-profesionalizacion-inmobiliaria/" target="_blank" rel="noopener">Busca AMPI Realty Summit elevar la profesionalización inmobiliaria</a></h3>
@@ -954,7 +1284,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Empresas y lideres establecidos</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
     <span class="fecha">8 ago</span>
     
   </div>
@@ -970,7 +1300,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Empresas y lideres establecidos</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
     <span class="fecha">7 ago</span>
     
   </div>
@@ -986,7 +1316,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Gobierno</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">7 ago</span>
     
   </div>
@@ -1002,7 +1332,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Hacienda</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">7 ago</span>
     
   </div>
@@ -1018,7 +1348,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Camaras empresariales</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
     <span class="fecha">7 ago</span>
     
   </div>
@@ -1034,7 +1364,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Camaras empresariales</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
     <span class="fecha">5 ago</span>
     
   </div>
@@ -1050,9 +1380,9 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Gobierno</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">3 ago</span>
-    <span class="icono-nuevo" role="img" aria-label="Noticia nueva" title="Nueva"></span>
+    
   </div>
   <div class="col-der">
     <h3><a href="https://el-mexicano.com.mx/Noticia/Mexicali/98193/Ampl%C3%ADa-Cabildo-de-Mexicali-programa-S.O.S-Hidr%C3%A1tate" target="_blank" rel="noopener">Amplía Cabildo de Mexicali programa S.O.S. Hidrátate</a></h3>
@@ -1066,7 +1396,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Gobierno</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">1 ago</span>
     
   </div>
@@ -1084,7 +1414,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Camaras empresariales</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">28 jul</span>
     
   </div>
@@ -1100,9 +1430,9 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Camaras empresariales</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">28 jul</span>
-    <span class="icono-nuevo" role="img" aria-label="Noticia nueva" title="Nueva"></span>
+    
   </div>
   <div class="col-der">
     <h3><a href="https://www.industrialnewsbc.com/2026/07/28/fortalecen-vinculacion-empresarial-con-torneo-de-golf-coparmex-banamex-2026/" target="_blank" rel="noopener">Fortalecen vinculación empresarial con torneo de golf Coparmex-Banamex 2026</a></h3>
@@ -1116,7 +1446,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Empresas y lideres establecidos</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
     <span class="fecha">27 jul</span>
     
   </div>
@@ -1132,7 +1462,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Hacienda</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
     <span class="fecha">25 jul</span>
     
   </div>
@@ -1148,7 +1478,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Gobierno</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
     <span class="fecha">21 jul</span>
     
   </div>
@@ -1164,7 +1494,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Empresas y lideres establecidos</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">16 jul</span>
     
   </div>
@@ -1180,7 +1510,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Camaras empresariales</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">15 jul</span>
     
   </div>
@@ -1196,7 +1526,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Camaras empresariales</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">14 jul</span>
     
   </div>
@@ -1212,7 +1542,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Empresas y lideres establecidos</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
     <span class="fecha">8 jul</span>
     
   </div>
@@ -1228,7 +1558,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Camaras empresariales</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
     <span class="fecha">3 jul</span>
     
   </div>
@@ -1244,7 +1574,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Camaras empresariales</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
     <span class="fecha">2 jul</span>
     
   </div>
@@ -1262,7 +1592,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Camaras empresariales</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
     <span class="fecha">23 jun</span>
     
   </div>
@@ -1278,7 +1608,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Camaras empresariales</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
     <span class="fecha">22 jun</span>
     
   </div>
@@ -1294,7 +1624,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Empresas y lideres establecidos</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">18 jun</span>
     
   </div>
@@ -1310,7 +1640,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Empresas y lideres establecidos</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
     <span class="fecha">18 jun</span>
     
   </div>
@@ -1326,7 +1656,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Empresas y lideres establecidos</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
     <span class="fecha">18 jun</span>
     
   </div>
@@ -1342,7 +1672,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Empresas y lideres establecidos</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
     <span class="fecha">18 jun</span>
     
   </div>
@@ -1358,7 +1688,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Inversion entrante / expansiones</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">18 jun</span>
     
   </div>
@@ -1374,7 +1704,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Inversion entrante / expansiones</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">18 jun</span>
     
   </div>
@@ -1390,7 +1720,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Inversion entrante / expansiones</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">18 jun</span>
     
   </div>
@@ -1406,7 +1736,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Gobierno</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">18 jun</span>
     
   </div>
@@ -1422,7 +1752,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Gobierno</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
     <span class="fecha">18 jun</span>
     
   </div>
@@ -1438,7 +1768,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Gobierno</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
     <span class="fecha">18 jun</span>
     
   </div>
@@ -1454,7 +1784,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Agropecuario</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
     <span class="fecha">18 jun</span>
     
   </div>
@@ -1470,7 +1800,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Filantropia y responsabilidad social</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">4 jun</span>
     
   </div>
@@ -1488,7 +1818,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Empresas y lideres establecidos</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
     <span class="fecha">14 may</span>
     
   </div>
@@ -1504,7 +1834,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Empresas y lideres establecidos</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">12 may</span>
     
   </div>
@@ -1522,7 +1852,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Empresas y lideres establecidos</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">24 abr</span>
     
   </div>
@@ -1540,7 +1870,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Camaras empresariales</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">26 mar</span>
     
   </div>
@@ -1556,7 +1886,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Inversion entrante / expansiones</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto verde" role="img" aria-label="Semaforo verde: Oportunidad / positivo"></span>
+    <span class="punto verde" role="img" aria-label="Semaforo verde: positivo"></span>
     <span class="fecha">25 mar</span>
     
   </div>
@@ -1572,7 +1902,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Empresas y lideres establecidos</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
     <span class="fecha">19 mar</span>
     
   </div>
@@ -1588,7 +1918,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Empresas y lideres establecidos</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
     <span class="fecha">16 mar</span>
     
   </div>
@@ -1606,7 +1936,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Camaras empresariales</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: Seguimiento / neutral"></span>
+    <span class="punto amarillo" role="img" aria-label="Semaforo amarillo: neutral"></span>
     <span class="fecha">5 feb</span>
     
   </div>
@@ -1624,7 +1954,7 @@ footer{margin-top:46px; border-top:3px double var(--accent); padding-top:16px; t
 <div class="mes-nota-eje">Empresas y lideres establecidos</div>
 <article class="nota">
   <div class="col-izq">
-    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta / riesgo"></span>
+    <span class="punto rojo" role="img" aria-label="Semaforo rojo: Alerta"></span>
     <span class="fecha">27 ene</span>
     
   </div>
