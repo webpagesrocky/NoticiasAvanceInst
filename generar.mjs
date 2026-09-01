@@ -81,7 +81,7 @@ body{
 a{color:var(--accent); text-decoration:none;}
 a:hover{text-decoration:underline;}
 
-.masthead{background:linear-gradient(135deg,var(--azul) 0%,var(--azul-claro) 100%);
+.masthead{background:#3d7ab5;
   color:#fff; border-radius:14px; padding:30px 28px; margin-bottom:24px;
   box-shadow:0 8px 22px rgba(34,48,61,.14);}
 .kicker{font-size:.72rem; letter-spacing:.24em; text-transform:uppercase; color:rgba(255,255,255,.88); margin:0 0 8px; font-weight:600;}
@@ -112,6 +112,9 @@ a:hover{text-decoration:underline;}
 .fuente-linea{font-size:.8rem; color:var(--muted); display:flex; flex-wrap:wrap; gap:10px; align-items:center;}
 .chip{background:var(--paper-2); border:1px solid var(--rule); border-radius:999px; padding:2px 10px; font-size:.74rem; color:var(--ink);}
 .icono-nuevo{width:28px; height:28px; display:inline-block; margin-top:4px; flex:0 0 auto;}
+
+.nuevas{margin-top:34px;}
+.nuevas h2{font-family:Arial,Helvetica,sans-serif; font-size:1.3rem; font-weight:700; margin:0 0 14px;}
 
 .por-mes{margin-top:44px; border-top:3px double var(--accent); padding-top:18px;}
 .por-mes h2{font-family:Arial,Helvetica,sans-serif; font-size:1.3rem; font-weight:700; margin:0 0 14px;}
@@ -197,6 +200,27 @@ function seccionesEjes(porEje) {
   }).join("\n");
 }
 
+function seccionNuevas(porEje) {
+  const nuevas = [];
+  for (const eje of EJES) {
+    for (const nota of porEje[eje.id] || []) {
+      if (!nota.nueva) continue;
+      const d = new Date(nota.fecha);
+      nuevas.push({ ...nota, ejeTitulo: eje.titulo, ts: isNaN(d) ? 0 : d.getTime() });
+    }
+  }
+  nuevas.sort((a, b) => b.ts - a.ts);
+
+  const cuerpo = nuevas.length
+    ? nuevas.map((n) => `<div class="mes-nota-eje">${escHtml(n.ejeTitulo)}</div>\n${tarjetaNota(n)}`).join("\n")
+    : `<p class="vacio">No hay noticias nuevas por el momento.</p>`;
+
+  return `<section class="nuevas">
+  <h2>Noticias Nuevas</h2>
+  ${cuerpo}
+</section>`;
+}
+
 function seccionMeses(porEje) {
   const todas = [];
   for (const eje of EJES) {
@@ -269,9 +293,11 @@ function renderPagina(porEje, metaDetalle) {
 
 ${leyendaSemaforo()}
 
-${seccionesEjes(porEje)}
+${seccionNuevas(porEje)}
 
 ${seccionMeses(porEje)}
+
+${seccionesEjes(porEje)}
 
 <footer>
   <p>Avance Institucional — documento interno de monitoreo.</p>
