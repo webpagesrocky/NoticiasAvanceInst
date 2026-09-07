@@ -1,12 +1,92 @@
 [
   {
+    "titulo": "Casi una de cada 4 empresas sufren extorsión en BC: Coparmex",
+    "url": "https://puntonorte.info/2026/09/05/casi-una-de-cada-4-empresas-sufren-extorsion-en-bc-coparmex/",
+    "fuente": "Punto Norte",
+    "fecha": "2026-09-05",
+    "eje": "Camaras empresariales",
+    "semaforo": "rojo",
+    "nueva": true,
+    "resumen": "Según la encuesta DataCoparmex 2026, el 23% de las empresas afiliadas en Baja California reportó haber sido víctima de extorsión, el delito más señalado, pese a que la victimización delictiva general bajó de 53.5% a 43.9%; las empresas han aumentado su gasto en seguridad más de 40%, desviando recursos de la reinversión y el crecimiento."
+  },
+  {
+    "titulo": "Data Coparmex: cinco señales que retratan el entorno empresarial de Baja California",
+    "url": "https://podermx.tv/agro-negocios/data-coparmex-cinco-senales-que-retratan-el-entorno-empresarial-de-baja-california/",
+    "fuente": "PoderMX",
+    "fecha": "2026-09-04",
+    "eje": "Camaras empresariales",
+    "semaforo": "amarillo",
+    "nueva": true,
+    "resumen": "El diagnóstico DataCoparmex revela una paradoja: aunque 50.9% de los socios consultados espera ampliar personal, sucursales o productos, solo 18.1% confía en invertir en el estado, mientras 59.9% reporta problemas en trámites gubernamentales y 36.4% ha vivido actos de corrupción, ubicando a Baja California entre las entidades con peor desempeño en estos indicadores."
+  },
+  {
+    "titulo": "Gobierno de Mexicali avanza en proyecto integral de agua para diez comunidades ejidales",
+    "url": "https://pregonerobaja.com.mx/2026/09/04/gobierno-de-mexicali-avanza-en-proyecto-integral-de-agua-para-diez-comunidades-ejidales/",
+    "fuente": "Pregonero Baja",
+    "fecha": "2026-09-04",
+    "eje": "Gobierno",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "El Ayuntamiento de Mexicali avanza en un proyecto de infraestructura hídrica para diez ejidos del Valle de Mexicali, con obras de extracción, almacenamiento y conducción de agua que se prevé iniciar en febrero de 2027, con apoyo coordinado de Conagua y autoridades agrarias federales."
+  },
+  {
+    "titulo": "Aprueba Cabildo de Mexicali paquete de obras públicas 2026, son 148 MDP en inversión",
+    "url": "https://www.periodismonegro.mx/2026/09/03/aprueba-cabildo-de-mexicali-paquete-de-obras-publicas-2026-son-148-mdp-en-inversion/",
+    "fuente": "Periodismo Negro",
+    "fecha": "2026-09-03",
+    "eje": "Gobierno",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "El Cabildo de Mexicali aprobó un segundo paquete de obra pública por 148 millones de pesos, con 52 proyectos de rehabilitación vial, semaforización, alumbrado público y mejoras comunitarias financiados con recursos propios y federales."
+  },
+  {
+    "titulo": "Avanza Baja California con proyectos estratégicos en agua, salud, educación e infraestructura con respaldo federal",
+    "url": "https://www.elimparcial.com/tij/tijuana/2026/09/03/avanza-baja-california-con-proyectos-estrategicos-en-agua-salud-educacion-e-infraestructura-con-respaldo-federal/",
+    "fuente": "El Imparcial",
+    "fecha": "2026-09-03",
+    "eje": "Gobierno",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "La gobernadora Marina del Pilar Ávila destacó la coordinación con el gobierno federal en obras como el Viaducto Elevado de Tijuana, la modernización del Puerto de Ensenada, la desaladora de Playas de Rosarito, el Hospital Regional de Ensenada y la ampliación de nueve preparatorias con 4,500 nuevos espacios."
+  },
+  {
+    "titulo": "Industria y gobierno plantean fortalecer condiciones para atraer inversión a Baja California",
+    "url": "https://www.infobaja.info/industria-y-gobierno-plantean-fortalecer-condiciones-para-atraer-inversion-a-baja-california/",
+    "fuente": "Infobaja",
+    "fecha": "2026-08-31",
+    "eje": "Gobierno",
+    "semaforo": "amarillo",
+    "nueva": true,
+    "resumen": "Autoridades estatales y federales sostuvieron la primera sesión del Comité Promotor de Inversión de Baja California con el sector manufacturero, donde la iniciativa privada pidió mayor certeza jurídica y fiscal para inversionistas y se presentó la Ventanilla Digital para agilizar trámites, ante los retos derivados de cambios arancelarios."
+  },
+  {
+    "titulo": "Conecta gobierno de Baja California a negocios locales con nuevas oportunidades de crecimiento",
+    "url": "https://www.uniradiobaja.com/sociedad/conecta-gobierno-baja-california-negocios-locales-nuevas-oportunidades-crecimiento-n900770",
+    "fuente": "Uniradio Baja",
+    "fecha": "2026-08-26",
+    "eje": "Camaras empresariales",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "El Gobierno de Baja California realizará en septiembre tres encuentros gratuitos para fortalecer a las MiPyMEs, entre ellos CREO MX Rosarito (con premios de hasta 50 mil pesos) y Baja California Conecta & Crece, que facilitará cerca de 750 citas de negocio entre 180 pequeñas empresas y compradores de cadenas como Coppel, Herdez y Calimax."
+  },
+  {
+    "titulo": "Inició la cosecha del cultivo algodonero 2026 en el Valle de Mexicali",
+    "url": "https://www.industrialnewsbc.com/2026/08/20/inicio-la-cosecha-del-cultivo-algodonero-2026-en-el-valle-de-mexicali/",
+    "fuente": "Industrial News BC",
+    "fecha": "2026-08-20",
+    "eje": "Agropecuario",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "Inició la cosecha algodonera 2026 en el Valle de Mexicali con la pizca de 20 hectáreas en el Ejido Querétaro; se espera generalizar el proceso entre finales de septiembre e inicios de octubre sobre las 5,800 hectáreas sembradas, con la participación de 219 productores y 6 empresas despepitadoras que exportan principalmente a Estados Unidos, Vietnam, China e Indonesia."
+  },
+  {
     "titulo": "Foro Eleva Mexicali 2026 buscará impulsar oportunidades de negocio y vinculación empresarial",
     "url": "https://www.elimparcial.com/mxl/mexicali/2026/08/29/foro-eleva-mexicali-2026-buscara-impulsar-oportunidades-de-negocio-y-vinculacion-empresarial/",
     "fuente": "El Imparcial",
     "fecha": "2026-08-29",
     "eje": "Camaras empresariales",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "Coparmex Mexicali anunció la 14ª edición del Foro Eleva, a realizarse el 7 de octubre en el Centro Estatal de las Artes, con ponentes como Leo Zuckermann y Mariana Chávez para abordar economía, innovación e inteligencia artificial y fortalecer la vinculación entre empresarios."
   },
   {
@@ -16,7 +96,7 @@
     "fecha": "2026-08-27",
     "eje": "Camaras empresariales",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "Index Mexicali felicitó a Ariel Alejandro Lizárraga Montero por su nombramiento como Coordinador de Gabinete del Gobierno de Baja California, expresando respaldo para fortalecer la coordinación interinstitucional en el estado."
   },
   {
@@ -26,7 +106,7 @@
     "fecha": "2026-08-27",
     "eje": "Gobierno",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "La Comisión Estatal del Agua y el Sindicato de Burócratas firmaron el Contrato Colectivo de Trabajo 2026 con mejoras salariales y laborales para los trabajadores que operan infraestructura crítica como el Acueducto Río Colorado-Tijuana."
   },
   {
@@ -36,7 +116,7 @@
     "fecha": "2026-08-27",
     "eje": "Agropecuario",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "Representantes de sistemas producto agrícolas (dátil, trigo, cítricos) y organizaciones del campo respaldaron la gestión del Gobierno del Estado, reconociendo el apoyo institucional pese a desafíos climáticos y altos costos de insumos."
   },
   {
@@ -46,7 +126,7 @@
     "fecha": "2026-08-25",
     "eje": "Gobierno",
     "semaforo": "amarillo",
-    "nueva": true,
+    "nueva": false,
     "resumen": "El Gobierno de Baja California reforzó, por instrucción de la gobernadora Marina del Pilar Ávila, la coordinación de operativos de seguridad en Mexicali entre autoridades estatales y federales, tras la alerta de seguridad emitida por Estados Unidos."
   },
   {
@@ -56,7 +136,7 @@
     "fecha": "2026-08-25",
     "eje": "Camaras empresariales",
     "semaforo": "amarillo",
-    "nueva": true,
+    "nueva": false,
     "resumen": "Ante la alerta de seguridad de Estados Unidos, Index Mexicali llamó a las maquiladoras a activar sus protocolos internos de seguridad y priorizar el cuidado de sus plantillas laborales, sin detener la operación comercial de la región."
   },
   {
@@ -66,7 +146,7 @@
     "fecha": "2026-08-25",
     "eje": "Empresas y lideres establecidos",
     "semaforo": "rojo",
-    "nueva": true,
+    "nueva": false,
     "resumen": "Un reportaje de Telemundo San Diego documenta cómo la alerta de seguridad emitida por Estados Unidos sobre Mexicali genera incertidumbre entre empresarios, que advierten un reto adicional para la actividad económica de la región."
   },
   {
@@ -76,7 +156,7 @@
     "fecha": "2026-08-25",
     "eje": "Gobierno",
     "semaforo": "rojo",
-    "nueva": true,
+    "nueva": false,
     "resumen": "El Consulado de Estados Unidos emitió una alerta de seguridad para Mexicali tras una amenaza dirigida a autoridades, lo que desplegó a 350 elementos de seguridad; el gobierno estatal descartó indicios que la confirmen y llamó a mantener la calma mientras la actividad económica continúa con normalidad."
   },
   {
@@ -86,7 +166,7 @@
     "fecha": "2026-08-17",
     "eje": "Inversion entrante / expansiones",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "Conagua adjudicó a Cox Energy, filial del grupo español Cox, la construcción de la desaladora de Playas de Rosarito, una de las mayores de América Latina, con una inversión de 5,291 millones de pesos que aumentaría hasta 45% la disponibilidad de agua para Tijuana y Rosarito."
   },
   {
