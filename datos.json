@@ -1,12 +1,72 @@
 [
   {
+    "titulo": "Destaca Sheinbaum logros de su gobierno en Baja California",
+    "url": "https://www.brujula.news/2026/09/19/destaca-sheinbaum-logros-de-su-gobierno-en-baja-california/",
+    "fuente": "Brújula",
+    "fecha": "2026-09-19",
+    "eje": "Gobierno",
+    "semaforo": "amarillo",
+    "nueva": true,
+    "resumen": "En su segundo informe de gobierno, presentado en Tijuana, la presidenta Claudia Sheinbaum destacó obras viales, la desalinizadora para abasto de agua y 80 mil viviendas en construcción; el PAN cuestionó los resultados, señalando la crisis de seguridad, el deterioro de los servicios de salud y la pérdida de más de 3 mil registros patronales en 2026."
+  },
+  {
+    "titulo": "Produjo BC más de 8 mil toneladas de dátil",
+    "url": "https://linderonorte.com/2026/09/16/produjo-bc-mas-de-8-mil-toneladas-de-datil/",
+    "fuente": "Lindero Norte",
+    "fecha": "2026-09-16",
+    "eje": "Agropecuario",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "Baja California alcanzó 8,282 toneladas de dátil en la temporada del Valle de Mexicali (1,675 hectáreas), lo que lo ubica como segundo productor nacional; el 60% se destina a exportación (EE. UU., Australia, Europa y África), con ventas por 63 millones de dólares en 2025 y la variedad Medjool como ventaja competitiva."
+  },
+  {
+    "titulo": "Baja California fortalece su liderazgo nacional en la industria de semiconductores",
+    "url": "https://www.elimparcial.com/mxl/mexicali/2026/09/13/baja-california-fortalece-su-liderazgo-nacional-en-la-industria-de-semiconductores/",
+    "fuente": "El Imparcial",
+    "fecha": "2026-09-13",
+    "eje": "Gobierno",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "El Gobierno de Baja California seleccionó a 15 empresas (5 de reciente creación y 10 proveedoras de Mexicali, Tijuana, Ensenada y Tecate) para dos programas de seis meses de capacitación en el sector de semiconductores, donde operan 127 empresas de electrónica avanzada y participan aliados como Skyworks, Qualcomm e Infineon. También reportado por Punto Norte."
+  },
+  {
+    "titulo": "Entregan implementos e insumos a productores",
+    "url": "https://www.elvigia.net/el-valle/2026/9/10/entregan-implementos-insumos-productores-511914.html",
+    "fuente": "El Vigía",
+    "fecha": "2026-09-10",
+    "eje": "Agropecuario",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "La Secretaría de Agricultura y Desarrollo Rural de Baja California entregó semillas, fertilizante, implementos y diésel a productores del Valle de Mexicali (Distrito de Riego 014) mediante el Programa Compensatorio estatal, con apoyos de hasta 45 mil pesos por beneficiario para mitigar costos de producción."
+  },
+  {
+    "titulo": "En un entorno económico en constante cambio, Foro Eleva 2026 analizará los retos y oportunidades para las empresas mexicalenses",
+    "url": "https://www.elimparcial.com/mxl/mexicali/2026/09/08/en-un-entorno-economico-en-constante-cambio-foro-eleva-2026-analizara-los-retos-y-oportunidades-para-las-empresas-mexicalenses/",
+    "fuente": "El Imparcial",
+    "fecha": "2026-09-08",
+    "eje": "Camaras empresariales",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "Coparmex Mexicali realizará el Foro Eleva el 7 de octubre en la Sala Auka del Ceart, con cinco conferencias sobre inteligencia artificial, economía y liderazgo empresarial y una asistencia esperada de 450 personas; el boleto cuesta 4,300 pesos al público general y 3,800 a socios."
+  },
+  {
+    "titulo": "Arrancan trabajos de cosecha de dátil en el Valle de Mexicali",
+    "url": "https://tijuanaenlanoticia.info/arrancan-trabajos-de-cosecha-de-datil-en-el-valle-de-mexicali/",
+    "fuente": "Tijuana en la Noticia",
+    "fecha": "2026-09-06",
+    "eje": "Agropecuario",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "La Secretaría de Agricultura y Desarrollo Rural de Baja California formalizó el inicio de la temporada de cosecha de dátil 2026 en Mexicali; la entidad ocupa el segundo lugar nacional en producción y el estado mantendrá asesoría técnica y articulación de canales de distribución para esta actividad, clave para el empleo rural."
+  },
+  {
     "titulo": "«Que nadie se quede atrás»: Gobierno de Mexicali entrega laptops a jóvenes estudiantes",
     "url": "https://www.periodismonegro.mx/2026/09/11/que-nadie-se-quede-atras-gobierno-de-mexicali-entrega-laptops-a-jovenes-estudiantes/",
     "fuente": "Periodismo Negro",
     "fecha": "2026-09-11",
     "eje": "Gobierno",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "El Gobierno de Mexicali entregó 15 laptops a estudiantes de escasos recursos a través del programa municipal de juventud, en una primera fase orientada a reducir la deserción escolar y fortalecer el acceso tecnológico en poblaciones vulnerables."
   },
   {
@@ -16,7 +76,7 @@
     "fecha": "2026-09-06",
     "eje": "Empresas y lideres establecidos",
     "semaforo": "amarillo",
-    "nueva": true,
+    "nueva": false,
     "resumen": "El sector transportista de carga levantó el bloqueo en la garita comercial de Mexicali tras negociar con el gobierno estatal, luego de denunciar la revocación de cerca de 700 visas de trabajo por parte de Estados Unidos; se instaló una mesa de trabajo con autoridades federales y consulares para el 7 de septiembre."
   },
   {
@@ -26,7 +86,7 @@
     "fecha": "2026-09-04",
     "eje": "Empresas y lideres establecidos",
     "semaforo": "rojo",
-    "nueva": true,
+    "nueva": false,
     "resumen": "El gobierno de Estados Unidos ha revocado unas 4,000 visas a transportistas de Baja California entre abril de 2025 y abril de 2026 (21% del sector transfronterizo regional, con Mexicali como la zona más afectada), lo que Canacar advierte sería \"un golpe durísimo\" si los bloqueos en aduanas continúan."
   },
   {
@@ -36,7 +96,7 @@
     "fecha": "2026-09-03",
     "eje": "Empresas y lideres establecidos",
     "semaforo": "rojo",
-    "nueva": true,
+    "nueva": false,
     "resumen": "Decenas de transportistas de carga bloquearon la aduana comercial Garita Nueva entre Mexicali y Calexico en protesta por la cancelación masiva de visas estadounidenses a operadores acusados de cabotaje, afectando las operaciones comerciales transfronterizas de la región."
   },
   {
@@ -46,7 +106,7 @@
     "fecha": "2026-09-03",
     "eje": "Camaras empresariales",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "Canacintra Tijuana activó, durante la Cumbre Tijuana Industrial, un mecanismo para conectar a pymes locales con una bolsa de compras de 180 millones de dólares ofrecida por 10 grandes corporativos, mediante cerca de 150 citas de negocio para sustituir importaciones de insumos por proveeduría regional."
   },
   {
@@ -56,7 +116,7 @@
     "fecha": "2026-08-31",
     "eje": "Filantropia y responsabilidad social",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "Arca Continental y Coca-Cola México, en colaboración con la Secretaría de Medio Ambiente de Baja California, inauguraron en Mexicali un nuevo Centro de Acopio de PetStar con capacidad para procesar 54 millones de botellas de PET al año, que beneficiará a 30 proveedores locales y generará cerca de 650 empleos indirectos."
   },
   {
