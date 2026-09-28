@@ -1,12 +1,82 @@
 [
   {
+    "titulo": "Alcanzan exportaciones maquiladoras de Mexicali máximo histórico en 1° semestre de 2026",
+    "url": "https://www.industrialnewsbc.com/2026/09/24/alcanzan-exportaciones-maquiladoras-de-mexicali-maximo-historico-en-1-semestre-de-2026/",
+    "fuente": "Industrial News BC",
+    "fecha": "2026-09-24",
+    "eje": "Empresas y lideres establecidos",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "Las exportaciones de la industria maquiladora de Mexicali sumaron 38,343 millones de pesos en el primer semestre de 2026, 3.9% más que en 2025 y un máximo histórico para ese periodo; a junio operaban 150 establecimientos con más de 79 mil empleos y llegaron 488 millones de dólares de inversión extranjera."
+  },
+  {
+    "titulo": "Reconocen salida de empresas en Baja California por aranceles de EU",
+    "url": "https://www.industrialnewsbc.com/2026/09/24/reconocen-salida-de-empresas-en-baja-california-por-aranceles-de-eu/",
+    "fuente": "Industrial News BC",
+    "fecha": "2026-09-24",
+    "eje": "Gobierno",
+    "semaforo": "amarillo",
+    "nueva": true,
+    "resumen": "El secretario de Economía estatal, Kurt Honold, reconoció que algunas empresas, sobre todo pequeñas del sector logístico, han salido o cerrado por los aranceles de Estados Unidos, aunque los describió como casos aislados y aseguró que la inversión sigue llegando, en algunos casos sin anunciarse públicamente."
+  },
+  {
+    "titulo": "Sheinbaum y Marina del Pilar presentan proyectos e inversiones para Baja California ante más de 50 mil personas",
+    "url": "https://www.cronica.com.mx/estados/2026/09/20/sheinbaum-y-marina-del-pilar-presentan-proyectos-e-inversiones-para-baja-california-ante-mas-de-50-mil-personas/",
+    "fuente": "Crónica",
+    "fecha": "2026-09-20",
+    "eje": "Gobierno",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "El Gobierno Federal y el estatal presentaron su agenda de inversión para Baja California ante unas 50 mil personas: la desaladora de Playas de Rosarito (12,500 mdp), la central de ciclo combinado González Ortega (646 mdd, 641 MW), 5,134 sistemas fotovoltaicos, el Viaducto Elevado de Tijuana y 80,880 viviendas programadas."
+  },
+  {
+    "titulo": "Crisis del agua agrícola en el Valle de Mexicali",
+    "url": "https://semanarioelpionero.com.mx/2026/09/20/crisis-del-agua-agricola-en-elvalle-de-mexicali/",
+    "fuente": "Semanario El Pionero",
+    "fecha": "2026-09-20",
+    "eje": "Agropecuario",
+    "semaforo": "rojo",
+    "nueva": true,
+    "resumen": "El Valle de Mexicali enfrenta recortes proyectados de 308 millones de m³ de agua para 2027-2028, lo que obliga a reconfigurar cultivos (37 mil hectáreas de alfalfa frente a 29 mil de trigo) y agrava la salinidad en 50-60 mil hectáreas, con riesgo de 78 mil hectáreas sin sembrar hacia 2030 y desempleo agrícola."
+  },
+  {
+    "titulo": "Dátil, un cultivo viable y rentable para el Valle de Mexicali",
+    "url": "https://www.periodismonegro.mx/2026/09/20/datil-un-cultivo-viable-y-rentable-para-el-valle-de-mexicali/",
+    "fuente": "Periodismo Negro",
+    "fecha": "2026-09-20",
+    "eje": "Agropecuario",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "Ante las limitaciones de los cultivos tradicionales, productores y autoridades agrícolas destacan al dátil como alternativa viable y rentable por su competitividad y acceso a mercados nacionales e internacionales, aunque persisten retos como la falta de canales de distribución y de experiencia en gestión comercial."
+  },
+  {
+    "titulo": "Marina del Pilar encabeza multitudinario Grito en Mexicali",
+    "url": "https://opinia.com.mx/2026/09/16/marina-del-pilar-encabeza-multitudinario-grito-en-mexicali/",
+    "fuente": "Opinia",
+    "fecha": "2026-09-16",
+    "eje": "Gobierno",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "La gobernadora Marina del Pilar Ávila presidió el Grito de Independencia en el Centro Cívico de Mexicali ante más de 75 mil personas, con espectáculo de drones y un concierto gratuito de Edén Muñoz, una de las concentraciones más numerosas de las fiestas patrias estatales."
+  },
+  {
+    "titulo": "Invitan Coparmex y patrocinadores a Foro Eleva 2026",
+    "url": "https://www.periodismonegro.mx/2026/09/23/invitan-coparmex-y-patrocinadores-a-foro-eleva-2026/",
+    "fuente": "Periodismo Negro",
+    "fecha": "2026-09-23",
+    "eje": "Camaras empresariales",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "El presidente de Coparmex Mexicali, Luis Ernesto García, y los patrocinadores invitaron a la 14ª edición del Foro Eleva, el 7 de octubre en la Sala Auka del Ceart, con Leo Zuckermann como ponente inaugural y boletos de 3,800 pesos para socios y 4,300 para público general."
+  },
+  {
     "titulo": "Gobierno de México consolida inversión histórica y obras en Baja California",
     "url": "https://www.enlineabc.com.mx/tijuana/inicio/2026/09/19/gobierno-de-mexico-consolida-inversion-historica-y-obras-en-baja-california/",
     "fuente": "En Línea BC",
     "fecha": "2026-09-19",
     "eje": "Gobierno",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "El Gobierno Federal destaca una inversión de 24,719 millones de pesos en programas de bienestar para 1.15 millones de personas en Baja California, además de megaproyectos como el Viaducto Elevado de Tijuana (5,500 mdp), la desaladora de Rosarito (12,500 mdp) y la Central González Ortega en Mexicali (641 MW), y reporta 1.07 millones de empleos formales ante el IMSS a junio de 2026."
   },
   {
@@ -16,7 +86,7 @@
     "fecha": "2026-09-17",
     "eje": "Filantropia y responsabilidad social",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "La Fundación Agrícola El Toro entregó 82 becas a estudiantes del Valle de Mexicali mediante convenios renovados con CETYS Universidad y UABC, con lo que suma más de 1,450 apoyos educativos otorgados a jóvenes de la región agrícola con desempeño académico destacado."
   },
   {
@@ -26,7 +96,7 @@
     "fecha": "2026-09-15",
     "eje": "Camaras empresariales",
     "semaforo": "amarillo",
-    "nueva": true,
+    "nueva": false,
     "resumen": "INDEX Zona Costa BC inició encuentros con los candidatos a la presidencia nacional de INDEX 2027-2028: ya presentó su propuesta Salvador Maese (INDEX Mexicali) y siguen Enrique Morán (23 de septiembre) y Guillermo del Río (14 de octubre); la asociación mantiene una posición institucional neutral durante el proceso."
   },
   {
@@ -36,7 +106,7 @@
     "fecha": "2026-09-19",
     "eje": "Gobierno",
     "semaforo": "amarillo",
-    "nueva": true,
+    "nueva": false,
     "resumen": "En su segundo informe de gobierno, presentado en Tijuana, la presidenta Claudia Sheinbaum destacó obras viales, la desalinizadora para abasto de agua y 80 mil viviendas en construcción; el PAN cuestionó los resultados, señalando la crisis de seguridad, el deterioro de los servicios de salud y la pérdida de más de 3 mil registros patronales en 2026."
   },
   {
@@ -46,7 +116,7 @@
     "fecha": "2026-09-16",
     "eje": "Agropecuario",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "Baja California alcanzó 8,282 toneladas de dátil en la temporada del Valle de Mexicali (1,675 hectáreas), lo que lo ubica como segundo productor nacional; el 60% se destina a exportación (EE. UU., Australia, Europa y África), con ventas por 63 millones de dólares en 2025 y la variedad Medjool como ventaja competitiva."
   },
   {
@@ -56,7 +126,7 @@
     "fecha": "2026-09-13",
     "eje": "Gobierno",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "El Gobierno de Baja California seleccionó a 15 empresas (5 de reciente creación y 10 proveedoras de Mexicali, Tijuana, Ensenada y Tecate) para dos programas de seis meses de capacitación en el sector de semiconductores, donde operan 127 empresas de electrónica avanzada y participan aliados como Skyworks, Qualcomm e Infineon. También reportado por Punto Norte."
   },
   {
@@ -66,7 +136,7 @@
     "fecha": "2026-09-10",
     "eje": "Agropecuario",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "La Secretaría de Agricultura y Desarrollo Rural de Baja California entregó semillas, fertilizante, implementos y diésel a productores del Valle de Mexicali (Distrito de Riego 014) mediante el Programa Compensatorio estatal, con apoyos de hasta 45 mil pesos por beneficiario para mitigar costos de producción."
   },
   {
@@ -76,7 +146,7 @@
     "fecha": "2026-09-08",
     "eje": "Camaras empresariales",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "Coparmex Mexicali realizará el Foro Eleva el 7 de octubre en la Sala Auka del Ceart, con cinco conferencias sobre inteligencia artificial, economía y liderazgo empresarial y una asistencia esperada de 450 personas; el boleto cuesta 4,300 pesos al público general y 3,800 a socios."
   },
   {
@@ -86,7 +156,7 @@
     "fecha": "2026-09-06",
     "eje": "Agropecuario",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "La Secretaría de Agricultura y Desarrollo Rural de Baja California formalizó el inicio de la temporada de cosecha de dátil 2026 en Mexicali; la entidad ocupa el segundo lugar nacional en producción y el estado mantendrá asesoría técnica y articulación de canales de distribución para esta actividad, clave para el empleo rural."
   },
   {
