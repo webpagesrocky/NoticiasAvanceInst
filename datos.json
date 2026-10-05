@@ -1,12 +1,72 @@
 [
   {
+    "titulo": "Con inversión de 98 MDP, UABC construye el primer Hospital Universitario de Labio y Paladar Hendido en México",
+    "url": "https://www.elimparcial.com/mxl/mexicali/2026/10/02/con-inversion-de-98-mdp-uabc-construye-el-primer-hospital-universitario-de-labio-y-paladar-hendido-en-mexico/",
+    "fuente": "El Imparcial",
+    "fecha": "2026-10-02",
+    "eje": "Gobierno",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "La UABC inició la construcción del primer hospital universitario de labio y paladar hendido del país, con 98 millones de pesos (82 mdp de infraestructura estatal y 16 mdp de equipamiento), dos quirófanos y seis consultorios; operará desde junio de 2027 con capacidad para unos 200 pacientes al año."
+  },
+  {
+    "titulo": "Gobierno de Baja California reconoce contratos con personas sancionadas por EEUU en cruzada contra narcotráfico",
+    "url": "https://proyectopuente.com.mx/2026/10/01/gobierno-de-baja-california-reconoce-que-tiene-contratos-con-personas-sancionadas-por-eeuu-en-cruzada-contra-narcotrafico",
+    "fuente": "Proyecto Puente",
+    "fecha": "2026-10-01",
+    "eje": "Gobierno",
+    "semaforo": "rojo",
+    "nueva": true,
+    "resumen": "El gobierno estatal confirmó contratos por más de 200 millones de pesos (2022-2025) con Inteliproof Efficient, empresa en la lista de sancionados de la OFAC por presunto lavado de dinero para el Cártel de Sinaloa, además de 16.5 mdp con otros proveedores; la gobernadora ordenó vetar en licitaciones estatales a proveedores señalados por autoridades nacionales o extranjeras."
+  },
+  {
+    "titulo": "Mexicali aprueba convocatoria del Presupuesto Participativo 2026-2027; buscan agilizar licitaciones",
+    "url": "https://www.elimparcial.com/mxl/mexicali/2026/09/30/mexicali-aprueba-convocatoria-del-presupuesto-participativo-2026-2027-buscan-agilizar-licitaciones/",
+    "fuente": "El Imparcial",
+    "fecha": "2026-09-30",
+    "eje": "Gobierno",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "El Cabildo de Mexicali aprobó por unanimidad la convocatoria del Presupuesto Participativo 2026-2027, con el equivalente al 10% de la recaudación del predial para obras que voten los contribuyentes, y busca agilizar las licitaciones antes del cierre de la administración en septiembre de 2027; el ciclo anterior movió 80.5 mdp con 11,272 participantes."
+  },
+  {
+    "titulo": "Buscan agilizar inversiones en Baja California",
+    "url": "https://www.industrialnewsbc.com/2026/09/15/buscan-agilizar-inversiones-en-baja-california/",
+    "fuente": "Industrial News BC",
+    "fecha": "2026-09-15",
+    "eje": "Gobierno",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "La Secretaría de Economía coordina mesas de trabajo para eliminar obstáculos de trámites, permisos y energía que frenan nuevos proyectos; con un portafolio nacional superior a 300 mil millones de dólares, Baja California se posiciona en los sectores médico, aeroespacial y automotriz mediante comités promotores que articulan autoridades y empresarios."
+  },
+  {
+    "titulo": "Canacintra pone la mira al Paquete Económico 2027: advierte riesgos para invertir",
+    "url": "https://energymagazine.mx/2026/09/canacintra-pone-la-mira-al-paquete-economico-2027-advierte-riesgos-para-invertir/",
+    "fuente": "Energy Magazine",
+    "fecha": "2026-09-11",
+    "eje": "Camaras empresariales",
+    "semaforo": "amarillo",
+    "nueva": true,
+    "resumen": "Canacintra reconoce la inversión física proyectada de 1.04 billones de pesos en el Paquete Económico 2027, pero advierte riesgos para invertir: la deducción de intereses baja de 30% a 20% y la inversión real de la CFE se reduce, lo que pega a empresas intensivas en capital."
+  },
+  {
+    "titulo": "Celebrará Canaco Mexicali 108 años de historia empresarial",
+    "url": "https://www.industrialnewsbc.com/2026/09/01/celebrara-canaco-mexicali-108-anos-de-historia-empresarial/",
+    "fuente": "Industrial News BC",
+    "fecha": "2026-09-01",
+    "eje": "Camaras empresariales",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "La Canaco Mexicali, presidida por César Beltrán Badilla, conmemoró su 108 aniversario el 23 de septiembre con eventos culturales y deportivos, reafirmándose como una de las organizaciones empresariales más antiguas de la ciudad, fundada en 1918."
+  },
+  {
     "titulo": "Alcanzan exportaciones maquiladoras de Mexicali máximo histórico en 1° semestre de 2026",
     "url": "https://www.industrialnewsbc.com/2026/09/24/alcanzan-exportaciones-maquiladoras-de-mexicali-maximo-historico-en-1-semestre-de-2026/",
     "fuente": "Industrial News BC",
     "fecha": "2026-09-24",
     "eje": "Empresas y lideres establecidos",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "Las exportaciones de la industria maquiladora de Mexicali sumaron 38,343 millones de pesos en el primer semestre de 2026, 3.9% más que en 2025 y un máximo histórico para ese periodo; a junio operaban 150 establecimientos con más de 79 mil empleos y llegaron 488 millones de dólares de inversión extranjera."
   },
   {
@@ -16,7 +76,7 @@
     "fecha": "2026-09-24",
     "eje": "Gobierno",
     "semaforo": "amarillo",
-    "nueva": true,
+    "nueva": false,
     "resumen": "El secretario de Economía estatal, Kurt Honold, reconoció que algunas empresas, sobre todo pequeñas del sector logístico, han salido o cerrado por los aranceles de Estados Unidos, aunque los describió como casos aislados y aseguró que la inversión sigue llegando, en algunos casos sin anunciarse públicamente."
   },
   {
@@ -26,7 +86,7 @@
     "fecha": "2026-09-20",
     "eje": "Gobierno",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "El Gobierno Federal y el estatal presentaron su agenda de inversión para Baja California ante unas 50 mil personas: la desaladora de Playas de Rosarito (12,500 mdp), la central de ciclo combinado González Ortega (646 mdd, 641 MW), 5,134 sistemas fotovoltaicos, el Viaducto Elevado de Tijuana y 80,880 viviendas programadas."
   },
   {
@@ -36,7 +96,7 @@
     "fecha": "2026-09-20",
     "eje": "Agropecuario",
     "semaforo": "rojo",
-    "nueva": true,
+    "nueva": false,
     "resumen": "El Valle de Mexicali enfrenta recortes proyectados de 308 millones de m³ de agua para 2027-2028, lo que obliga a reconfigurar cultivos (37 mil hectáreas de alfalfa frente a 29 mil de trigo) y agrava la salinidad en 50-60 mil hectáreas, con riesgo de 78 mil hectáreas sin sembrar hacia 2030 y desempleo agrícola."
   },
   {
@@ -46,7 +106,7 @@
     "fecha": "2026-09-20",
     "eje": "Agropecuario",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "Ante las limitaciones de los cultivos tradicionales, productores y autoridades agrícolas destacan al dátil como alternativa viable y rentable por su competitividad y acceso a mercados nacionales e internacionales, aunque persisten retos como la falta de canales de distribución y de experiencia en gestión comercial."
   },
   {
@@ -56,7 +116,7 @@
     "fecha": "2026-09-16",
     "eje": "Gobierno",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "La gobernadora Marina del Pilar Ávila presidió el Grito de Independencia en el Centro Cívico de Mexicali ante más de 75 mil personas, con espectáculo de drones y un concierto gratuito de Edén Muñoz, una de las concentraciones más numerosas de las fiestas patrias estatales."
   },
   {
@@ -66,7 +126,7 @@
     "fecha": "2026-09-23",
     "eje": "Camaras empresariales",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "El presidente de Coparmex Mexicali, Luis Ernesto García, y los patrocinadores invitaron a la 14ª edición del Foro Eleva, el 7 de octubre en la Sala Auka del Ceart, con Leo Zuckermann como ponente inaugural y boletos de 3,800 pesos para socios y 4,300 para público general."
   },
   {
