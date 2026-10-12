@@ -1,12 +1,102 @@
 [
   {
+    "titulo": "Advierten crisis hídrica en el Valle de Mexicali",
+    "url": "https://www.industrialnewsbc.com/2026/10/08/advierten-crisis-hidrica-en-el-valle-de-mexicali/",
+    "fuente": "Industrial News BC",
+    "fecha": "2026-10-08",
+    "eje": "Agropecuario",
+    "semaforo": "rojo",
+    "nueva": true,
+    "resumen": "El Congreso Agrario Permanente prevé una crisis hídrica en el Valle de Mexicali en enero y febrero por los recortes del Acta 334 de la CILA (308 Mm³ en 2027-2028) y la cesión de 128 Mm³ a la zona costa; el riego bajaría de 109 a 85 l/s por hectárea y ya suman más de 80 mil hectáreas sin sembrar."
+  },
+  {
+    "titulo": "Cambios en el comercio internacional ponen nuevos retos; Index Mexicali los llevará a su primera cumbre",
+    "url": "https://www.elimparcial.com/mxl/mexicali/2026/10/07/cambios-en-el-comercio-internacional-ponen-nuevos-retos-index-mexicali-los-llevara-a-su-primera-cumbre/",
+    "fuente": "El Imparcial",
+    "fecha": "2026-10-07",
+    "eje": "Camaras empresariales",
+    "semaforo": "amarillo",
+    "nueva": true,
+    "resumen": "Index Mexicali organizará el 12 de noviembre su primera Cumbre de Comercio Exterior y Aduanas para analizar cómo las nuevas regulaciones, la renegociación del T-MEC y la inteligencia artificial cambian la operación de la industria maquiladora y exportadora, y preparar a las empresas ante mayores exigencias de cumplimiento."
+  },
+  {
+    "titulo": "Coparmex pide la permanencia del estímulo fiscal del IVA en la frontera ante la incertidumbre del sector empresarial",
+    "url": "https://canal66.tv/coparmex-pide-la-permanencia-del-estimulo-fiscal-del-iva-en-la-frontera-ante-la-incertidumbre-del-sector-empresarial/",
+    "fuente": "Canal 66",
+    "fecha": "2026-10-07",
+    "eje": "Camaras empresariales",
+    "semaforo": "amarillo",
+    "nueva": true,
+    "resumen": "El presidente de Coparmex Mexicali, Ernesto García, pidió que el estímulo fiscal del IVA en la frontera se incorpore de forma permanente a la ley y no dependa de renovar un decreto, pues la falta de definición sobre su continuidad aumenta la incertidumbre empresarial rumbo al cierre del año."
+  },
+  {
+    "titulo": "Fortalece CANACINTRA Mexicali vínculos empresariales",
+    "url": "https://www.industrialnewsbc.com/2026/10/07/fortalece-canacintra-mexicali-vinculos-empresariales/",
+    "fuente": "Industrial News BC",
+    "fecha": "2026-10-07",
+    "eje": "Camaras empresariales",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "Canacintra Mexicali celebró su Convivencia Anual Empresarial 2026, donde reconoció a empresas ancla como Papel San Francisco, Kenworth Mexicana y FEVISA y reforzó la coordinación con las autoridades; la presidenta municipal Norma Bustamante destacó su papel en el impulso al emprendimiento juvenil."
+  },
+  {
+    "titulo": "Mexicali crea más de 42 mil empleos formales en 2026, según cifras del IMSS",
+    "url": "https://esnoticia.mx/2026/10/mexicali-crea-mas-de-42-mil-empleos-formales-en-2026-segun-cifras-del-imss/",
+    "fuente": "Es Noticia",
+    "fecha": "2026-10-06",
+    "eje": "Empresas y lideres establecidos",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "Mexicali sumó 42,362 empleos formales en 2026 con corte al 31 de agosto, impulsados sobre todo por servicios, y llegó a 313,155 trabajadores afiliados al IMSS frente a 270,793 un año antes; el salario promedio de 766.94 pesos diarios es el más alto de Baja California."
+  },
+  {
+    "titulo": "Foro Eleva aprovecha el entorno político de BC para analizar, aprender y generar nuevas alianzas",
+    "url": "https://www.elimparcial.com/mxl/mexicali/2026/10/05/foro-eleva-aprovecha-el-entorno-politico-de-bc-para-analizar-aprender-y-generar-nuevas-alianzas/",
+    "fuente": "El Imparcial",
+    "fecha": "2026-10-05",
+    "eje": "Camaras empresariales",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "La 14ª edición del Foro Eleva de Coparmex Mexicali, el 7 de octubre, reunió a cinco conferencistas sobre economía, política, inteligencia artificial e innovación en un contexto preelectoral, y cerró con un espacio de networking para generar alianzas comerciales y laborales."
+  },
+  {
+    "titulo": "La inversión extranjera directa que llega, y la que no se instala",
+    "url": "https://elindependiente.mx/economia/2026/10/02/la-inversion-extranjera-directa-que-llega-y-la-que-no-se-instala/",
+    "fuente": "El Independiente",
+    "fecha": "2026-10-02",
+    "eje": "Inversion entrante / expansiones",
+    "semaforo": "amarillo",
+    "nueva": true,
+    "resumen": "La IED en México sumó 40,871 mdd en 2025 (+10.8%), quinto máximo consecutivo, pero se explica sobre todo por reinversión de utilidades (88.5% en el primer semestre de 2026): el flujo hacia nuevas plantas cayó 13.4% y los anuncios bajaron de 44 mil a 24 mil mdd; Baja California está entre las cinco entidades que concentran 73.9% del flujo."
+  },
+  {
+    "titulo": "Presenta Secretaría de Economía calendario de capacitación empresarial para octubre",
+    "url": "https://www.uniradiobaja.com/sociedad/presenta-secretaria-economia-calendario-capacitacion-empresarial-octubre-n906490",
+    "fuente": "Uniradio Baja",
+    "fecha": "2026-10-02",
+    "eje": "Gobierno",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "La Secretaría de Economía e Innovación, a través del Instituto del Emprendimiento, presentó su agenda de octubre con 13 talleres y webinars gratuitos para emprendedores y negocios en Tijuana, Tecate, Ensenada, Mexicali y San Quintín, del 5 al 26 de octubre, con sesiones en Mexicali los días 9, 16 y 23."
+  },
+  {
+    "titulo": "Anuncian Expo Construcción y Vivienda 2026 en Mexicali; será gratuita",
+    "url": "https://www.elimparcial.com/mxl/mexicali/2026/10/01/anuncian-expo-construccion-y-vivienda-2026-en-mexicali-sera-gratuita/",
+    "fuente": "El Imparcial",
+    "fecha": "2026-10-01",
+    "eje": "Camaras empresariales",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "La CMIC Baja California y otros organizadores realizarán la Expo Construcción y Vivienda 2026 el 15 y 16 de octubre en el Museo Sol del Niño, con entrada libre, oferta de vivienda, materiales, maquinaria y tecnología, y ocho conferencias gratuitas; es el segundo año consecutivo en esa sede."
+  },
+  {
     "titulo": "Con inversión de 98 MDP, UABC construye el primer Hospital Universitario de Labio y Paladar Hendido en México",
     "url": "https://www.elimparcial.com/mxl/mexicali/2026/10/02/con-inversion-de-98-mdp-uabc-construye-el-primer-hospital-universitario-de-labio-y-paladar-hendido-en-mexico/",
     "fuente": "El Imparcial",
     "fecha": "2026-10-02",
     "eje": "Gobierno",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "La UABC inició la construcción del primer hospital universitario de labio y paladar hendido del país, con 98 millones de pesos (82 mdp de infraestructura estatal y 16 mdp de equipamiento), dos quirófanos y seis consultorios; operará desde junio de 2027 con capacidad para unos 200 pacientes al año."
   },
   {
@@ -16,7 +106,7 @@
     "fecha": "2026-10-01",
     "eje": "Gobierno",
     "semaforo": "rojo",
-    "nueva": true,
+    "nueva": false,
     "resumen": "El gobierno estatal confirmó contratos por más de 200 millones de pesos (2022-2025) con Inteliproof Efficient, empresa en la lista de sancionados de la OFAC por presunto lavado de dinero para el Cártel de Sinaloa, además de 16.5 mdp con otros proveedores; la gobernadora ordenó vetar en licitaciones estatales a proveedores señalados por autoridades nacionales o extranjeras."
   },
   {
@@ -26,7 +116,7 @@
     "fecha": "2026-09-30",
     "eje": "Gobierno",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "El Cabildo de Mexicali aprobó por unanimidad la convocatoria del Presupuesto Participativo 2026-2027, con el equivalente al 10% de la recaudación del predial para obras que voten los contribuyentes, y busca agilizar las licitaciones antes del cierre de la administración en septiembre de 2027; el ciclo anterior movió 80.5 mdp con 11,272 participantes."
   },
   {
@@ -36,7 +126,7 @@
     "fecha": "2026-09-15",
     "eje": "Gobierno",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "La Secretaría de Economía coordina mesas de trabajo para eliminar obstáculos de trámites, permisos y energía que frenan nuevos proyectos; con un portafolio nacional superior a 300 mil millones de dólares, Baja California se posiciona en los sectores médico, aeroespacial y automotriz mediante comités promotores que articulan autoridades y empresarios."
   },
   {
@@ -46,7 +136,7 @@
     "fecha": "2026-09-11",
     "eje": "Camaras empresariales",
     "semaforo": "amarillo",
-    "nueva": true,
+    "nueva": false,
     "resumen": "Canacintra reconoce la inversión física proyectada de 1.04 billones de pesos en el Paquete Económico 2027, pero advierte riesgos para invertir: la deducción de intereses baja de 30% a 20% y la inversión real de la CFE se reduce, lo que pega a empresas intensivas en capital."
   },
   {
@@ -56,7 +146,7 @@
     "fecha": "2026-09-01",
     "eje": "Camaras empresariales",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "La Canaco Mexicali, presidida por César Beltrán Badilla, conmemoró su 108 aniversario el 23 de septiembre con eventos culturales y deportivos, reafirmándose como una de las organizaciones empresariales más antiguas de la ciudad, fundada en 1918."
   },
   {
