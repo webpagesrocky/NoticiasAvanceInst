@@ -1,12 +1,62 @@
 [
   {
+    "titulo": "Analiza Index Mexicali retos de proveeduría y competitividad ante el nuevo T-MEC",
+    "url": "https://www.industrialnewsbc.com/2026/10/15/analiza-index-mexicali-retos-de-proveeduria-y-competitividad-ante-el-nuevo-t-mec/",
+    "fuente": "Industrial News BC",
+    "fecha": "2026-10-15",
+    "eje": "Camaras empresariales",
+    "semaforo": "amarillo",
+    "nueva": true,
+    "resumen": "El Foro Index Mexicali Nearshoring 360, realizado el 14 de octubre, reunió a empresarios, autoridades y especialistas para analizar cómo fortalecer la proveeduría nacional y la competitividad exportadora ante el T-MEC, con paneles sobre cadenas de suministro, inteligencia artificial, retos fiscales y el papel de México como plataforma industrial de Norteamérica."
+  },
+  {
+    "titulo": "Inauguran la edición 2026 del Foro Index en Mexicali",
+    "url": "https://www.industrialnewsbc.com/2026/10/14/inauguran-la-edicion-2026-del-foro-index-en-mexicali/",
+    "fuente": "Industrial News BC",
+    "fecha": "2026-10-14",
+    "eje": "Camaras empresariales",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "Arrancó el Foro Index 2026 en Mexicali con un llamado a una agenda compartida entre autoridades e industria, con la energía y la eficiencia de los cruces fronterizos como prioridades; la conferencia magistral inaugural, de Francisco Zea, abordó \"México 2030: Poder, Política y Relación con Estados Unidos\"."
+  },
+  {
+    "titulo": "FMI determina que México crecerá más de lo previsto en 2026: eleva a 1.5% su pronóstico por el impulso de las exportaciones y la inversión, aunque persiste la incertidumbre por el T-MEC",
+    "url": "https://www.elimparcial.com/dinero/2026/10/13/fmi-determina-que-mexico-crecera-mas-de-lo-previsto-en-2026-eleva-a-15-su-pronostico-por-el-impulso-de-las-exportaciones-y-la-inversion-aunque-persiste-la-incertidumbre-por-el-t-mec/",
+    "fuente": "El Imparcial",
+    "fecha": "2026-10-13",
+    "eje": "Hacienda",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "El FMI elevó de 1.2% a 1.5% su pronóstico de crecimiento de México para 2026 por el impulso de exportaciones e inversión, y proyecta 1.8% para 2027 con inflación de 3.8% al cierre de 2026; advierte que la incertidumbre por el T-MEC, el costo de la energía y la deuda pública siguen siendo riesgos."
+  },
+  {
+    "titulo": "SADER avanza al 75% en entrega de apoyos de 45 mil pesos a agricultores del Valle de Mexicali",
+    "url": "https://www.elimparcial.com/mxl/mexicali/2026/10/06/sader-avanza-al-75-en-entrega-de-apoyos-de-45-mil-pesos-a-agricultores-del-valle-de-mexicali/",
+    "fuente": "El Imparcial",
+    "fecha": "2026-10-06",
+    "eje": "Agropecuario",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "El programa estatal de apoyos compensatorios lleva cerca de 75% de avance en la entrega a 406 productores del Valle de Mexicali, con hasta 45 mil pesos por beneficiario en diésel, semilla, fertilizantes e implementos; ya suman unos 300 atendidos, con entregas cada 15 días y cierre previsto a finales de octubre. También reportado por Brújula."
+  },
+  {
+    "titulo": "Norma Bustamante presume reducción delictiva y anuncia academia de policía en Mexicali",
+    "url": "https://zetatijuana.com/2026/10/norma-bustamante-presume-reduccion-delictiva-y-anuncia-academia-de-policia-en-mexicali/",
+    "fuente": "Zeta Tijuana",
+    "fecha": "2026-10-02",
+    "eje": "Gobierno",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "En su segundo informe, la presidenta municipal de Mexicali, Norma Bustamante, reportó reducciones de 35% en robo con violencia y 30% en homicidios (cifras del propio gobierno municipal) y anunció la autorización federal para una academia de policía en la Misión San Carlos, con 50 millones de pesos."
+  },
+  {
     "titulo": "Advierten crisis hídrica en el Valle de Mexicali",
     "url": "https://www.industrialnewsbc.com/2026/10/08/advierten-crisis-hidrica-en-el-valle-de-mexicali/",
     "fuente": "Industrial News BC",
     "fecha": "2026-10-08",
     "eje": "Agropecuario",
     "semaforo": "rojo",
-    "nueva": true,
+    "nueva": false,
     "resumen": "El Congreso Agrario Permanente prevé una crisis hídrica en el Valle de Mexicali en enero y febrero por los recortes del Acta 334 de la CILA (308 Mm³ en 2027-2028) y la cesión de 128 Mm³ a la zona costa; el riego bajaría de 109 a 85 l/s por hectárea y ya suman más de 80 mil hectáreas sin sembrar."
   },
   {
@@ -16,7 +66,7 @@
     "fecha": "2026-10-07",
     "eje": "Camaras empresariales",
     "semaforo": "amarillo",
-    "nueva": true,
+    "nueva": false,
     "resumen": "Index Mexicali organizará el 12 de noviembre su primera Cumbre de Comercio Exterior y Aduanas para analizar cómo las nuevas regulaciones, la renegociación del T-MEC y la inteligencia artificial cambian la operación de la industria maquiladora y exportadora, y preparar a las empresas ante mayores exigencias de cumplimiento."
   },
   {
@@ -26,7 +76,7 @@
     "fecha": "2026-10-07",
     "eje": "Camaras empresariales",
     "semaforo": "amarillo",
-    "nueva": true,
+    "nueva": false,
     "resumen": "El presidente de Coparmex Mexicali, Ernesto García, pidió que el estímulo fiscal del IVA en la frontera se incorpore de forma permanente a la ley y no dependa de renovar un decreto, pues la falta de definición sobre su continuidad aumenta la incertidumbre empresarial rumbo al cierre del año."
   },
   {
@@ -36,7 +86,7 @@
     "fecha": "2026-10-07",
     "eje": "Camaras empresariales",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "Canacintra Mexicali celebró su Convivencia Anual Empresarial 2026, donde reconoció a empresas ancla como Papel San Francisco, Kenworth Mexicana y FEVISA y reforzó la coordinación con las autoridades; la presidenta municipal Norma Bustamante destacó su papel en el impulso al emprendimiento juvenil."
   },
   {
@@ -46,7 +96,7 @@
     "fecha": "2026-10-06",
     "eje": "Empresas y lideres establecidos",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "Mexicali sumó 42,362 empleos formales en 2026 con corte al 31 de agosto, impulsados sobre todo por servicios, y llegó a 313,155 trabajadores afiliados al IMSS frente a 270,793 un año antes; el salario promedio de 766.94 pesos diarios es el más alto de Baja California."
   },
   {
@@ -56,7 +106,7 @@
     "fecha": "2026-10-05",
     "eje": "Camaras empresariales",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "La 14ª edición del Foro Eleva de Coparmex Mexicali, el 7 de octubre, reunió a cinco conferencistas sobre economía, política, inteligencia artificial e innovación en un contexto preelectoral, y cerró con un espacio de networking para generar alianzas comerciales y laborales."
   },
   {
@@ -66,7 +116,7 @@
     "fecha": "2026-10-02",
     "eje": "Inversion entrante / expansiones",
     "semaforo": "amarillo",
-    "nueva": true,
+    "nueva": false,
     "resumen": "La IED en México sumó 40,871 mdd en 2025 (+10.8%), quinto máximo consecutivo, pero se explica sobre todo por reinversión de utilidades (88.5% en el primer semestre de 2026): el flujo hacia nuevas plantas cayó 13.4% y los anuncios bajaron de 44 mil a 24 mil mdd; Baja California está entre las cinco entidades que concentran 73.9% del flujo."
   },
   {
@@ -76,7 +126,7 @@
     "fecha": "2026-10-02",
     "eje": "Gobierno",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "La Secretaría de Economía e Innovación, a través del Instituto del Emprendimiento, presentó su agenda de octubre con 13 talleres y webinars gratuitos para emprendedores y negocios en Tijuana, Tecate, Ensenada, Mexicali y San Quintín, del 5 al 26 de octubre, con sesiones en Mexicali los días 9, 16 y 23."
   },
   {
@@ -86,7 +136,7 @@
     "fecha": "2026-10-01",
     "eje": "Camaras empresariales",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "La CMIC Baja California y otros organizadores realizarán la Expo Construcción y Vivienda 2026 el 15 y 16 de octubre en el Museo Sol del Niño, con entrada libre, oferta de vivienda, materiales, maquinaria y tecnología, y ocho conferencias gratuitas; es el segundo año consecutivo en esa sede."
   },
   {
