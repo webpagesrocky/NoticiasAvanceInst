@@ -1,12 +1,72 @@
 [
   {
+    "titulo": "Plan México y nearshoring: del anuncio a la planta",
+    "url": "https://elimparcial.com/estilos/2026/10/26/plan-mexico-y-nearshoring-del-anuncio-a-la-planta",
+    "fuente": "El Imparcial",
+    "fecha": "2026-10-26",
+    "eje": "Inversion entrante / expansiones",
+    "semaforo": "amarillo",
+    "nueva": true,
+    "resumen": "La IED en el primer semestre de 2026 fue récord (34,968 mdd, +2.1%), pero casi nueve de cada diez dólares (88.5%) son reinversión de empresas que ya operan en México y solo 7.8% son nuevas inversiones; el análisis, enfocado en Sonora, plantea el reto de convertir los anuncios del nearshoring en plantas y empleo."
+  },
+  {
+    "titulo": "CESPM amplía infraestructura de agua potable en la colonia Madero del Valle de Mexicali",
+    "url": "https://www.uniradiobaja.com/sociedad/cespm-amplia-infraestructura-agua-potable-colonia-madero-valle-mexicali-n910709",
+    "fuente": "Uniradio Baja",
+    "fecha": "2026-10-26",
+    "eje": "Gobierno",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "La CESPM amplía el suministro de agua potable en la colonia Madero del Valle de Mexicali con 5.4 millones de pesos (50% federal vía PROAGUA y 50% recursos propios): 2,583 metros de tubería nueva, 11 válvulas y 22 tomas domiciliarias para 79 habitantes."
+  },
+  {
+    "titulo": "Anuncian 20 nuevos parques industriales en México con inversión de 670 millones de dólares",
+    "url": "https://mediosobson.com/2026/10/22/anuncian-20-nuevos-parques-industriales-en-mexico-con-inversion-de-670-millones-de-dolares/",
+    "fuente": "Medios Obson",
+    "fecha": "2026-10-22",
+    "eje": "Inversion entrante / expansiones",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "La Secretaría de Economía anunció 20 nuevos parques industriales con una inversión de 670 millones de dólares en 8 entidades y 17 municipios, que suman 40 de los 100 espacios previstos en el Plan México; la nota no menciona a Baja California."
+  },
+  {
+    "titulo": "Fortalece Secretaría de Educación vínculo escuela empresa con conocida maquila aeroespacial y escuela recibe donativos",
+    "url": "https://thebajapost.com/2026/10/21/fortalece-secretaria-de-educacion-vinculo-escuela-empresa-con-conocida-maquila-aeroespacial-y-escuela-recibe-donativos/",
+    "fuente": "The Baja Post",
+    "fecha": "2026-10-21",
+    "eje": "Filantropia y responsabilidad social",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "La Secretaría de Educación y la maquiladora aeroespacial Honeywell, con operaciones en Mexicali desde hace décadas, donaron mochilas con útiles a la Primaria Juventud Milenio (74 alumnos) mediante la campaña voluntaria \"Cuaderno y Lápiz\" de los trabajadores de la empresa, reforzando el vínculo escuela-empresa."
+  },
+  {
+    "titulo": "Baja California destina más de 61 mil millones de pesos a infraestructura y agua",
+    "url": "https://www.elimparcial.com/mxl/mexicali/2026/10/20/baja-california-destina-mas-de-61-mil-millones-de-pesos-a-infraestructura-y-agua/",
+    "fuente": "El Imparcial",
+    "fecha": "2026-10-20",
+    "eje": "Gobierno",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "El Gobierno estatal reporta una inversión de 61,584 millones de pesos en infraestructura y agua, con 30,440 millones para el sector hídrico (incluidas las desaladoras de Rosarito y San Quintín), obras viales y mantenimiento escolar, financiadas con recursos propios, federales y un Bono Verde; las cifras son del propio gobierno."
+  },
+  {
+    "titulo": "Presentan propuestas para dirigir la industria manufacturera Index",
+    "url": "https://www.tijuanaenlinea.com/economia/2026/10/15/presentan-propuestas-para-dirigir-la-industria-manufacturera-index/",
+    "fuente": "Tijuana En Línea",
+    "fecha": "2026-10-15",
+    "eje": "Camaras empresariales",
+    "semaforo": "amarillo",
+    "nueva": true,
+    "resumen": "Guillermo del Río Ochoa, aspirante a la presidencia nacional de Index 2027-2028, presentó en Tijuana ante Index Zona Costa su plan de trabajo en tres ejes (competitividad e innovación, relaciones institucionales y optimización interna), con la meta de que Index sea la organización líder del sector exportador en 2030."
+  },
+  {
     "titulo": "Analiza Index Mexicali retos de proveeduría y competitividad ante el nuevo T-MEC",
     "url": "https://www.industrialnewsbc.com/2026/10/15/analiza-index-mexicali-retos-de-proveeduria-y-competitividad-ante-el-nuevo-t-mec/",
     "fuente": "Industrial News BC",
     "fecha": "2026-10-15",
     "eje": "Camaras empresariales",
     "semaforo": "amarillo",
-    "nueva": true,
+    "nueva": false,
     "resumen": "El Foro Index Mexicali Nearshoring 360, realizado el 14 de octubre, reunió a empresarios, autoridades y especialistas para analizar cómo fortalecer la proveeduría nacional y la competitividad exportadora ante el T-MEC, con paneles sobre cadenas de suministro, inteligencia artificial, retos fiscales y el papel de México como plataforma industrial de Norteamérica."
   },
   {
@@ -16,7 +76,7 @@
     "fecha": "2026-10-14",
     "eje": "Camaras empresariales",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "Arrancó el Foro Index 2026 en Mexicali con un llamado a una agenda compartida entre autoridades e industria, con la energía y la eficiencia de los cruces fronterizos como prioridades; la conferencia magistral inaugural, de Francisco Zea, abordó \"México 2030: Poder, Política y Relación con Estados Unidos\"."
   },
   {
@@ -26,7 +86,7 @@
     "fecha": "2026-10-13",
     "eje": "Hacienda",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "El FMI elevó de 1.2% a 1.5% su pronóstico de crecimiento de México para 2026 por el impulso de exportaciones e inversión, y proyecta 1.8% para 2027 con inflación de 3.8% al cierre de 2026; advierte que la incertidumbre por el T-MEC, el costo de la energía y la deuda pública siguen siendo riesgos."
   },
   {
@@ -36,7 +96,7 @@
     "fecha": "2026-10-06",
     "eje": "Agropecuario",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "El programa estatal de apoyos compensatorios lleva cerca de 75% de avance en la entrega a 406 productores del Valle de Mexicali, con hasta 45 mil pesos por beneficiario en diésel, semilla, fertilizantes e implementos; ya suman unos 300 atendidos, con entregas cada 15 días y cierre previsto a finales de octubre. También reportado por Brújula."
   },
   {
@@ -46,7 +106,7 @@
     "fecha": "2026-10-02",
     "eje": "Gobierno",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "En su segundo informe, la presidenta municipal de Mexicali, Norma Bustamante, reportó reducciones de 35% en robo con violencia y 30% en homicidios (cifras del propio gobierno municipal) y anunció la autorización federal para una academia de policía en la Misión San Carlos, con 50 millones de pesos."
   },
   {
