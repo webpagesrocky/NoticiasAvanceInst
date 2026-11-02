@@ -1,12 +1,52 @@
 [
   {
+    "titulo": "Impulsa Economía e Innovación a emprendimientos de Mexicali con \"Capital Semilla 2026\"",
+    "url": "https://www.uniradioinforma.com/sociedad/impulsa-economia-e-innovacion-emprendimientos-mexicali-capital-semilla-2026-n911466",
+    "fuente": "Uniradio Baja",
+    "fecha": "2026-10-29",
+    "eje": "Gobierno",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "La Secretaría de Economía e Innovación entregó 13 apoyos del programa Capital Semilla 2026 en Mexicali por 313,913 pesos para equipamiento y capital de trabajo de negocios de reciente creación (menos de seis meses), con apoyos en especie de hasta 25 mil pesos, capacitación y acompañamiento."
+  },
+  {
+    "titulo": "Empiezan a fluir inversiones de empresas mexicanas: CCE",
+    "url": "https://jornada.com.mx/noticia/2026/10/29/economia/empiezan-a-fluir-inversiones-de-empresas-mexicanas-cce",
+    "fuente": "La Jornada",
+    "fecha": "2026-10-29",
+    "eje": "Inversion entrante / expansiones",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "El presidente del CCE, José Medina Mora, dijo que desde mayo se han destrabado 23 proyectos por 3,900 millones de dólares que ya fluyen a la economía, gracias a una oficina de proyectos de inversión en Presidencia, y que 90% de la inversión es de origen nacional; señaló el suministro de energía y la disponibilidad de agua como los principales cuellos de botella."
+  },
+  {
+    "titulo": "Impulsará Expo Industria Tecate 2026 de Canacintra la proveeduría industrial",
+    "url": "https://www.industrialnewsbc.com/2026/10/21/impulsara-expo-industria-tecate-2026-de-canacintra-la-proveeduria-industrial/",
+    "fuente": "Industrial News BC",
+    "fecha": "2026-10-21",
+    "eje": "Camaras empresariales",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "Canacintra Tecate realizará el 5 de noviembre la Expo Industria Tecate 2026 para vincular proveedores con empresas compradoras (Kenworth, Scantibodies, Quasar, Milwaukee Electronics, Baja Aerospace Clúster, Conesys y Teleflex), con más de 150 requerimientos de proveeduría y un panel sobre T-MEC, aduanas y competitividad."
+  },
+  {
+    "titulo": "Reporta INEGI altas exportaciones en Mexicali en 2do trimestre de 2026",
+    "url": "https://www.industrialnewsbc.com/2026/10/21/reporta-inegi-altas-exportaciones-en-mexicali-en-2do-trimestre-de-2026/",
+    "fuente": "Industrial News BC",
+    "fecha": "2026-10-21",
+    "eje": "Empresas y lideres establecidos",
+    "semaforo": "verde",
+    "nueva": true,
+    "resumen": "Las exportaciones de mercancías de Mexicali sumaron unos 4,475 millones de dólares en el segundo trimestre de 2026, 9.4% más que en 2025; los productos manufacturados aportaron cerca de 4,387 millones (98%), lo que sugiere que las empresas mantienen su confianza pese a los cambios en la política comercial de Estados Unidos."
+  },
+  {
     "titulo": "Plan México y nearshoring: del anuncio a la planta",
     "url": "https://elimparcial.com/estilos/2026/10/26/plan-mexico-y-nearshoring-del-anuncio-a-la-planta",
     "fuente": "El Imparcial",
     "fecha": "2026-10-26",
     "eje": "Inversion entrante / expansiones",
     "semaforo": "amarillo",
-    "nueva": true,
+    "nueva": false,
     "resumen": "La IED en el primer semestre de 2026 fue récord (34,968 mdd, +2.1%), pero casi nueve de cada diez dólares (88.5%) son reinversión de empresas que ya operan en México y solo 7.8% son nuevas inversiones; el análisis, enfocado en Sonora, plantea el reto de convertir los anuncios del nearshoring en plantas y empleo."
   },
   {
@@ -16,7 +56,7 @@
     "fecha": "2026-10-26",
     "eje": "Gobierno",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "La CESPM amplía el suministro de agua potable en la colonia Madero del Valle de Mexicali con 5.4 millones de pesos (50% federal vía PROAGUA y 50% recursos propios): 2,583 metros de tubería nueva, 11 válvulas y 22 tomas domiciliarias para 79 habitantes."
   },
   {
@@ -26,8 +66,8 @@
     "fecha": "2026-10-22",
     "eje": "Inversion entrante / expansiones",
     "semaforo": "verde",
-    "nueva": true,
-    "resumen": "La Secretaría de Economía anunció 20 nuevos parques industriales con una inversión de 670 millones de dólares en 8 entidades y 17 municipios, que suman 40 de los 100 espacios previstos en el Plan México; la nota no menciona a Baja California."
+    "nueva": false,
+    "resumen": "La Secretaría de Economía anunció 20 nuevos parques industriales con una inversión de 670 millones de dólares en 8 entidades y 17 municipios, que suman 40 de los 100 espacios previstos en el Plan México. El Imparcial reporta la cifra en 763 mdd según la Ampip (4.6 millones de m², 175 empresas, 32,127 empleos) y que Sheinbaum mencionó a Baja California entre las regiones con inversión; las cifras difieren entre fuentes."
   },
   {
     "titulo": "Fortalece Secretaría de Educación vínculo escuela empresa con conocida maquila aeroespacial y escuela recibe donativos",
@@ -36,7 +76,7 @@
     "fecha": "2026-10-21",
     "eje": "Filantropia y responsabilidad social",
     "semaforo": "verde",
-    "nueva": true,
+    "nueva": false,
     "resumen": "La Secretaría de Educación y la maquiladora aeroespacial Honeywell, con operaciones en Mexicali desde hace décadas, donaron mochilas con útiles a la Primaria Juventud Milenio (74 alumnos) mediante la campaña voluntaria \"Cuaderno y Lápiz\" de los trabajadores de la empresa, reforzando el vínculo escuela-empresa."
   },
   {
@@ -46,8 +86,8 @@
     "fecha": "2026-10-20",
     "eje": "Gobierno",
     "semaforo": "verde",
-    "nueva": true,
-    "resumen": "El Gobierno estatal reporta una inversión de 61,584 millones de pesos en infraestructura y agua, con 30,440 millones para el sector hídrico (incluidas las desaladoras de Rosarito y San Quintín), obras viales y mantenimiento escolar, financiadas con recursos propios, federales y un Bono Verde; las cifras son del propio gobierno."
+    "nueva": false,
+    "resumen": "El Gobierno estatal reporta una inversión de 61,584 millones de pesos en infraestructura y agua, con 30,440 millones para el sector hídrico (incluidas las desaladoras de Rosarito y San Quintín), obras viales y mantenimiento escolar, financiadas con recursos propios, federales y un Bono Verde; las cifras son del propio gobierno. California Medios añade que la proyección al cierre de 2027 equivale a 6.7 veces la inversión de las tres administraciones anteriores y que la autonomía financiera subió de 14.1% (2021) a 19.3% (2026)."
   },
   {
     "titulo": "Presentan propuestas para dirigir la industria manufacturera Index",
@@ -56,7 +96,7 @@
     "fecha": "2026-10-15",
     "eje": "Camaras empresariales",
     "semaforo": "amarillo",
-    "nueva": true,
+    "nueva": false,
     "resumen": "Guillermo del Río Ochoa, aspirante a la presidencia nacional de Index 2027-2028, presentó en Tijuana ante Index Zona Costa su plan de trabajo en tres ejes (competitividad e innovación, relaciones institucionales y optimización interna), con la meta de que Index sea la organización líder del sector exportador en 2030."
   },
   {
